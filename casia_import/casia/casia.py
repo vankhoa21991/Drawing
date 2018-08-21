@@ -299,8 +299,9 @@ def extract_casia_offline(folder):
             #
             # print(f, len(lbls))
 
-        except:
+        except Exception as e:
             print("error at :" + f)
+            print(e)
     return IMGS, LBLS
 
 def statistic(data_dir):
@@ -321,8 +322,8 @@ def statistic(data_dir):
 if __name__ == '__main__':
 
     # ONLINE
-    folder = "D:/3_Project/ComputerVision/Cinnamon/Flaxscanner/Dataset/CASIA/CASIA-OLHWDB1.0/Data/"
-    extract_casia_online(folder)
+    #folder = "D:/3_Project/ComputerVision/Cinnamon/Flaxscanner/Dataset/CASIA/CASIA-OLHWDB1.0/Data/"
+    # extract_casia_onlin(folder)
 
     #data_dir = folder + '/preprocessed/'
     # statistic(data_dir)
@@ -330,6 +331,6 @@ if __name__ == '__main__':
 
     # OFFLINE
 
-    #folder = "D:/3_Project/ComputerVision/Cinnamon/Flaxscanner/Dataset/CASIA/GntData1_0/Data/"
-    #IMGS, LBLS = extract_casia_offline(folder)
-    #IMGS
+    folder = "/mnt/DATA/lupin/Dataset/CASIA_HW1.0/"
+    IMGS, LBLS = extract_casia_offline(folder)
+    IMGS
