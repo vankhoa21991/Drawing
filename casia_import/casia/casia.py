@@ -322,14 +322,14 @@ if __name__ == '__main__':
 
     # ONLINE
     folder = "D:/3_Project/ComputerVision/Cinnamon/Flaxscanner/Dataset/CASIA/CASIA-OLHWDB1.0/Data/"
-    # extract_casia_onlin(folder)
+    extract_casia_online(folder)
 
-    data_dir = folder + '/preprocessed/'
+    #data_dir = folder + '/preprocessed/'
     # statistic(data_dir)
 
 
     # OFFLINE
 
-    folder = "D:/3_Project/ComputerVision/Cinnamon/Flaxscanner/Dataset/CASIA/GntData1_0/Data/"
-    IMGS, LBLS = extract_casia_offline(folder)
-    IMGS
+    #folder = "D:/3_Project/ComputerVision/Cinnamon/Flaxscanner/Dataset/CASIA/GntData1_0/Data/"
+    #IMGS, LBLS = extract_casia_offline(folder)
+    #IMGS
