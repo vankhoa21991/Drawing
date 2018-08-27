@@ -11,13 +11,14 @@ from keras.layers import Bidirectional
 # create a sequence classification instance
 def get_sequence(n_timesteps):
     # create a sequence of random numbers in [0,1]
-    X = array([random() for _ in range(n_timesteps)])
+    X = array([(random(),random()) for _ in range(n_timesteps)])
     # calculate cut-off value to change class values
     limit = n_timesteps / 4.0
     # determine the class outcome for each item in cumulative sequence
-    y = array([0 if x < limit else 1 for x in cumsum(X)])
+    A = [x[0] + x[1] for x in X]
+    y = array([0 if x < limit else 1 for x in cumsum(A)])
     # reshape input and output data to be suitable for LSTMs
-    X = X.reshape(1, n_timesteps, 1)
+    X = X.reshape(1, n_timesteps, 2)
     y = y.reshape(1, n_timesteps, 1)
     return X, y
 
@@ -26,7 +27,7 @@ def get_sequence(n_timesteps):
 n_timesteps = 10
 # define LSTM
 model = Sequential()
-model.add(Bidirectional(LSTM(20, return_sequences=True), input_shape=(n_timesteps, 1)))
+model.add(Bidirectional(LSTM(20, return_sequences=True), input_shape=(n_timesteps, 2)))
 model.add(Bidirectional(LSTM(20, return_sequences=True)))
 model.add(TimeDistributed(Dense(1, activation='sigmoid')))
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['acc'])
@@ -40,4 +41,4 @@ for epoch in range(1000):
 X, y = get_sequence(n_timesteps)
 yhat = model.predict_classes(X, verbose=0)
 for i in range(n_timesteps):
-    print('Expected:', y[0, i], 'Predicted', yhat[0, i])
+    print('Expected:', y[0, i], 'Predictedarray([random() for _ in range(n_timesteps)], [random() for _ in range(n_timesteps)])', yhat[0, i])
