@@ -8,10 +8,9 @@ import six
 import tensorflow as tf
 from sklearn.model_selection import train_test_split
 import json
+import io
 
-from preprocess import *
-
-def load_data(data_dir=''):
+def load_data(data_dir='',model_dir=''):
     list_files = os.listdir(data_dir)
     list_files = sorted(list_files)
     chars, lbls = [], []
@@ -69,11 +68,11 @@ def load_data(data_dir=''):
         ALL_LINES += Lines_input[i]
         ALL_LBLS += lbls_all[i]
 
-    create_encode_decode_file(ALL_LBLS)
+    create_encode_decode_file(ALL_LBLS,model_dir)
     max_len = np.max([len(x) for x in ALL_LINES])
 
     # load encode file
-    char2label = json.load(open('/mnt/DATA/lupin/Drawing/keras_model/data/encode_kanji.json'))
+    char2label = json.load(open(model_dir + 'encode_kanji.json'))
     label2char = {}
     for k, v in char2label.items():
         label2char[v] = k
@@ -248,3 +247,13 @@ def clean_redundant_points(chars_pts):
                     del chars_out[c][s][inx]
 
     return chars_out
+
+def create_encode_decode_file(lbls,data_path):
+    filelist = {}
+    unique_lbls = list(set(lbls))
+    for i in range(len(unique_lbls)):
+        filelist[unique_lbls[i]]= i
+
+
+    with io.open(data_path + 'encode_kanji.json', 'w', encoding='utf8') as json_file:
+        json.dump(filelist, json_file, ensure_ascii=False)

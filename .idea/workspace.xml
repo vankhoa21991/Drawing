@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41121d4c-46bb-486c-81df-3375551ff1bb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/drawing_lstm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/drawing_lstm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Drawing_recognition-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Drawing_recognition-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawing_recognition.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Drawing_recognition.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casia_import/casia/export-casia.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/casia_import/casia/export-casia.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_keras_biLSTM.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_keras_biLSTM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keras_model/data/encode_kanji.json" beforeDir="false" afterPath="$PROJECT_DIR$/keras_model/data/encode_kanji.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keras_model/data_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/keras_model/data_gen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keras_model/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/keras_model/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keras_model/preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/keras_model/preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keras_model/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/keras_model/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,31 +19,33 @@
     <session id="56723511">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="3" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ipynb" value="2" />
-          <entry key="py" value="21" />
+          <entry key="py" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IPNB" value="2" />
-          <entry key="Python" value="21" />
+          <entry key="Python" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="239" />
-          <entry key="py" value="3788" />
+          <entry key="py" value="4437" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4027" />
+          <entry key="Python" value="4676" />
         </counts>
       </usages-collector>
     </session>
@@ -54,47 +55,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_keras_biLSTM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="180">
+              <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_keras_lstm_classification.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-              <folding>
-                <element signature="e#129#141#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/keras_model/preprocess.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <marker date="1535117864963" expanded="true" signature="69:88" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/keras_model/data_gen.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,10 +67,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/keras_model/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            <state relative-caret-position="255">
+              <caret line="74" column="45" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#2826#3018#0" />
+                <element signature="e#3045#3533#0" />
+                <element signature="e#3561#4224#0" />
+                <element signature="e#4252#5998#0" />
+                <element signature="e#6032#6990#0" />
+                <element signature="e#7034#7321#0" />
+                <element signature="e#7366#7812#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/keras_model/data_gen.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,10 +98,24 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/keras_model/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="857">
-              <caret line="59" column="76" lean-forward="true" selection-start-line="59" selection-start-column="76" selection-end-line="59" selection-end-column="76" />
+            <state relative-caret-position="452">
+              <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#2314#3115#0" />
+                <marker date="1535378361555" expanded="true" signature="479:807" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/keras_model/preprocess.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_keras_mnist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="40" selection-end-column="48" />
+            <state relative-caret-position="708">
+              <caret line="79" selection-start-line="79" selection-end-line="82" selection-end-column="30" />
               <folding>
                 <element signature="e#472#482#0" expanded="true" />
               </folding>
@@ -169,11 +166,11 @@
         <option value="$PROJECT_DIR$/Drawing_recognition.ipynb" />
         <option value="$PROJECT_DIR$/test_keras_biLSTM.py" />
         <option value="$PROJECT_DIR$/Drawing_recognition.py" />
+        <option value="$PROJECT_DIR$/test_keras_lstm_classification.py" />
+        <option value="$PROJECT_DIR$/test_keras_mnist.py" />
         <option value="$PROJECT_DIR$/keras_model/preprocess.py" />
         <option value="$PROJECT_DIR$/keras_model/utils.py" />
-        <option value="$PROJECT_DIR$/test_keras_lstm_classification.py" />
         <option value="$PROJECT_DIR$/keras_model/data_gen.py" />
-        <option value="$PROJECT_DIR$/test_keras_mnist.py" />
         <option value="$PROJECT_DIR$/keras_model/main.py" />
       </list>
     </option>
@@ -192,6 +189,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,11 +197,15 @@
               <item name="Drawing" type="b2602c69:ProjectViewProjectNode" />
               <item name="Drawing" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Drawing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Drawing" type="462c0819:PsiDirectoryNode" />
+              <item name="keras_model" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,6 +353,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.101639345" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -378,19 +381,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test_keras_lstm_classification.py</url>
-          <line>25</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/keras_model/main.py</url>
-          <line>57</line>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test_keras_mnist.py</url>
           <line>54</line>
           <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/keras_model/data_gen.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -524,73 +522,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/keras_model/preprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1535117864963" expanded="true" signature="69:88" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_keras_lstm_classification.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding>
-            <element signature="e#129#141#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_keras_biLSTM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="180">
+          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/keras_model/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/keras_model/data_gen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_keras_mnist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="40" selection-end-column="48" />
+        <state relative-caret-position="708">
+          <caret line="79" selection-start-line="79" selection-end-line="82" selection-end-column="30" />
           <folding>
             <element signature="e#472#482#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test_keras_lstm_classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_model/preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_model/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="74" column="45" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#2826#3018#0" />
+            <element signature="e#3045#3533#0" />
+            <element signature="e#3561#4224#0" />
+            <element signature="e#4252#5998#0" />
+            <element signature="e#6032#6990#0" />
+            <element signature="e#7034#7321#0" />
+            <element signature="e#7366#7812#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_model/data_gen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/keras_model/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="857">
-          <caret line="59" column="76" lean-forward="true" selection-start-line="59" selection-start-column="76" selection-end-line="59" selection-end-column="76" />
+        <state relative-caret-position="452">
+          <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#2314#3115#0" />
+            <marker date="1535378361555" expanded="true" signature="479:807" ph="..." />
           </folding>
         </state>
       </provider>
