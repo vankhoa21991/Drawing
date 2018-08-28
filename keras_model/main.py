@@ -17,8 +17,9 @@ from data_gen import *
 def Model(args,vocabulary):
     model = Sequential()
     model.add(Bidirectional(LSTM(args.hidden_size), input_shape=(317, 6)))
-    model.add(Dropout(0.2, input_shape=(vocabulary,)))
-    model.add(Dense(vocabulary, activation='softmax'))
+    model.add(Dropout(0.2))
+    model.add(Dense(input_dim=200, output_dim=vocabulary))
+    model.add(Dense(output_dim=vocabulary, activation='softmax'))
     model.compile(loss='categorical_crossentropy',
                   optimizer='adam',
                   metrics=['accuracy'])
@@ -44,7 +45,7 @@ def train(args):
     y_val = to_categorical(valid_data_generator.label, num_classes=vocabulary)
 
     model.fit(X_train, y_train, batch_size=args.batch_size, epochs=args.num_epochs,
-              validation_data=(X_val,y_val), shuffle=True)
+              validation_data=(X_val,y_val))
     
 
     model.save(args.model_dir + "final_model.hdf5")
@@ -72,7 +73,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = True
+    server = False
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Dataset/CASIA_extracted/')
@@ -82,11 +83,11 @@ if __name__ == "__main__":
         parser.add_argument('--model_dir', default='data/')
 
     parser.add_argument('--num_epochs', default=100, type=int)
-    parser.add_argument('--hidden_size', default=50, type=int)
+    parser.add_argument('--hidden_size', default=500, type=int)
     parser.add_argument('--learning_rate', default=1e-4, type=float)
     parser.add_argument('--dropout_rate', default=0.2, type=float)
     parser.add_argument('--max_seq_length', default=317, type=int)
-    parser.add_argument('--batch_size', default=32, type=int)
+    parser.add_argument('--batch_size', default=100, type=int)
     parser.add_argument('--is_resume', default=False, type=bool)
 
     args = parser.parse_args()
