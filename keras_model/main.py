@@ -39,23 +39,21 @@ def train(args):
         model = Model(args, vocabulary)
 
     X_train = train_data_generator.pad_strokes
-    y_train = to_categorical(train_data_generator.label, num_classes=None)
+    y_train = to_categorical(train_data_generator.label, num_classes=vocabulary)
     X_val = valid_data_generator.pad_strokes
-    y_val = to_categorical(valid_data_generator.label, num_classes=None)
+    y_val = to_categorical(valid_data_generator.label, num_classes=vocabulary)
 
     model.fit(X_train, y_train, batch_size=args.batch_size, epochs=args.num_epochs,
-              validation_split=0.2, shuffle=True)
+              validation_data=(X_val,y_val), shuffle=True)
+    
 
     model.save(args.model_dir + "final_model.hdf5")
 
 def evaluate(args):
     model = load_model(args.model_dir + "\model-40.hdf5")
     dummy_iters = 40
-    example_training_generator = DataLoader(stroke_train, label_train, batch_size=args.batch_size, num_steps=args.num_steps)
+    example_training_generator = DataLoader(stroke_train, label_train, args=args)
 
-    print("Training data:")
-    for i in range(dummy_iters):
-        dummy = next(example_training_generator.generate())
     num_predict = 10
     true_print_out = "Actual words: "
     pred_print_out = "Predicted words: "
@@ -84,7 +82,7 @@ if __name__ == "__main__":
         parser.add_argument('--model_dir', default='data/')
 
     parser.add_argument('--num_epochs', default=100, type=int)
-    parser.add_argument('--hidden_size', default=100, type=int)
+    parser.add_argument('--hidden_size', default=50, type=int)
     parser.add_argument('--learning_rate', default=1e-4, type=float)
     parser.add_argument('--dropout_rate', default=0.2, type=float)
     parser.add_argument('--max_seq_length', default=317, type=int)
@@ -92,6 +90,6 @@ if __name__ == "__main__":
     parser.add_argument('--is_resume', default=False, type=bool)
 
     args = parser.parse_args()
-    os.environ["CUDA_VISIBLE_DEVICES"] = '0'
+    os.environ["CUDA_VISIBLE_DEVICES"] = '2'
 
     train(args)
