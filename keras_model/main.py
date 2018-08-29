@@ -55,7 +55,7 @@ def train(args):
 def evaluate(args):
     stroke_train, stroke_val, label_train, label_val, label2char, char2label = load_data(args.data_dir,args.model_dir)
     vocabulary = len(label2char)
-    test_data = DataLoader(stroke_train, label_train, args=args)
+    test_data = DataLoader(stroke_val, label_val, args=args)
 
     model = load_model(args.model_dir + "final_model.hdf5")
     
@@ -63,7 +63,7 @@ def evaluate(args):
 
     true_print_out = "Actual words: "
     pred_print_out = "Predicted words: "
-    index = random.sample(range(0,len(test_data.pad_strokes)), 10)
+    index = random.sample(range(0,len(test_data.pad_strokes)), 100)
     data = test_data.pad_strokes[index, :,:]
     prediction = model.predict(data)
 
@@ -87,7 +87,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = False
+    server = True
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Drawing/keras_model/data/')

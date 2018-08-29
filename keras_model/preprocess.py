@@ -15,6 +15,7 @@ import itertools
 from keras.utils import to_categorical
 import json
 
+
     list_files = os.listdir(data_dir)
       list_files = sorted(list_files)
       chars, lbls = [], []

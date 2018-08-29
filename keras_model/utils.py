@@ -68,7 +68,7 @@ def load_data(data_dir='',model_dir=''):
         ALL_LINES += Lines_input[i]
         ALL_LBLS += lbls_all[i]
 
-    create_encode_decode_file(ALL_LBLS,model_dir)
+    #create_encode_decode_file(ALL_LBLS,model_dir)
     max_len = np.max([len(x) for x in ALL_LINES])
 
     # load encode file
