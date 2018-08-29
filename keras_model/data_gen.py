@@ -31,7 +31,7 @@ class DataLoader(object):
       self.skip_step = 2
       self.current_idx = 0
 
-      self.pad_strokes = sequence.pad_sequences(strokes, maxlen=args.max_seq_length)
+      self.pad_strokes = sequence.pad_sequences(strokes, maxlen=args.max_seq_length, dtype='float')
       # self.pad_strokes = np.transpose(self.pad_strokes,(0,2,1))
 
 class WeightsSaver(Callback):
