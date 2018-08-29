@@ -3,7 +3,7 @@ from numpy import array
 from numpy import cumsum
 from keras.models import Sequential, load_model
 from keras.layers import Dense, Activation, Embedding, Flatten, Dropout, TimeDistributed, Reshape, Lambda,Bidirectional
-from keras.layers import LSTM
+from keras.layers import LSTM, AveragePooling1D
 from keras.utils import to_categorical
 from keras.optimizers import RMSprop, Adam, SGD
 from keras.callbacks import ModelCheckpoint
@@ -18,7 +18,7 @@ def Model(args,vocabulary):
     model = Sequential()
     model.add(Bidirectional(LSTM(args.hidden_size), input_shape=(317, 6)))
     model.add(Dropout(0.2))
-    model.add(Dense(input_dim=200, output_dim=vocabulary))
+    model.add(Dense(output_dim=200))
     model.add(Dense(output_dim=vocabulary, activation='softmax'))
     model.compile(loss='categorical_crossentropy',
                   optimizer='adam',
