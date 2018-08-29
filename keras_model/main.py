@@ -3,11 +3,9 @@ from numpy import array
 from numpy import cumsum
 from keras.models import Sequential, load_model, Model
 from keras.layers import Dense, Activation, Embedding, Flatten, Dropout, TimeDistributed, Reshape, Lambda,Bidirectional
-<<<<<<< HEAD
 from keras.layers import LSTM, AveragePooling1D
-=======
 from keras.layers import LSTM, Input
->>>>>>> ecea335f30ecadf2019d77b3d16b84619917d370
+
 from keras.utils import to_categorical
 from keras.optimizers import RMSprop, Adam, SGD
 from keras.callbacks import ModelCheckpoint
@@ -18,14 +16,7 @@ from data_gen import *
 
 
 
-<<<<<<< HEAD
-def Model(args,vocabulary):
-    model = Sequential()
-    model.add(Bidirectional(LSTM(args.hidden_size), input_shape=(317, 6)))
-    model.add(Dropout(0.2))
-    model.add(Dense(output_dim=200))
-    model.add(Dense(output_dim=vocabulary, activation='softmax'))
-=======
+
 def recognition_model(args,vocabulary):
     
     # This returns a tensor
@@ -37,7 +28,6 @@ def recognition_model(args,vocabulary):
     
     model = Model(inputs=_input, outputs=predictions)
 
->>>>>>> ecea335f30ecadf2019d77b3d16b84619917d370
     model.compile(loss='categorical_crossentropy',
                   optimizer='adam',
                   metrics=['accuracy'])
@@ -69,20 +59,20 @@ def train(args):
 
 def evaluate(args):
     stroke_train, stroke_val, label_train, label_val, label2char, char2label = load_data(args.data_dir,args.model_dir)
-    vocabulary = len(label2char)
-    
+
+    test_data = DataLoader(stroke_train, label_train, args=args)
+
     model = load_model(args.model_dir + "final_model.hdf5")
-    dummy_iters = 40
-    
-    test_data = DataLoader(stroke_val, label_val, args=args)
 
     true_print_out = "Actual words: "
     pred_print_out = "Predicted words: "
-    for i in range(random.randint(0,len(test_data.pad_strokes))):
-        data = test_data.pad_strokes[:,i,:]
-        prediction = model.predict(test_data.pad_strokes)
-        predict_word = np.argmax(prediction[:, args.max_seq_length - 1, :])
-        true_print_out += label2char[label_train[i]] + " "
+    index = random.sample(range(0,len(test_data.pad_strokes)), 10)
+    data = test_data.pad_strokes[index, :,:]
+    prediction = model.predict(data)
+
+    for i in range(len(index)):
+        predict_word = np.argmax(prediction[i, :])
+        true_print_out += label2char[test_data.label[index[i]]] + " "
         pred_print_out += label2char[predict_word] + " "
     print(true_print_out)
     print(pred_print_out)
@@ -93,7 +83,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = True
+    server = False
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Dataset/CASIA_extracted/')
