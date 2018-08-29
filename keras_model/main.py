@@ -1,9 +1,9 @@
 from random import random
 from numpy import array
 from numpy import cumsum
-from keras.models import Sequential, load_model
+from keras.models import Sequential, load_model, Model
 from keras.layers import Dense, Activation, Embedding, Flatten, Dropout, TimeDistributed, Reshape, Lambda,Bidirectional
-from keras.layers import LSTM
+from keras.layers import LSTM, Input
 from keras.utils import to_categorical
 from keras.optimizers import RMSprop, Adam, SGD
 from keras.callbacks import ModelCheckpoint
@@ -14,12 +14,17 @@ from data_gen import *
 
 
 
-def Model(args,vocabulary):
-    model = Sequential()
-    model.add(Bidirectional(LSTM(args.hidden_size), input_shape=(317, 6)))
-    model.add(Dropout(0.2))
-    model.add(Dense(input_dim=200, output_dim=vocabulary))
-    model.add(Dense(output_dim=vocabulary, activation='softmax'))
+def recognition_model(args,vocabulary):
+    
+    # This returns a tensor
+    _input = Input(shape=(317, 6))
+
+    x = Bidirectional(LSTM(args.hidden_size))(_input)
+    x = Dropout(0.1)(x)
+    predictions = Dense(input_dim = 200, output_dim=vocabulary, activation='softmax')(x)
+    
+    model = Model(inputs=_input, outputs=predictions)
+
     model.compile(loss='categorical_crossentropy',
                   optimizer='adam',
                   metrics=['accuracy'])
@@ -31,38 +36,40 @@ def train(args):
     stroke_train, stroke_val, label_train, label_val, label2char, char2label = load_data(args.data_dir,args.model_dir)
     vocabulary = len(label2char)
 
-    train_data_generator = DataLoader(stroke_train, label_train, args=args)
-    valid_data_generator = DataLoader(stroke_val, label_val, args=args)
+    train_data = DataLoader(stroke_train, label_train, args=args)
+    valid_data = DataLoader(stroke_val, label_val, args=args)
 
     if args.is_resume:
         model = load_model(args.model_dir + "final_model.hdf5")
     else:
-        model = Model(args, vocabulary)
+        model = recognition_model(args, vocabulary)
 
-    X_train = train_data_generator.pad_strokes
-    y_train = to_categorical(train_data_generator.label, num_classes=vocabulary)
-    X_val = valid_data_generator.pad_strokes
-    y_val = to_categorical(valid_data_generator.label, num_classes=vocabulary)
+    X_train = train_data.pad_strokes
+    y_train = to_categorical(train_data.label, num_classes=vocabulary)
+    X_val = valid_data.pad_strokes
+    y_val = to_categorical(valid_data.label, num_classes=vocabulary)
 
     model.fit(X_train, y_train, batch_size=args.batch_size, epochs=args.num_epochs,
               validation_data=(X_val,y_val))
     
-
     model.save(args.model_dir + "final_model.hdf5")
 
 def evaluate(args):
-    model = load_model(args.model_dir + "\model-40.hdf5")
+    stroke_train, stroke_val, label_train, label_val, label2char, char2label = load_data(args.data_dir,args.model_dir)
+    vocabulary = len(label2char)
+    
+    model = load_model(args.model_dir + "final_model.hdf5")
     dummy_iters = 40
-    example_training_generator = DataLoader(stroke_train, label_train, args=args)
+    
+    test_data = DataLoader(stroke_val, label_val, args=args)
 
-    num_predict = 10
     true_print_out = "Actual words: "
     pred_print_out = "Predicted words: "
-    for i in range(num_predict):
-        data = next(example_training_generator.generate())
-        prediction = model.predict(data[0])
-        predict_word = np.argmax(prediction[:, args.num_steps - 1, :])
-        true_print_out += label2char[label_train[args.num_steps + dummy_iters + i]] + " "
+    for i in range(random.randint(0,len(test_data.pad_strokes))):
+        data = test_data.pad_strokes[:,i,:]
+        prediction = model.predict(test_data.pad_strokes)
+        predict_word = np.argmax(prediction[:, args.max_seq_length - 1, :])
+        true_print_out += label2char[label_train[i]] + " "
         pred_print_out += label2char[predict_word] + " "
     print(true_print_out)
     print(pred_print_out)
@@ -73,7 +80,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = False
+    server = True
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Dataset/CASIA_extracted/')
@@ -81,16 +88,20 @@ if __name__ == "__main__":
     else:
         parser.add_argument('--data_dir', default='/home/lupin/Cinnamon/Flaxscanner/Dataset/CASIA/Online/Data/preprocessed/')
         parser.add_argument('--model_dir', default='data/')
-
-    parser.add_argument('--num_epochs', default=100, type=int)
+        
+    parser.add_argument('--mode', default='test', type=str)
+    parser.add_argument('--num_epochs', default=40, type=int)
     parser.add_argument('--hidden_size', default=500, type=int)
     parser.add_argument('--learning_rate', default=1e-4, type=float)
     parser.add_argument('--dropout_rate', default=0.2, type=float)
     parser.add_argument('--max_seq_length', default=317, type=int)
-    parser.add_argument('--batch_size', default=100, type=int)
+    parser.add_argument('--batch_size', default=1000, type=int)
     parser.add_argument('--is_resume', default=False, type=bool)
 
     args = parser.parse_args()
     os.environ["CUDA_VISIBLE_DEVICES"] = '2'
-
-    train(args)
+    
+    if args.mode == 'train':
+        train(args)
+    else:
+        evaluate(args)
