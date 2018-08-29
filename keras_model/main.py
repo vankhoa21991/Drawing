@@ -12,11 +12,6 @@ from keras.callbacks import ModelCheckpoint
 from utils import *
 from data_gen import *
 
-
-
-
-
-
 def recognition_model(args,vocabulary):
     
     # This returns a tensor
@@ -59,10 +54,12 @@ def train(args):
 
 def evaluate(args):
     stroke_train, stroke_val, label_train, label_val, label2char, char2label = load_data(args.data_dir,args.model_dir)
-
+    vocabulary = len(label2char)
     test_data = DataLoader(stroke_train, label_train, args=args)
 
     model = load_model(args.model_dir + "final_model.hdf5")
+    
+    
 
     true_print_out = "Actual words: "
     pred_print_out = "Predicted words: "
@@ -76,6 +73,13 @@ def evaluate(args):
         pred_print_out += label2char[predict_word] + " "
     print(true_print_out)
     print(pred_print_out)
+    
+    X_test = test_data.pad_strokes[index, :,:]
+    y_test_ = [test_data.label[index[i]] for i in range(len(index))]
+    y_test = to_categorical(y_test_, num_classes=vocabulary)
+    
+    scores = model.evaluate(X_test, y_test, verbose=0)
+    print("Accuracy: %.2f%%" % (scores[1]*100))
 
 if __name__ == "__main__":
     import argparse
@@ -83,7 +87,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = False
+    server = True
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Dataset/CASIA_extracted/')

@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="41121d4c-46bb-486c-81df-3375551ff1bb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/keras_model/data/encode_kanji.json" beforeDir="false" afterPath="$PROJECT_DIR$/keras_model/data/encode_kanji.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/keras_model/data_gen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_keras_mnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_keras_mnist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keras_model/data/final_model.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/keras_model/data/final_model.hdf5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keras_model/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/keras_model/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,27 +25,27 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ipynb" value="2" />
-          <entry key="json" value="1" />
-          <entry key="py" value="33" />
+          <entry key="json" value="2" />
+          <entry key="py" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IPNB" value="2" />
-          <entry key="JSON" value="1" />
-          <entry key="Python" value="33" />
+          <entry key="JSON" value="2" />
+          <entry key="Python" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="280" />
-          <entry key="json" value="1" />
+          <entry key="json" value="2" />
           <entry key="py" value="4634" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="1" />
+          <entry key="JSON" value="2" />
           <entry key="Python" value="4914" />
         </counts>
       </usages-collector>
@@ -53,18 +53,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/keras_model/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/keras_model/utils.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,11 +90,32 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/keras_model/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="25" column="50" lean-forward="true" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/keras_model/data/encode_kanji.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_keras_mnist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="64" column="95" lean-forward="true" selection-start-line="64" selection-start-column="95" selection-end-line="64" selection-end-column="95" />
+            <state relative-caret-position="188">
+              <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
               <folding>
                 <element signature="e#472#482#0" expanded="true" />
               </folding>
@@ -159,10 +168,10 @@
         <option value="$PROJECT_DIR$/test_keras_lstm_classification.py" />
         <option value="$PROJECT_DIR$/keras_model/preprocess.py" />
         <option value="$PROJECT_DIR$/keras_model/utils.py" />
-        <option value="$PROJECT_DIR$/keras_model/data/encode_kanji.json" />
         <option value="$PROJECT_DIR$/keras_model/main.py" />
         <option value="$PROJECT_DIR$/keras_model/data_gen.py" />
         <option value="$PROJECT_DIR$/test_keras_mnist.py" />
+        <option value="$PROJECT_DIR$/keras_model/data/encode_kanji.json" />
       </list>
     </option>
   </component>
@@ -352,13 +361,13 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.101639345" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.101639345" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32540542" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -370,6 +379,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.101639345" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32540542" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32972974" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -384,7 +412,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/keras_model/main.py</url>
-          <line>72</line>
+          <line>69</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -531,10 +559,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/keras_model/data/encode_kanji.json">
+    <entry file="file://$PROJECT_DIR$/keras_model/data_gen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="263">
+          <caret line="33" column="98" selection-start-line="33" selection-start-column="83" selection-end-line="33" selection-end-column="98" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/py3/lib/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="319" selection-start-line="319" selection-end-line="319" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_keras_mnist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+          <folding>
+            <element signature="e#472#482#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -552,26 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/keras_model/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/keras_model/data_gen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="33" column="98" selection-start-line="33" selection-start-column="83" selection-end-line="33" selection-end-column="98" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_keras_lstm_classification.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -579,20 +607,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/py3/lib/python3.6/codecs.py">
+    <entry file="file://$PROJECT_DIR$/keras_model/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="319" selection-start-line="319" selection-end-line="319" />
+        <state relative-caret-position="285">
+          <caret line="25" column="50" lean-forward="true" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_keras_mnist.py">
+    <entry file="file://$PROJECT_DIR$/keras_model/data/encode_kanji.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="64" column="95" lean-forward="true" selection-start-line="64" selection-start-column="95" selection-end-line="64" selection-end-column="95" />
-          <folding>
-            <element signature="e#472#482#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
