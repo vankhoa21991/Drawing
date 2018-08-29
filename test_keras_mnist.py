@@ -79,7 +79,7 @@ class MnistLSTMClassifier(object):
 
 if __name__ == "__main__":
     lstm_classifier = MnistLSTMClassifier()
-    lstm_classifier.train(save_model=True)
+    lstm_classifier.train(save_model=False)
     lstm_classifier.evaluate()
     # Load a trained model.
     # lstm_classifier.evaluate(model="./saved_model/lstm-model.h5")
