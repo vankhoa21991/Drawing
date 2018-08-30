@@ -18,8 +18,14 @@ def recognition_model(args,vocabulary):
     _input = Input(shape=(317, 6))
 
     x = Bidirectional(LSTM(args.hidden_size))(_input)
-    x = Dropout(0.1)(x)
-    predictions = Dense(input_dim = 200, output_dim=vocabulary, activation='softmax')(x)
+    x = Dropout(0.2)(x)
+    x = Reshape((args.hidden_size*2,1))(x)
+    x = AveragePooling1D(pool_size=2)(x)
+    x = Reshape((args.hidden_size,))(x)
+    x = Dropout(0.2)(x)
+    x = Dense(200)(x)
+    x = Dropout(0.2)(x)
+    predictions = Dense(vocabulary, activation='softmax')(x)
     
     model = Model(inputs=_input, outputs=predictions)
 
@@ -97,7 +103,7 @@ if __name__ == "__main__":
         parser.add_argument('--model_dir', default='data/')
         
     parser.add_argument('--mode', default='test', type=str)
-    parser.add_argument('--num_epochs', default=40, type=int)
+    parser.add_argument('--num_epochs', default=100, type=int)
     parser.add_argument('--hidden_size', default=500, type=int)
     parser.add_argument('--learning_rate', default=1e-4, type=float)
     parser.add_argument('--dropout_rate', default=0.2, type=float)
@@ -106,7 +112,7 @@ if __name__ == "__main__":
     parser.add_argument('--is_resume', default=False, type=bool)
 
     args = parser.parse_args()
-    os.environ["CUDA_VISIBLE_DEVICES"] = '2'
+    os.environ["CUDA_VISIBLE_DEVICES"] = '0'
     
     if args.mode == 'train':
         train(args)
