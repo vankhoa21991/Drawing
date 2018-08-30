@@ -95,7 +95,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = False
+    server = True
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Drawing/keras_model/data/')
