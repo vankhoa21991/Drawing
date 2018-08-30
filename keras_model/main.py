@@ -9,6 +9,7 @@ from keras.layers import LSTM, Input
 from keras.utils import to_categorical
 from keras.optimizers import RMSprop, Adam, SGD
 from keras.callbacks import ModelCheckpoint
+import matplotlib.pyplot as plt
 from utils import *
 from data_gen import *
 
@@ -57,17 +58,36 @@ def train(args):
 
     model.fit(X_train, y_train, batch_size=args.batch_size, epochs=args.num_epochs,
               validation_data=(X_val,y_val))
+
+    # list all data in history
+    print(model.history.keys())
+    # summarize history for accuracy
+    plt.plot(model.history['acc'])
+    plt.plot(model.history['val_acc'])
+    plt.title('model accuracy')
+    plt.ylabel('accuracy')
+    plt.xlabel('epoch')
+    plt.legend(['train', 'test'], loc='upper left')
+    plt.show()
+    # summarize history for loss
+    plt.plot(model.history['loss'])
+    plt.plot(model.history['val_loss'])
+    plt.title('model loss')
+    plt.ylabel('loss')
+    plt.xlabel('epoch')
+    plt.legend(['train', 'test'], loc='upper left')
+    plt.show()
     
     model.save(args.model_dir + "final_model.hdf5")
 
 def evaluate(args):
-    stroke_train, stroke_val, label_train, label_val, label2char, char2label = load_data(args.data_dir,args.model_dir)
+    stroke_train, stroke_val, label_train, label_val, label2char, char2label, max_len = load_data(args.data_dir,args.model_dir)
     vocabulary = len(label2char)
     test_data = DataLoader(stroke_val, label_val, args=args)
 
     model = load_model(args.model_dir + "final_model.hdf5")
-    
-    
+
+
 
     true_print_out = "Actual words: "
     pred_print_out = "Predicted words: "
@@ -105,7 +125,7 @@ if __name__ == "__main__":
         parser.add_argument('--model_dir', default='data/')
         
 
-    parser.add_argument('--mode', default='train', type=str)
+    parser.add_argument('--mode', default='test', type=str)
     parser.add_argument('--num_epochs', default=100, type=int)
     parser.add_argument('--hidden_size', default=500, type=int)
     parser.add_argument('--learning_rate', default=1e-4, type=float)
