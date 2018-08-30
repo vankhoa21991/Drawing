@@ -42,7 +42,15 @@ def load_data(data_dir='',model_dir=''):
 
     chars_pts_after_clean, lbls_after_clean = remove_empty_labels(chars_pts_before_clean, lbls_before_clean)
 
-    chars_pts_after_clean = clean_redundant_points(chars_pts_after_clean)
+    for w in range(len(chars_pts_after_clean)):
+        for c in range(len(chars_pts_after_clean[w])):
+            chars_pts_after_clean[w][c] = clean_one_point_strokes(chars_pts_after_clean[w][c])
+
+    for w in range(len(chars_pts_after_clean)):
+        for c in range(len(chars_pts_after_clean[w])):
+            chars_pts_after_clean[w][c] = clean_redundant_points(chars_pts_after_clean[w][c],0.99)
+
+
 
     Lines_normalized = []
     chars_pts_normalized = []
@@ -81,7 +89,7 @@ def load_data(data_dir='',model_dir=''):
 
     stroke_train, stroke_val, label_train, label_val = train_test_split(ALL_LINES, ALL_LBLS_ENCODED, test_size=0.08,random_state=1)
 
-    return stroke_train, stroke_val, label_train, label_val, label2char, char2label
+    return stroke_train, stroke_val, label_train, label_val, label2char, char2label, max_len
 
 def file_to_word_ids(label, word_to_id):
     label_out = []
@@ -232,21 +240,19 @@ def remove_empty_labels(chars, lbls):
             del lbls_out[i][j]
     return chars_out, lbls_out
 
-def clean_redundant_points(chars_pts):
-    chars_out = list(chars_pts)
+def clean_one_point_strokes(char_pts):
+    char_out = list(char_pts)
 
-    for c in range(len(chars_out)):
-        for s in range(len(chars_out[c])):
-            index = []
-            for p in range(len(chars_out[c][s])):
-                if len(chars_out[c][s][p]) == 1:
-                    print('Found strokes with one point')
-                    index.append(p)
-            if index:
-                for inx in index:
-                    del chars_out[c][s][inx]
+    index = []
+    for s in range(len(char_out)):
+        if len(char_out[s]) == 1:
+            print('Found strokes with one point')
+            index.append(s)
+    if index:
+        for inx in index:
+            del char_out[inx]
 
-    return chars_out
+    return char_out
 
 def create_encode_decode_file(lbls,data_path):
     filelist = {}
@@ -257,3 +263,54 @@ def create_encode_decode_file(lbls,data_path):
 
     with io.open(data_path + 'encode_kanji.json', 'w', encoding='utf8') as json_file:
         json.dump(filelist, json_file, ensure_ascii=False)
+
+def get_width_height(char_pts):
+    px, py = [],[]
+    for s in range(len(char_pts)):
+
+        for p in range(len(char_pts[s])):
+            px.append(char_pts[s][p][0])
+            py.append(char_pts[s][p][1])
+    return np.max(px) - np.min(px), np.max(py) - np.min(py)
+
+
+def clean_redundant_points(char_pts, Tcos):
+
+    # get width and height of a character
+    width, height = get_width_height(char_pts)
+    Tdis = 0.01*np.max([width,height])
+
+    strokes = []
+    for s in range(len(char_pts)):
+
+        index = []
+        for p in range(1,len(char_pts[s])-1):
+
+            xi   = char_pts[s][p][0]
+            xi_1 = char_pts[s][p-1][0]
+            xi1  = char_pts[s][p+1][0]
+
+            yi   = char_pts[s][p][1]
+            yi_1 = char_pts[s][p-1][1]
+            yi1  = char_pts[s][p+1][1]
+
+            dxi = xi1 - xi
+            dxi_1 = xi - xi_1
+
+            dyi = yi1 - yi
+            dyi_1 = yi - yi_1
+
+            Tc = (dxi_1*dxi + dyi_1*dyi)/(np.sqrt(dxi_1**2 + dyi_1**2)*np.sqrt(dxi**2 + dyi**2))
+
+            Td = np.sqrt((xi - xi_1)**2 + (yi - yi_1)**2)
+            if Td < Tdis:
+                index.append(p)
+            elif Tc > Tcos:
+                index.append(p)
+
+        if index:
+            for inx in sorted(index, reverse=True):
+                del char_pts[s][inx]
+
+
+    return char_pts

@@ -18,8 +18,12 @@ def recognition_model(args,vocabulary):
     _input = Input(shape=(317, 6))
 
     x = Bidirectional(LSTM(args.hidden_size))(_input)
+    x = Reshape((args.hidden_size*2,1))(x)
+    x = AveragePooling1D(pool_size=2)(x)
+    x = Reshape((args.hidden_size,))(x)
     x = Dropout(0.1)(x)
-    predictions = Dense(input_dim = 200, output_dim=vocabulary, activation='softmax')(x)
+    x = Dense(200)(x)
+    predictions = Dense(vocabulary, activation='softmax')(x)
     
     model = Model(inputs=_input, outputs=predictions)
 
@@ -31,7 +35,7 @@ def recognition_model(args,vocabulary):
 
 def train(args):
     # load data
-    stroke_train, stroke_val, label_train, label_val, label2char, char2label = load_data(args.data_dir,args.model_dir)
+    stroke_train, stroke_val, label_train, label_val, label2char, char2label,max_len = load_data(args.data_dir,args.model_dir)
     vocabulary = len(label2char)
 
     train_data = DataLoader(stroke_train, label_train, args=args)
@@ -87,7 +91,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = True
+    server = False
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Drawing/keras_model/data/')
@@ -96,7 +100,7 @@ if __name__ == "__main__":
         parser.add_argument('--data_dir', default='data/')
         parser.add_argument('--model_dir', default='data/')
         
-    parser.add_argument('--mode', default='test', type=str)
+    parser.add_argument('--mode', default='train', type=str)
     parser.add_argument('--num_epochs', default=40, type=int)
     parser.add_argument('--hidden_size', default=500, type=int)
     parser.add_argument('--learning_rate', default=1e-4, type=float)
