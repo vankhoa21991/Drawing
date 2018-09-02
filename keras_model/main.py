@@ -56,29 +56,29 @@ def train(args):
     X_val = valid_data.pad_strokes
     y_val = to_categorical(valid_data.label, num_classes=vocabulary)
 
-    model.fit(X_train, y_train, batch_size=args.batch_size, epochs=args.num_epochs,
+    history = model.fit(X_train, y_train, batch_size=args.batch_size, epochs=args.num_epochs,
               validation_data=(X_val,y_val))
 
     # list all data in history
-    print(model.history.keys())
+    print(history.history.keys())
     # summarize history for accuracy
-    plt.plot(model.history['acc'])
-    plt.plot(model.history['val_acc'])
+    plt.plot(history.history['acc'])
+    plt.plot(history.history['val_acc'])
     plt.title('model accuracy')
     plt.ylabel('accuracy')
     plt.xlabel('epoch')
     plt.legend(['train', 'test'], loc='upper left')
     plt.show()
     # summarize history for loss
-    plt.plot(model.history['loss'])
-    plt.plot(model.history['val_loss'])
+    plt.plot(history.history['loss'])
+    plt.plot(history.history['val_loss'])
     plt.title('model loss')
     plt.ylabel('loss')
     plt.xlabel('epoch')
     plt.legend(['train', 'test'], loc='upper left')
     plt.show()
-    
-    model.save(args.model_dir + "final_model.hdf5")
+
+    #model.save(args.model_dir + "final_model.hdf5")
 
 def evaluate(args):
     stroke_train, stroke_val, label_train, label_val, label2char, char2label, max_len = load_data(args.data_dir,args.model_dir)
@@ -125,13 +125,13 @@ if __name__ == "__main__":
         parser.add_argument('--model_dir', default='data/')
         
 
-    parser.add_argument('--mode', default='test', type=str)
-    parser.add_argument('--num_epochs', default=100, type=int)
+    parser.add_argument('--mode', default='train', type=str)
+    parser.add_argument('--num_epochs', default=1, type=int)
     parser.add_argument('--hidden_size', default=500, type=int)
     parser.add_argument('--learning_rate', default=1e-4, type=float)
     parser.add_argument('--dropout_rate', default=0.2, type=float)
     parser.add_argument('--max_seq_length', default=317, type=int)
-    parser.add_argument('--batch_size', default=1000, type=int)
+    parser.add_argument('--batch_size', default=32, type=int)
     parser.add_argument('--is_resume', default=False, type=bool)
 
     args = parser.parse_args()
