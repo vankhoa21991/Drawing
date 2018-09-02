@@ -9,6 +9,8 @@ from keras.layers import LSTM, Input
 from keras.utils import to_categorical
 from keras.optimizers import RMSprop, Adam, SGD
 from keras.callbacks import ModelCheckpoint
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from utils import *
 from data_gen import *
@@ -18,22 +20,22 @@ def recognition_model(args,vocabulary):
     # This returns a tensor
     _input = Input(shape=(317, 6))
 
-    x = Bidirectional(LSTM(args.hidden_size))(_input)
+    x = Bidirectional(LSTM(args.hidden_size, recurrent_dropout=0.3), merge_mode='ave')(_input)
 
     x = Dropout(0.2)(x)
-    x = Reshape((args.hidden_size*2,1))(x)
+    x = Reshape((args.hidden_size,1))(x)
     x = AveragePooling1D(pool_size=2)(x)
-    x = Reshape((args.hidden_size,))(x)
+    x = Reshape((int(args.hidden_size/2),))(x)
     x = Dropout(0.2)(x)
     x = Dense(200)(x)
-    x = Dropout(0.2)(x)
 
     predictions = Dense(vocabulary, activation='softmax')(x)
     
     model = Model(inputs=_input, outputs=predictions)
-
+    
+    adam = Adam(lr=0.001)
     model.compile(loss='categorical_crossentropy',
-                  optimizer='adam',
+                  optimizer=adam,
                   metrics=['accuracy'])
     print(model.summary())
     return model
@@ -57,28 +59,31 @@ def train(args):
     y_val = to_categorical(valid_data.label, num_classes=vocabulary)
 
     history = model.fit(X_train, y_train, batch_size=args.batch_size, epochs=args.num_epochs,
-              validation_data=(X_val,y_val))
-
+              validation_split=0.2)
+    
+    model.save(args.model_dir + "final_model.hdf5")
+    
     # list all data in history
     print(history.history.keys())
     # summarize history for accuracy
-    plt.plot(history.history['acc'])
-    plt.plot(history.history['val_acc'])
+    fig, ax = plt.subplots( nrows=1, ncols=1 ) 
+    ax.plot(history.history['acc'])
+    ax.plot(history.history['val_acc'])
     plt.title('model accuracy')
     plt.ylabel('accuracy')
     plt.xlabel('epoch')
     plt.legend(['train', 'test'], loc='upper left')
-    plt.show()
-    # summarize history for loss
-    plt.plot(history.history['loss'])
-    plt.plot(history.history['val_loss'])
+    fig.savefig('acc.png') 
+    
+    fig, ax = plt.subplots( nrows=1, ncols=1 ) 
+    ax.plot(history.history['loss'])
+    ax.plot(history.history['val_loss'])
     plt.title('model loss')
     plt.ylabel('loss')
     plt.xlabel('epoch')
     plt.legend(['train', 'test'], loc='upper left')
-    plt.show()
+    fig.savefig('loss.png')
 
-    #model.save(args.model_dir + "final_model.hdf5")
 
 def evaluate(args):
     stroke_train, stroke_val, label_train, label_val, label2char, char2label, max_len = load_data(args.data_dir,args.model_dir)
@@ -115,7 +120,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = False
+    server = True
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Drawing/keras_model/data/')
@@ -131,11 +136,13 @@ if __name__ == "__main__":
     parser.add_argument('--learning_rate', default=1e-4, type=float)
     parser.add_argument('--dropout_rate', default=0.2, type=float)
     parser.add_argument('--max_seq_length', default=317, type=int)
-    parser.add_argument('--batch_size', default=32, type=int)
+
+    parser.add_argument('--batch_size', default=1000, type=int)
+    parser.add_argument('--num_gpu', default='0', type=int)
     parser.add_argument('--is_resume', default=False, type=bool)
 
     args = parser.parse_args()
-    os.environ["CUDA_VISIBLE_DEVICES"] = '0'
+    os.environ["CUDA_VISIBLE_DEVICES"] = str(args.num_gpu)
     
     if args.mode == 'train':
         train(args)

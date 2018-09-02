@@ -16,7 +16,7 @@ def load_data(data_dir='',model_dir=''):
     chars, lbls = [], []
     chars_pts, LB = [], []
     data = []
-    for file in list_files:
+    for file in list_files[:100]:
 
         if file[-9:] == '_lbls.txt':
             file_name = file[:3]
@@ -76,7 +76,7 @@ def load_data(data_dir='',model_dir=''):
         ALL_LINES += Lines_input[i]
         ALL_LBLS += lbls_all[i]
 
-    #create_encode_decode_file(ALL_LBLS,model_dir)
+    create_encode_decode_file(ALL_LBLS,model_dir)
     max_len = np.max([len(x) for x in ALL_LINES])
 
     # load encode file
@@ -249,7 +249,7 @@ def clean_one_point_strokes(char_pts):
             print('Found strokes with one point')
             index.append(s)
     if index:
-        for inx in index:
+        for inx in sorted(index, reverse=True):
             del char_out[inx]
 
     return char_out
