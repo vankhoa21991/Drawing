@@ -21,7 +21,7 @@ __author__ = 'Lucas Kjaero'
 
 class CASIA:
     """
-    Class to download and use data from the CASIA dataset.
+    Class to download and use model from the CASIA dataset.
     """
     def __init__(self, path=None):
         self.datasets = {
@@ -95,7 +95,7 @@ class CASIA:
                             print("Error downloading %s: %s" % (dataset, ex))
                             was_error = True
 
-                    # Unzip the data files
+                    # Unzip the model files
                     if not isdir(dataset_path):
                         try:
                             with zipfile.ZipFile(zip_path) as zip_archive:
@@ -122,7 +122,7 @@ class CASIA:
 
     def get_raw(self, verbose=True):
         """
-        Used to create easily introspectable image directories of all the data.
+        Used to create easily introspectable image directories of all the model.
         :return:
         """
         assert self.get_all_datasets() is True, "Datasets aren't properly downloaded, " \

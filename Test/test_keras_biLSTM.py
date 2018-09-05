@@ -17,7 +17,7 @@ def get_sequence(n_timesteps):
     # determine the class outcome for each item in cumulative sequence
     A = [x[0] + x[1] for x in X]
     y = array([0 if x < limit else 1 for x in cumsum(A)])
-    # reshape input and output data to be suitable for LSTMs
+    # reshape input and output model to be suitable for LSTMs
     X = X.reshape(1, n_timesteps, 2)
     y = y.reshape(1, n_timesteps, 1)
     return X, y
