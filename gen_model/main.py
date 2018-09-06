@@ -235,11 +235,12 @@ if __name__ == "__main__":
     parser.add_argument('--grad_clip', default=1.0, type=int)
     parser.add_argument('--decay_rate', default=0.9999, type=int)
     parser.add_argument('--dropout_rate', default=0.2, type=float)
-    parser.add_argument('--max_seq_len', default=317, type=int)
-    parser.add_argument('--num_mixture', default=20, type=int)
+    parser.add_argument('--max_seq_len', default=300, type=int)
+    parser.add_argument('--num_mixture', default=30, type=int)
+    parser.add_argument('--embedding_len', default=500, type=int)
 
     parser.add_argument('--batch_size', default=32, type=int)
-    parser.add_argument('--save_every', default=20, type=int)
+    parser.add_argument('--save_every', default=10, type=int)
     parser.add_argument('--num_gpu', default='0', type=int)
     parser.add_argument('--is_resume', default=False, type=bool)
 
@@ -251,7 +252,7 @@ if __name__ == "__main__":
         'Directory to store model checkpoints, tensorboard.')
 
     if args.mode == 'train':
-        tf.app.run(trainer(args))
+        trainer(args)
 
     else:
         generate(args)

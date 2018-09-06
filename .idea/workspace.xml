@@ -2,36 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41121d4c-46bb-486c-81df-3375551ff1bb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/test_keras_biLSTM.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/test_keras_biLSTM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casia_import/casia/pycasia/CASIA.py" beforeDir="false" afterPath="$PROJECT_DIR$/casia_import/casia/pycasia/CASIA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/001_lbls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/001_lbls.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/001_stroke.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/001_stroke.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/002_lbls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/002_lbls.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/002_stroke.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/002_stroke.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/003_lbls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/003_lbls.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/003_stroke.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/003_stroke.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/004_lbls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/004_lbls.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/004_stroke.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/004_stroke.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/005_lbls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/005_lbls.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/005_stroke.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/005_stroke.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/006_lbls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/006_lbls.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/006_stroke.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/006_stroke.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/007_lbls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/007_lbls.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/007_stroke.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/007_stroke.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/008_lbls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/008_lbls.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/008_stroke.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/008_stroke.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/009_lbls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/009_lbls.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/009_stroke.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/009_stroke.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/010_lbls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/010_lbls.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/010_stroke.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/010_stroke.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data/final_model.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/recog_model/model/final_model.hdf5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/data_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/recog_model/data_gen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/recog_model/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/recog_model/preprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/test.png" beforeDir="false" afterPath="$PROJECT_DIR$/recog_model/test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras_model/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/recog_model/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/model/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/model/events.out.tfevents.1536138013.lupincinnamon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/model/events.out.tfevents.1536138071.lupincinnamon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/model/events.out.tfevents.1536138225.lupincinnamon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/model/events.out.tfevents.1536138422.lupincinnamon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/model/events.out.tfevents.1536138660.lupincinnamon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/model/events.out.tfevents.1536138824.lupincinnamon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/model/events.out.tfevents.1536138972.lupincinnamon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/model/events.out.tfevents.1536139390.lupincinnamon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/model/events.out.tfevents.1536139448.lupincinnamon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/model/events.out.tfevents.1536139524.lupincinnamon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/model/vector-20.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/model/vector-20.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/model/vector-20.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/rnn.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,40 +31,41 @@
     <session id="56723511">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="10" />
+          <entry key="project.open.time.4" value="11" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="ipynb" value="2" />
+          <entry key="ipynb" value="3" />
           <entry key="json" value="2" />
-          <entry key="py" value="56" />
+          <entry key="py" value="58" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="IPNB" value="2" />
+          <entry key="IPNB" value="3" />
           <entry key="JSON" value="2" />
-          <entry key="Python" value="56" />
+          <entry key="Python" value="58" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="381" />
           <entry key="json" value="2" />
-          <entry key="py" value="7518" />
+          <entry key="py" value="7994" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="2" />
-          <entry key="Python" value="7899" />
+          <entry key="Python" value="8375" />
         </counts>
       </usages-collector>
     </session>
@@ -84,51 +73,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recog_model/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="76" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <marker date="1535897108243" expanded="true" signature="8339:8581" ph="..." />
-                <marker date="1535897108243" expanded="false" signature="8624:8625" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recog_model/data_gen.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recog_model/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_model/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="217" column="38" lean-forward="true" selection-start-line="217" selection-start-column="38" selection-end-line="217" selection-end-column="38" />
+            <state relative-caret-position="-2026">
+              <caret line="52" column="22" lean-forward="true" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
-                <marker date="1536139555839" expanded="true" signature="1016:6978" ph="..." />
               </folding>
             </state>
           </provider>
@@ -137,7 +87,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_model/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1157">
+            <state relative-caret-position="579">
               <caret line="365" column="26" selection-start-line="365" selection-start-column="26" selection-end-line="365" selection-end-column="26" />
               <folding>
                 <element signature="e#3490#3978#0" />
@@ -150,24 +100,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_model/data_gen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
+            <state relative-caret-position="542">
               <caret line="81" column="43" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_model/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="164" column="25" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
+            <state relative-caret-position="250">
+              <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
-                <element signature="e#7164#7695#0" />
-                <element signature="e#9120#9817#0" />
-                <element signature="e#11328#14282#0" />
-                <marker date="1536137237127" expanded="true" signature="288:295" ph="..." />
-                <marker date="1536137237127" expanded="true" signature="379:382" ph="..." />
+                <element signature="e#2387#2918#0" />
+                <element signature="e#3059#4128#0" />
+                <element signature="e#4274#4971#0" />
+                <element signature="e#6321#9275#0" />
+                <marker date="1536221974435" expanded="true" signature="288:295" ph="..." />
+                <marker date="1536221974435" expanded="true" signature="379:382" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gen_model/rnn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="132" column="32" lean-forward="true" selection-start-line="132" selection-start-column="32" selection-end-line="132" selection-end-column="32" />
+              <folding>
+                <element signature="e#752#1308#0" />
+                <element signature="e#1348#4180#0" />
+                <element signature="e#2204#2229#0" />
+                <element signature="e#2278#2299#0" />
+                <element signature="e#5075#5098#0" />
+                <element signature="e#5141#5164#0" />
+                <element signature="e#1658#1821#0" />
+                <element signature="e#1863#1888#0" />
+                <element signature="e#1931#1952#0" />
               </folding>
             </state>
           </provider>
@@ -213,20 +184,20 @@
         <option value="$PROJECT_DIR$/keras_model/data/encode_kanji.json" />
         <option value="$PROJECT_DIR$/keras_model/utils.py" />
         <option value="$PROJECT_DIR$/keras_model/main.py" />
+        <option value="$PROJECT_DIR$/gen_model/utils.py" />
+        <option value="$PROJECT_DIR$/gen_model/data_gen.py" />
         <option value="$PROJECT_DIR$/recog_model/main.py" />
         <option value="$PROJECT_DIR$/gen_model/rnn.py" />
-        <option value="$PROJECT_DIR$/gen_model/utils.py" />
-        <option value="$PROJECT_DIR$/gen_model/model.py" />
-        <option value="$PROJECT_DIR$/gen_model/data_gen.py" />
         <option value="$PROJECT_DIR$/gen_model/main.py" />
+        <option value="$PROJECT_DIR$/gen_model/model.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="535" />
-    <option name="y" value="170" />
-    <option name="width" value="917" />
-    <option name="height" value="789" />
+    <option name="x" value="993" />
+    <option name="y" value="25" />
+    <option name="width" value="927" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -253,7 +224,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,15 +242,11 @@
               <item name="gen_model" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Drawing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Drawing" type="462c0819:PsiDirectoryNode" />
-              <item name="recog_model" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -436,7 +402,7 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1874317" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27595627" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -489,6 +455,11 @@
           <url>file://$PROJECT_DIR$/recog_model/main.py</url>
           <line>45</line>
           <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gen_model/model.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="82" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -643,13 +614,6 @@ plt.show()</expression-string>
     <entry file="file://$PROJECT_DIR$/test_keras_mnist.py" />
     <entry file="file://$PROJECT_DIR$/test_keras_biLSTM.py" />
     <entry file="file://$PROJECT_DIR$/test_keras_lstm_classification.py" />
-    <entry file="file://$PROJECT_DIR$/gen_model/rnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="75" lean-forward="true" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/py3/lib/python3.6/site-packages/numpy/core/_methods.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -661,38 +625,6 @@ plt.show()</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="521">
           <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recog_model/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="76" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1535897108243" expanded="true" signature="8339:8581" ph="..." />
-            <marker date="1535897108243" expanded="false" signature="8624:8625" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recog_model/data_gen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recog_model/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -710,24 +642,61 @@ plt.show()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_model/model.py">
+    <entry file="file://$PROJECT_DIR$/Test/Drawing_recognition.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recog_model/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="164" column="25" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
+        <state relative-caret-position="589">
+          <caret line="137" column="55" selection-start-line="137" selection-start-column="55" selection-end-line="137" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recog_model/data_gen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#7164#7695#0" />
-            <element signature="e#9120#9817#0" />
-            <element signature="e#11328#14282#0" />
-            <marker date="1536137237127" expanded="true" signature="288:295" ph="..." />
-            <marker date="1536137237127" expanded="true" signature="379:382" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recog_model/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-470">
+          <caret line="73" column="17" lean-forward="true" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#3144#3336#0" />
+            <element signature="e#3363#3851#0" />
+            <element signature="e#3879#4542#0" />
+            <element signature="e#4570#6316#0" />
+            <element signature="e#6350#7308#0" />
+            <element signature="e#7352#7639#0" />
+            <marker date="1535897108243" expanded="true" signature="8339:8581" ph="..." />
+            <marker date="1535897108243" expanded="false" signature="8624:8625" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/py3/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-446">
+          <caret line="786" column="35" lean-forward="true" selection-start-line="786" selection-start-column="35" selection-end-line="786" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_model/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1157">
+        <state relative-caret-position="579">
           <caret line="365" column="26" selection-start-line="365" selection-start-column="26" selection-end-line="365" selection-end-column="26" />
           <folding>
             <element signature="e#3490#3978#0" />
@@ -738,18 +707,51 @@ plt.show()</expression-string>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_model/data_gen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
+        <state relative-caret-position="542">
           <caret line="81" column="43" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_model/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="217" column="38" lean-forward="true" selection-start-line="217" selection-start-column="38" selection-end-line="217" selection-end-column="38" />
+        <state relative-caret-position="-2026">
+          <caret line="52" column="22" lean-forward="true" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-            <marker date="1536139555839" expanded="true" signature="1016:6978" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_model/rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="132" column="32" lean-forward="true" selection-start-line="132" selection-start-column="32" selection-end-line="132" selection-end-column="32" />
+          <folding>
+            <element signature="e#752#1308#0" />
+            <element signature="e#1348#4180#0" />
+            <element signature="e#2204#2229#0" />
+            <element signature="e#2278#2299#0" />
+            <element signature="e#5075#5098#0" />
+            <element signature="e#5141#5164#0" />
+            <element signature="e#1658#1821#0" />
+            <element signature="e#1863#1888#0" />
+            <element signature="e#1931#1952#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_model/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#2387#2918#0" />
+            <element signature="e#3059#4128#0" />
+            <element signature="e#4274#4971#0" />
+            <element signature="e#6321#9275#0" />
+            <marker date="1536221974435" expanded="true" signature="288:295" ph="..." />
+            <marker date="1536221974435" expanded="true" signature="379:382" ph="..." />
           </folding>
         </state>
       </provider>

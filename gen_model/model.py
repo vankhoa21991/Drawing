@@ -21,18 +21,21 @@ class Generation_model(object):
 
     self.global_step = tf.Variable(0, name='global_step', trainable=False)
 
-    cell_fn = rnn.LSTMCell
+    # cell_fn = rnn.LSTMCell
+    cell_fn = rnn.GRU
 
     cell = cell_fn(args.hidden_size)
 
     if args.dropout_rate > 0:
-      cell = tf.contrib.rnn.DropoutWrapper(cell, output_keep_prob=args.dropout_rate)
+       cell = tf.contrib.rnn.DropoutWrapper(cell, output_keep_prob=args.dropout_rate)
 
     self.cell = cell
 
     self.sequence_lengths = tf.placeholder(dtype=tf.int32, shape=[args.batch_size])
     self.input_data = tf.placeholder(dtype=tf.float32,
         shape=[args.batch_size, args.max_seq_len + 1, 5])
+
+    # self.embedding_vectors = tf.placeholder(dtype=tf.float32, shape=[args.batch_size, args.embedding_len])
 
     # The target/expected vectors of strokes
     self.output_x = self.input_data[:, 1:args.max_seq_len + 1, :]
@@ -96,7 +99,7 @@ class Generation_model(object):
       # result1 is the loss wrt pen offset (L_s in equation 9 of
       # https://arxiv.org/pdf/1704.03477.pdf)
       result1 = tf.multiply(result0, z_pi)
-      result1 = tf.reduce_sum(result1, 1, keep_dims=True)
+      result1 = tf.reduce_sum(result1, 1, keepdims=True)
       result1 = -tf.log(result1 + epsilon)  # avoid log(0)
 
       fs = 1.0 - pen_data[:, 2]  # use training model for this
