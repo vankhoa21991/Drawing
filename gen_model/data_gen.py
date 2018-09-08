@@ -19,7 +19,10 @@ class DataLoader(object):
                strokes, charlabel='',
                batch_size=100,
                max_seq_length=250,
-               limit=1000):
+               limit=1000,
+               embedding_len = 500,
+               trained_embedding=False,
+               vocabulary = 0):
     self.batch_size = batch_size  # minibatch size
     self.max_seq_length = max_seq_length  # N_max in sketch-rnn paper
     # Removes large gaps in the model. x and y offsets are clamped to have
@@ -34,20 +37,28 @@ class DataLoader(object):
     self.pad_strokes = sequence.pad_sequences(strokes, maxlen=max_seq_length, dtype='float')
 
 
+    if trained_embedding == True:
+        self.embedding_matrix = np.random.uniform(low=0, high=1, size=(vocabulary, embedding_len))
+    else:
+        self.embedding_matrix = np.random.uniform(low=0, high=1, size=(vocabulary, embedding_len ))
+
+
   def _get_batch_from_indices(self, indices):
     """Given a list of indices, return the potentially augmented batch."""
     x_batch = []
     seq_len = []
+    embed_vec = []
     for idx in range(len(indices)):
       i = indices[idx]
       data = self.strokes[i]
       data_copy = np.copy(data)
       x_batch.append(data_copy)
+      embed_vec.append(self.charlabel[i])
       length = len(data_copy)
       seq_len.append(length)
     seq_len = np.array(seq_len, dtype=int)
     # We return three things: stroke-3 format, stroke-5 format, list of seq_len.
-    return x_batch, self.pad_batch(x_batch, self.max_seq_length), seq_len
+    return x_batch, self.pad_batch(x_batch, self.max_seq_length), seq_len, embed_vec
 
   def random_batch(self):
     """Return a randomised portion of the training model."""

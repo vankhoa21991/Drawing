@@ -12,30 +12,21 @@ import tensorflow as tf
 import rnn
 
 class Generation_model(object):
-  def __init__(self, args, gpu_mode=True, reuse=False):
+  def __init__(self, args, gpu_mode=True, reuse=False, vocabulary = 4020):
       with tf.variable_scope('vector_rnn', reuse=reuse):
-          self.build_model(args)
+        # self.vocab = vocabulary
+        self.build_model(args)
+
 
   def build_model(self, args):
     """Define model architecture."""
 
     self.global_step = tf.Variable(0, name='global_step', trainable=False)
 
-    # cell_fn = rnn.LSTMCell
-    cell_fn = rnn.GRU
-
-    cell = cell_fn(args.hidden_size)
-
-    if args.dropout_rate > 0:
-       cell = tf.contrib.rnn.DropoutWrapper(cell, output_keep_prob=args.dropout_rate)
-
-    self.cell = cell
-
     self.sequence_lengths = tf.placeholder(dtype=tf.int32, shape=[args.batch_size])
-    self.input_data = tf.placeholder(dtype=tf.float32,
-        shape=[args.batch_size, args.max_seq_len + 1, 5])
+    self.input_data = tf.placeholder(dtype=tf.float32,shape=[args.batch_size, args.max_seq_len + 1, 5])
 
-    # self.embedding_vectors = tf.placeholder(dtype=tf.float32, shape=[args.batch_size, args.embedding_len])
+    # self.index_chars = tf.placeholder(dtype=tf.int32, shape=[args.batch_size])
 
     # The target/expected vectors of strokes
     self.output_x = self.input_data[:, 1:args.max_seq_len + 1, :]
@@ -43,9 +34,6 @@ class Generation_model(object):
     # one step to include initial dummy value of (0, 0, 1, 0, 0))
     self.input_x = self.input_data[:, :args.max_seq_len, :]
 
-
-    actual_input_x = self.input_x
-    self.initial_state = cell.zero_state(batch_size=args.batch_size, dtype=tf.float32)
 
     self.num_mixture = args.num_mixture
 
@@ -55,19 +43,35 @@ class Generation_model(object):
     # mixture weight/probability (Pi_k)
     n_out = (3 + args.num_mixture * 6)
 
+    # embedding_matrix = tf.Variable(tf.truncated_normal(dtype=tf.float64, shape=(self.vocab, args.embedding_len), mean=0, stddev=0.01), name='embedding_matrix')
+
     with tf.variable_scope('RNN'):
       output_w = tf.get_variable('output_w', [args.hidden_size, n_out])
       output_b = tf.get_variable('output_b', [n_out])
 
-    # decoder module of sketch-rnn is below
-    output, last_state = tf.nn.dynamic_rnn(
-        cell,
-        actual_input_x,
-        initial_state=self.initial_state,
-        time_major=False,
-        swap_memory=True,
-        dtype=tf.float32,
-        scope='RNN')
+    # cell_fn = rnn.LSTMCell
+    # cell_fn = rnn.GRU
+    # chars = tf.nn.embedding_lookup(embedding_matrix, self.index_chars)
+
+    # if args.dropout_rate > 0:
+    #   cell = tf.contrib.rnn.DropoutWrapper(cell, output_keep_prob=args.dropout_rate)
+
+    # self.cell = rnn.GRU_embedding(x_t=self.input_x,num_units=args.hidden_size, c = chars)
+    self.cell = rnn.GRU(x_t=self.input_x, hidden_size=args.hidden_size)
+    # self.initial_state = cell.zero_state(batch_size=args.batch_size, dtype=tf.float32)
+
+    # # decoder module of sketch-rnn is below
+    # output, last_state = tf.nn.dynamic_rnn(
+    #     cell,
+    #     actual_input_x,
+    #     initial_state=self.initial_state,
+    #     time_major=False,
+    #     swap_memory=True,
+    #     dtype=tf.float32,
+    #     scope='RNN')
+
+    output = self.cell.h_t
+    last_state = self.cell.h_t
 
     output = tf.reshape(output, [-1, args.hidden_size])
     output = tf.nn.xw_plus_b(output, output_w, output_b)
