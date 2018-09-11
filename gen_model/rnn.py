@@ -127,10 +127,12 @@ class GRU_embedding():
       The datatype used for the variables and constants (optional).
   """
 
-  def __init__(self, x_t,num_units, pen_dim = 300, embeding_size = 4020, c=''):
+  def __init__(self, x_t,num_units, pen_dim = 400, embeding_size = 4020, c='', state = []):
     self.c = c
     self.hidden_size = num_units                            # size RNN cell
     self.input_dimensions = x_t.get_shape().as_list()[2]    # size pen = 5
+    # self.batch_size = 1
+    # self.seq_max_len = 1
     self.pen_dim = pen_dim                                  # size pen in higher dimension
     self.embed_dim = embeding_size
 
@@ -154,31 +156,34 @@ class GRU_embedding():
     self.Uo = tf.get_variable('Uo', [self.pen_dim, self.hidden_size], initializer=h_init)
 
     # Biases for hidden vectors of shape (hidden_size,)
-    self.bd = tf.get_variable('bd', [self.hidden_size], initializer=tf.constant_initializer(0.0))
-    self.bs = tf.get_variable('bs', [self.hidden_size], initializer=tf.constant_initializer(0.0))
+    self.bd = tf.get_variable('bd', [self.pen_dim], initializer=tf.constant_initializer(0.0))
+    self.bs = tf.get_variable('bs', [self.pen_dim], initializer=tf.constant_initializer(0.0))
     self.br = tf.get_variable('br', [self.hidden_size], initializer=tf.constant_initializer(0.0))
     self.bz = tf.get_variable('bz', [self.hidden_size], initializer=tf.constant_initializer(0.0))
     self.bh = tf.get_variable('bh', [self.hidden_size], initializer=tf.constant_initializer(0.0))
+    self.bo = tf.get_variable('bo', [self.hidden_size], initializer=tf.constant_initializer(0.0))
 
     self.Vr = tf.get_variable('Vr', [self.pen_dim, self.hidden_size], initializer=h_init)
     self.Vz = tf.get_variable('Vz', [self.pen_dim,self.hidden_size], initializer=h_init)
     self.V = tf.get_variable('V', [self.pen_dim, self.hidden_size], initializer=h_init)
     self.Vo = tf.get_variable('Vo', [self.pen_dim, self.hidden_size], initializer=h_init)
 
-    self.Mr = tf.get_variable('Mr', [self.embed_dim, self.hidden_size], initializer=h_init)
-    self.Mz = tf.get_variable('Mz', [self.embed_dim, self.hidden_size], initializer=h_init)
-    self.M = tf.get_variable('M', [self.embed_dim, self.hidden_size], initializer=h_init)
-    self.Mo = tf.get_variable('Mo', [self.embed_dim, self.hidden_size], initializer=h_init)
+    self.Mr = tf.get_variable('Mr', [self.hidden_size, self.hidden_size], initializer=h_init)
+    self.Mz = tf.get_variable('Mz', [self.hidden_size, self.hidden_size], initializer=h_init)
+    self.M = tf.get_variable('M', [self.hidden_size, self.hidden_size], initializer=h_init)
+    self.Mo = tf.get_variable('Mo', [self.hidden_size, self.hidden_size], initializer=h_init)
 
     # Put the time-dimension upfront for the scan operator
     # x_t = tf.transpose(x_t, [0, 2, 1], name='x_t')
 
     # A little hack (to obtain the same shape as the input matrix) to define the initial hidden state h_0
-    self.h_0 = tf.matmul(x_t[0, :, :], tf.zeros(dtype=tf.float32, shape=(self.input_dimensions, self.hidden_size)),
-                         name='h_0')
+    # self.h_0 = tf.matmul(x_t[0, :, :], tf.zeros(dtype=tf.float32, shape=(self.input_dimensions, 2*self.hidden_size)),
+    #                      name='h_0')
 
     # Perform the scan operator
-    self.h_t = tf.scan(self.forward_pass, x_t, initializer=self.h_0, name='h_t_transposed')
+    self.step = tf.constant(0)
+
+    self.out = tf.scan(self.forward_pass, x_t, initializer=state, name='h_t_transposed')
 
     # Transpose the result back
     # self.h_t = tf.transpose(self.h_t_transposed, [1, 0, 2], name='h_t')
@@ -193,21 +198,32 @@ class GRU_embedding():
     x_t: np.matrix
         The input vector.
     """
+    h_tm1 = tf.reshape(h_tm1, (2,-1,500))[0,:,:]
 
-    # dt = x_t[:, :, :3]
-    # st = x_t[:, :, 3:]
+    a = tf.nn.embedding_lookup(self.c, self.step)
+    self.c_in = tf.reshape(a, (-1,500))
 
-    # Definitions of z_t and r_t
-    z_t = tf.sigmoid(tf.matmul(tf.transpose(x_t), self.Uz) + tf.matmul(h_tm1, self.Wz) + self.bz)
-    r_t = tf.sigmoid(tf.matmul(tf.transpose(x_t), self.Ur) + tf.matmul(h_tm1, self.Wr) + self.br)
+    self.step = tf.add(self.step,1)
 
-    # Definition of h~_t
-    h_proposal = tf.tanh(tf.matmul(x_t, self.Wh) + tf.matmul(tf.multiply(r_t, h_tm1), self.Uh) + self.bh)
+    dt = x_t[:, :3]
+    st = x_t[:, 3:]
+
+    d_tp = tf.tanh(tf.matmul(dt,self.Wd) + self.bd)
+    s_tp = tf.tanh(tf.matmul(st,self.Ws) + self.bs)
+
+    z_t = tf.sigmoid(tf.matmul(h_tm1, self.Wz) + tf.matmul(d_tp, self.Uz) + \
+                     tf.matmul(s_tp,self.Vz) + tf.matmul(self.c_in,self.Mz) + self.bz)
+    r_t = tf.sigmoid(tf.matmul(h_tm1, self.Wr) + tf.matmul(d_tp, self.Ur) + \
+                     tf.matmul(s_tp,self.Vr) + tf.matmul(self.c_in,self.Mr) + self.br)
+    h_bar = tf.tanh(tf.matmul(tf.multiply(r_t,h_tm1),self.W) + tf.matmul(d_tp,self.U) + \
+                    tf.matmul(s_tp, self.V) + tf.matmul(self.c_in, self.M) + self.bh)
 
     # Compute the next hidden state
-    h_t = tf.multiply(1 - z_t, h_tm1) + tf.multiply(z_t, h_proposal)
+    h_t = tf.multiply(z_t, h_tm1) + tf.multiply(1 - z_t, h_bar)
+    o_t = tf.tanh(tf.matmul(h_t,self.Wo) + tf.matmul(d_tp,self.Uo) + tf.matmul(s_tp,self.Vo) + \
+                  tf.matmul(self.c_in,self.Mo) + self.bo)
 
-    return h_t
+    return tf.concat([h_t, o_t],1)
 
 
 class LSTMCell(tf.contrib.rnn.RNNCell):

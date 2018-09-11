@@ -91,3 +91,8 @@ class DataLoader(object):
     start_idx = idx * self.batch_size
     indices = range(start_idx, start_idx + self.batch_size)
     return self._get_batch_from_indices(indices)
+
+  def random_sample(self):
+    """Return a random sample, in stroke-3 format as used by draw_strokes."""
+    idx = np.random.permutation(range(0, len(self.strokes)))[0:1]
+    return self._get_batch_from_indices(idx)

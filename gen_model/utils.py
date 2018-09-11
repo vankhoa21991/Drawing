@@ -9,6 +9,7 @@ import tensorflow as tf
 from sklearn.model_selection import train_test_split
 import json
 import io
+import svgwrite
 
 def load_data(data_dir='',model_dir=''):
     list_files = os.listdir(data_dir)
@@ -180,7 +181,6 @@ def lines2strokes5(Lines_in):
         Chars.append(Char)
     return Chars
 
-
 def normalize(Lines):
     for c in range(len(Lines)):  # char: LInes[c]
         Length, dxL = [], []
@@ -302,7 +302,6 @@ def get_width_height(char_pts):
             py.append(char_pts[s][p][1])
     return np.max(px) - np.min(px), np.max(py) - np.min(py)
 
-
 def clean_redundant_points(char_pts, Tcos):
 
     # get width and height of a character
@@ -350,7 +349,6 @@ def load_checkpoint(sess, checkpoint_path):
   tf.logging.info('Loading model %s.', ckpt.model_checkpoint_path)
   saver.restore(sess, ckpt.model_checkpoint_path)
 
-
 def save_model(sess, model_save_path, global_step):
   saver = tf.train.Saver(tf.global_variables())
   checkpoint_path = os.path.join(model_save_path, 'vector')
@@ -364,3 +362,94 @@ def reset_graph():
   if sess:
     sess.close()
   tf.reset_default_graph()
+
+def to_normal_strokes(big_stroke):
+  """Convert from stroke-5 format (from sketch-rnn paper) back to stroke-3."""
+  l = 0
+  for i in range(len(big_stroke)):
+    if big_stroke[i, 4] > 0:
+      l = i
+      break
+  if l == 0:
+    l = len(big_stroke)
+  result = np.zeros((l, 3))
+  result[:, 0:2] = big_stroke[0:l, 0:2]
+  result[:, 2] = big_stroke[0:l, 3]
+  return result
+
+def get_bounds(data, factor=10):
+  """Return bounds of data."""
+  min_x = 0
+  max_x = 0
+  min_y = 0
+  max_y = 0
+
+  abs_x = 0
+  abs_y = 0
+  for i in range(len(data)):
+    x = float(data[i, 0]) / factor
+    y = float(data[i, 1]) / factor
+    abs_x += x
+    abs_y += y
+    min_x = min(min_x, abs_x)
+    min_y = min(min_y, abs_y)
+    max_x = max(max_x, abs_x)
+    max_y = max(max_y, abs_y)
+
+  return (min_x, max_x, min_y, max_y)
+
+def draw_strokes(data,
+                 factor=0.2,
+                 svg_fpath = 'sample.svg',
+                 blur_dev = 0,
+                 stroke_width=1,
+                 angle = 0,
+                 sX = 0,
+                 sY = 0):
+  tf.gfile.MakeDirs(os.path.dirname(svg_fpath))
+  min_x, max_x, min_y, max_y = get_bounds(data, factor)
+  dims = (50 + max_x - min_x, 50 + max_y - min_y)
+  dwg = svgwrite.Drawing(svg_fpath, size=dims)
+  dwg.add(dwg.rect(insert=(0, 0), size=dims,fill='white'))
+
+  abs_x = 25 - min_x
+  abs_y = 25 - min_y
+  p = "M%s,%s " % (abs_x, abs_y)
+  command = "m"
+
+  strokes = []
+  stroke = []
+  for i in range(len(data)):
+    stroke.append(data[i])
+    if data[i,2] == 1:
+      strokes.append(stroke)
+      stroke = []
+
+
+  for stroke in strokes:
+    lift_pen = 1
+    for point in stroke:
+      if (lift_pen == 1):
+        command = "m"
+        lift_pen = 0
+      elif (command != "l"):
+        command = "l"
+      else:
+        command = ""
+      x = float(point[0]) / factor
+      y = float(point[1]) / factor
+      p += command + str(x) + "," + str(y) + " "
+    the_color = "black"
+    # stroke_width = random.uniform(0.5, 1.4)
+    dwg.add(dwg.path(p).stroke(the_color, stroke_width).fill("none"))
+
+  # create simple filter to blur rectangle
+  blur6_filter = dwg.defs.add(dwg.filter())
+  blur6_filter.feGaussianBlur(in_='SourceGraphic', stdDeviation=blur_dev)
+  g_f = dwg.add(dwg.g(filter=blur6_filter.get_funciri()))
+
+  g_f.skewX(sX)
+  g_f.skewY(sY)
+  g_f.rotate(angle)
+  dwg.save()
+  #display(SVG(dwg.tostring()))

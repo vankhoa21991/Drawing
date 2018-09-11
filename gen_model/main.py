@@ -23,8 +23,15 @@ def evaluate_model(sess, model, data_set):
   total_cost = 0.0
   total_r_cost = 0.0
   for batch in range(data_set.num_batches):
-    unused_orig_x, x, s,embedding_vectors = data_set.get_batch(batch)
-    feed = {model.input_data: x, model.sequence_lengths: s}
+
+    unused_orig_x, x, s,index_chars = data_set.random_batch()
+
+    feed = {model.input_data: x,
+            model.sequence_lengths: s,
+            model.index_chars: index_chars,
+            model.initial_state: np.zeros([args.max_seq_len, 2 * args.hidden_size]),
+            }
+
     (cost, r_cost) = sess.run([model.cost, model.r_cost], feed)
     total_cost += cost
     total_r_cost += r_cost
@@ -69,7 +76,9 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
         feed = {
             model.input_data: x,
             model.sequence_lengths: s,
-            model.lr: curr_learning_rate
+            model.lr: curr_learning_rate,
+            model.initial_state: np.zeros([args.max_seq_len, 2*args.hidden_size]),
+            model.index_chars: index_chars,
         }
 
         (train_cost, r_cost, _, train_step, _) = sess.run([
@@ -195,24 +204,51 @@ def trainer(args):
                max_seq_length=args.max_seq_len, embedding_len = args.embedding_len, trained_embedding=args.trained_embedding, vocabulary = vocabulary)
     test_set = valid_set
 
-
-
     reset_graph()
     # load model
     model = Generation_model(args=args,vocabulary=vocabulary)
     eval_model = Generation_model(args=args, reuse=True, vocabulary=vocabulary)
 
     # start session
-
     sess = tf.InteractiveSession()
     sess.run(tf.global_variables_initializer())
 
     # check if resume model
     if args.is_resume:
-        load_checkpoint(sess, args.model_dir)
+        load_checkpoint(sess,FLAGS.log_root)
 
     train(sess, model, eval_model, train_set, valid_set, test_set, args)
 
+def generate(args):
+    # load data
+    stroke_train, stroke_val, label_train, label_val, label2char, char2label, max_len = load_data(args.data_dir,
+                                                                                                  args.model_dir)
+    vocabulary = len(label2char)
+
+    test_set = DataLoader(stroke_val, label_val, batch_size=args.batch_size,
+                           max_seq_length=args.max_seq_len, embedding_len=args.embedding_len,
+                           trained_embedding=args.trained_embedding, vocabulary=vocabulary)
+
+
+    # construct the sketch-rnn model here:
+    reset_graph()
+
+    model = Generation_model(args=args, vocabulary=vocabulary)
+    sample_model = Generation_model(args=args, reuse=True, vocabulary=vocabulary)
+
+    sess = tf.InteractiveSession()
+    sess.run(tf.global_variables_initializer())
+
+    # loads the weights from checkpoint into our model
+    load_checkpoint(sess, FLAGS.log_root)
+
+    _, x, s, index_char = test_set.random_batch()
+
+    sample_strokes, m = sample(sess, sample_model, seq_len=args.max_seq_len, index_char = index_char[0], args = args)
+
+    strokes = to_normal_strokes(sample_strokes)
+
+    draw_strokes(strokes)
 
 if __name__ == "__main__":
     import argparse
@@ -229,8 +265,8 @@ if __name__ == "__main__":
         parser.add_argument('--data_dir', default='/home/lupin/Cinnamon/Flaxscanner/Drawing/data/')
         parser.add_argument('--model_dir', default='model/')
 
-    parser.add_argument('--mode', default='train', type=str)
-    parser.add_argument('--num_epochs', default=30, type=int)
+    parser.add_argument('--mode', default='trai', type=str)
+    parser.add_argument('--num_epochs', default=40, type=int)
     parser.add_argument('--hidden_size', default=500, type=int)
     parser.add_argument('--learning_rate', default=1e-4, type=float)
     parser.add_argument('--min_learning_rate', default=1e-6, type=float)
@@ -242,7 +278,7 @@ if __name__ == "__main__":
     parser.add_argument('--embedding_len', default=500, type=int)
     parser.add_argument('--trained_embedding', default=500, type=int)
     parser.add_argument('--batch_size', default=32, type=int)
-    parser.add_argument('--save_every', default=10, type=int)
+    parser.add_argument('--save_every', default=20, type=int)
     parser.add_argument('--num_gpu', default='0', type=int)
     parser.add_argument('--is_resume', default=False, type=bool)
 
