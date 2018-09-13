@@ -10,6 +10,7 @@ from sklearn.model_selection import train_test_split
 import json
 import io
 import svgwrite
+import random
 
 def load_data(data_dir='',model_dir=''):
     list_files = os.listdir(data_dir)
@@ -66,6 +67,11 @@ def load_data(data_dir='',model_dir=''):
 
         Lines_normalized.append(lines_after_normalize)
 
+    # for i in range(len(chars_pts_normalized)):
+    #     for c in range(len(chars_pts_normalized[i])):
+    #         plot_char(chars_pts_normalized[i][c], lbls_all[i][c])
+
+
     Lines_input = []
     for i in range(len(Lines_normalized)):
         Lines_input.append(lines2strokes5(Lines_normalized[i]))
@@ -91,7 +97,7 @@ def load_data(data_dir='',model_dir=''):
 
     stroke_train, stroke_val, label_train, label_val = train_test_split(ALL_LINES, ALL_LBLS_ENCODED, test_size=0.08,random_state=1)
 
-    return stroke_train, stroke_val, label_train, label_val, label2char, char2label, length
+    return stroke_train, stroke_val, label_train, label_val, label2char, char2label, length, ALL_LINES, ALL_LBLS_ENCODED
 
 def file_to_word_ids(label, word_to_id):
     label_out = []
@@ -102,15 +108,20 @@ def file_to_word_ids(label, word_to_id):
             print(word + 'not exist')
     return label_out
 
-def plot_char(char):
+def plot_char(char, lbl):
     fig = plt.figure()
-    ax = plt.axes()
+    ax = plt.subplot(111)
 
     for i in range(len(char)):
         x,y = zip(*char[i])
-        plt.plot(x,np.dot(y,-1))
+        ax.plot(x,np.dot(y,-1))
     plt.axes().set_aspect('equal', 'datalim')
-    plt.show()
+
+    if lbl[0] == '/':
+        lbl = 'sur'
+    name = '_'+lbl[0]+ '_' + str(random.randint(0,1000000)) + '.png'
+    fig.savefig('/home/lupin/Cinnamon/Flaxscanner/Drawing/data/png/' + name)
+    # plt.show()
 
 def pts2lines(CHAR):
     # input: CHAR[char[stroke[x,y]]]
@@ -174,7 +185,7 @@ def lines2strokes5(Lines_in):
 
                 if l == len(Lines_in[c][s]) - 1 and s != len(Lines_in[c]) - 1:   # end of stroke
                     dx = Lines_in[c][s + 1][0][0] - Lines_in[c][s][l][1]
-                    dy = Lines_in[c][s + 1][0][1] - Lines_in[c][s][l][3]
+                    dy = Lines_in[c][s + 1][0][2] - Lines_in[c][s][l][3]
                     si = [0, 1, 0]
                     Char.append([dx, dy] + si)
 
@@ -374,7 +385,8 @@ def to_normal_strokes(big_stroke):
     l = len(big_stroke)
   result = np.zeros((l, 3))
   result[:, 0:2] = big_stroke[0:l, 0:2]
-  result[:, 2] = big_stroke[0:l, 3]
+  result[:, 2] = 1-big_stroke[0:l, 2]
+  result[-1, 2] = 1 # end char
   return result
 
 def get_bounds(data, factor=10):
@@ -400,7 +412,7 @@ def get_bounds(data, factor=10):
 
 def draw_strokes(data,
                  factor=0.2,
-                 svg_fpath = 'sample.svg',
+                 svg_fpath = 'sample/sample.svg',
                  blur_dev = 0,
                  stroke_width=1,
                  angle = 0,
@@ -436,8 +448,8 @@ def draw_strokes(data,
         command = "l"
       else:
         command = ""
-      x = float(point[0]) / factor
-      y = float(point[1]) / factor
+      x = float(point[0]) / 0.2
+      y = float(point[1]) / 0.1
       p += command + str(x) + "," + str(y) + " "
     the_color = "black"
     # stroke_width = random.uniform(0.5, 1.4)

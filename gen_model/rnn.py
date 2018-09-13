@@ -2,6 +2,32 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+
+from tensorflow.core.framework import attr_value_pb2
+from tensorflow.python.eager import context
+from tensorflow.python.framework import constant_op
+from tensorflow.python.framework import dtypes
+from tensorflow.python.framework import function
+from tensorflow.python.framework import ops
+from tensorflow.python.framework import sparse_tensor
+from tensorflow.python.framework import tensor_shape
+from tensorflow.python.ops import array_ops
+from tensorflow.python.ops import control_flow_ops
+from tensorflow.python.ops import gen_functional_ops
+from tensorflow.python.ops import math_ops
+from tensorflow.python.ops import tensor_array_ops
+from tensorflow.python.ops import variable_scope as vs
+# pylint: disable=unused-import
+from tensorflow.python.ops.gen_functional_ops import remote_call
+# pylint: enable=unused-import
+from tensorflow.python.ops.gen_functional_ops import symbolic_gradient
+from tensorflow.python.util import nest
+from tensorflow.python.util.tf_export import tf_export
+
 # internal imports
 import numpy as np
 import tensorflow as tf
@@ -181,14 +207,15 @@ class GRU_embedding():
     #                      name='h_0')
 
     # Perform the scan operator
-    self.step = tf.constant(0)
 
-    self.out = tf.scan(self.forward_pass, x_t, initializer=state, name='h_t_transposed')
+    # x_in = tf.concat([x_t, tf.reshape(c, (32, -1, 500)) ], 1)
+
+    self.out = scan(self.forward_pass, [x_t, c], initializer=state, name='h_t_transposed')
 
     # Transpose the result back
     # self.h_t = tf.transpose(self.h_t_transposed, [1, 0, 2], name='h_t')
 
-  def forward_pass(self, h_tm1, x_t):
+  def forward_pass(self, h_tm1, x_t, c_in):
     """Perform a forward pass.
 
     Arguments
@@ -200,10 +227,9 @@ class GRU_embedding():
     """
     h_tm1 = tf.reshape(h_tm1, (2,-1,500))[0,:,:]
 
-    a = tf.nn.embedding_lookup(self.c, self.step)
-    self.c_in = tf.reshape(a, (-1,500))
+    self.c_in = tf.reshape(c_in,(-1,500))
 
-    self.step = tf.add(self.step,1)
+    # x_t, self.c_in = tf.split(t_in, [5, 500], 1)
 
     dt = x_t[:, :3]
     st = x_t[:, 3:]
@@ -288,3 +314,151 @@ class LSTMCell(tf.contrib.rnn.RNNCell):
       new_h = tf.tanh(new_c) * tf.sigmoid(o)
 
       return new_h, tf.concat([new_c, new_h], 1)  # fuk tuples.
+
+
+def scan(fn, elems, initializer=None, parallel_iterations=10, back_prop=True,
+         swap_memory=False, infer_shape=True, reverse=False, name=None):
+  cs = elems[1]
+  elems = elems[0]
+  if not callable(fn):
+    raise TypeError("fn must be callable.")
+
+  input_is_sequence = nest.is_sequence(elems)
+  input_flatten = lambda x: nest.flatten(x) if input_is_sequence else [x]
+  def input_pack(x):
+    return nest.pack_sequence_as(elems, x) if input_is_sequence else x[0]
+
+  if initializer is None:
+    output_is_sequence = input_is_sequence
+    output_flatten = input_flatten
+    output_pack = input_pack
+  else:
+    output_is_sequence = nest.is_sequence(initializer)
+    output_flatten = lambda x: nest.flatten(x) if output_is_sequence else [x]
+    def output_pack(x):
+      return (nest.pack_sequence_as(initializer, x)
+              if output_is_sequence else x[0])
+
+  elems_flat = input_flatten(elems)
+  cs_flat = input_flatten(cs)
+
+  in_graph_mode = not context.executing_eagerly()
+  with ops.name_scope(name, "scan", elems_flat):
+    # TODO(akshayka): Remove the in_graph_mode check once caching devices are
+    # supported in Eager
+    if in_graph_mode:
+      # Any get_variable calls in fn will cache the first call locally
+      # and not issue repeated network I/O requests for each iteration.
+      varscope = vs.get_variable_scope()
+      varscope_caching_device_was_none = False
+      if varscope.caching_device is None:
+        # TODO(ebrevdo): Change to using colocate_with here and in other
+        # methods.
+        varscope.set_caching_device(lambda op: op.device)
+        varscope_caching_device_was_none = True
+
+    # Convert elems to tensor array.
+    elems_flat = [
+        ops.convert_to_tensor(elem, name="elem") for elem in elems_flat]
+
+    cs_flat = [
+      ops.convert_to_tensor(c_, name="c") for c_ in cs_flat]
+
+    # Convert elems to tensor array. n may be known statically.
+    n = elems_flat[0].shape[0].value or array_ops.shape(elems_flat[0])[0]
+
+    # TensorArrays are always flat
+    elems_ta = [
+        tensor_array_ops.TensorArray(dtype=elem.dtype, size=n,
+                                     dynamic_size=False,
+                                     infer_shape=True)
+        for elem in elems_flat]
+
+    cs_ta = [
+      tensor_array_ops.TensorArray(dtype=c_.dtype, size=n,
+                                   dynamic_size=False,
+                                   infer_shape=True)
+      for c_ in cs_flat]
+
+    # Unpack elements
+    elems_ta = [
+        elem_ta.unstack(elem) for elem_ta, elem in zip(elems_ta, elems_flat)]
+
+    cs_ta = [
+      c_ta.unstack(c) for c_ta, c in zip(cs_ta, cs_flat)]
+
+    if initializer is None:
+      a_flat = [elem.read(n - 1 if reverse else 0) for elem in elems_ta]
+      i = constant_op.constant(1)
+    else:
+      initializer_flat = output_flatten(initializer)
+      a_flat = [ops.convert_to_tensor(init) for init in initializer_flat]
+      i = constant_op.constant(0)
+
+    # Create a tensor array to store the intermediate values.
+    accs_ta = [
+        tensor_array_ops.TensorArray(
+            dtype=init.dtype, size=n,
+            element_shape=init.shape if infer_shape else None,
+            dynamic_size=False,
+            infer_shape=infer_shape)
+        for init in a_flat]
+
+    if initializer is None:
+      accs_ta = [acc_ta.write(n - 1 if reverse else 0, a)
+                 for (acc_ta, a) in zip(accs_ta, a_flat)]
+
+    def compute(i, a_flat, tas):
+      """The loop body of scan.
+      Args:
+        i: the loop counter.
+        a_flat: the accumulator value(s), flattened.
+        tas: the output accumulator TensorArray(s), flattened.
+      Returns:
+        [i + 1, a_flat, tas]: the updated counter + new accumulator values +
+          updated TensorArrays
+      Raises:
+        TypeError: if initializer and fn() output structure do not match
+        ValueType: if initializer and fn() output lengths do not match
+      """
+      packed_elems = input_pack([elem_ta.read(i) for elem_ta in elems_ta])
+      packed_cs = input_pack([c_ta.read(i) for c_ta in cs_ta])
+      packed_a = output_pack(a_flat)
+      a_out = fn(packed_a, packed_elems, packed_cs)
+      nest.assert_same_structure(
+          elems if initializer is None else initializer, a_out)
+      flat_a_out = output_flatten(a_out)
+      tas = [ta.write(i, value) for (ta, value) in zip(tas, flat_a_out)]
+      if reverse:
+        next_i = i - 1
+      else:
+        next_i = i + 1
+      return (next_i, flat_a_out, tas)
+
+    if reverse:
+      initial_i = n - 1 - i
+      condition = lambda i, _1, _2: i >= 0
+    else:
+      initial_i = i
+      condition = lambda i, _1, _2: i < n
+    _, _, r_a = control_flow_ops.while_loop(
+        condition, compute, (initial_i, a_flat, accs_ta),
+        parallel_iterations=parallel_iterations,
+        back_prop=back_prop, swap_memory=swap_memory,
+        maximum_iterations=n)
+
+    results_flat = [r.stack() for r in r_a]
+
+    n_static = elems_flat[0].get_shape().with_rank_at_least(1)[0]
+    for elem in elems_flat[1:]:
+      n_static.merge_with(elem.get_shape().with_rank_at_least(1)[0])
+    for r in results_flat:
+      r.set_shape(tensor_shape.TensorShape(n_static).concatenate(
+          r.get_shape()[1:]))
+
+    # TODO(akshayka): Remove the in_graph_mode check once caching devices are
+    # supported in Eager
+    if in_graph_mode and varscope_caching_device_was_none:
+      varscope.set_caching_device(None)
+
+    return output_pack(results_flat)

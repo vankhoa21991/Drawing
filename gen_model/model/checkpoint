@@ -1,2 +1,2 @@
-model_checkpoint_path: "vector-20"
-all_model_checkpoint_paths: "vector-20"
+model_checkpoint_path: "vector-50"
+all_model_checkpoint_paths: "vector-50"

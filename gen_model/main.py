@@ -69,6 +69,8 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
 
         step = sess.run(model.global_step)
 
+        embedding_init = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0,32)})
+
         curr_learning_rate = ((args.learning_rate - args.min_learning_rate) *
                               (args.decay_rate) ** step + args.min_learning_rate)
 
@@ -85,6 +87,10 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
             model.cost, model.r_cost, model.final_state,
             model.global_step, model.train_op], feed)
 
+        embedding_after = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0, 32)})
+
+        a = abs(embedding_after - embedding_init)
+        print(np.max(a))
         if step % 20 == 0 and step > 0:
             end = time.time()
             time_taken = end - start
@@ -195,7 +201,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
 def trainer(args):
 
     # load data
-    stroke_train, stroke_val, label_train, label_val, label2char, char2label, max_len = load_data(args.data_dir, args.model_dir)
+    stroke_train, stroke_val, label_train, label_val, label2char, char2label, max_len,_,_ = load_data(args.data_dir, args.model_dir)
     vocabulary = len(label2char)
 
     train_set = DataLoader(stroke_train, label_train, batch_size=args.batch_size,
@@ -221,7 +227,7 @@ def trainer(args):
 
 def generate(args):
     # load data
-    stroke_train, stroke_val, label_train, label_val, label2char, char2label, max_len = load_data(args.data_dir,
+    stroke_train, stroke_val, label_train, label_val, label2char, char2label, max_len, all_strokes, all_lbls = load_data(args.data_dir,
                                                                                                   args.model_dir)
     vocabulary = len(label2char)
 
@@ -229,7 +235,13 @@ def generate(args):
                            max_seq_length=args.max_seq_len, embedding_len=args.embedding_len,
                            trained_embedding=args.trained_embedding, vocabulary=vocabulary)
 
+    train_set = DataLoader(stroke_train, label_train, batch_size=args.batch_size,
+                          max_seq_length=args.max_seq_len, embedding_len=args.embedding_len,
+                          trained_embedding=args.trained_embedding, vocabulary=vocabulary)
 
+    data_set = DataLoader(all_strokes, all_lbls, batch_size=args.batch_size,
+                           max_seq_length=args.max_seq_len, embedding_len=args.embedding_len,
+                           trained_embedding=args.trained_embedding, vocabulary=vocabulary)
     # construct the sketch-rnn model here:
     reset_graph()
 
@@ -239,13 +251,25 @@ def generate(args):
     sess = tf.InteractiveSession()
     sess.run(tf.global_variables_initializer())
 
+    print(
+        f"The embedding matrix: {sess.run(model.embedding_matrix, feed_dict={model.index_chars: [1,2,3,4,5]})}"
+    )
+
     # loads the weights from checkpoint into our model
     load_checkpoint(sess, FLAGS.log_root)
 
-    _, x, s, index_char = test_set.random_batch()
+    q, x, s, index_char = data_set.random_batch()
+
+    print(label2char.get(index_char[0],None)[0])
+
+    draw_strokes(to_normal_strokes(x[0]), svg_fpath='sample/origin_' + label2char.get(index_char[0],None)[0] + '.svg')
+    # 0: ve 1: nhac len
+    # for i in range(len(q)):
+    #     char = label2char.get(index_char[i], None)
+    #     draw_strokes(to_normal_strokes(q[i]),svg_fpath='sample/origin_'+ char[0] + '.svg')
 
     sample_strokes, m = sample(sess, sample_model, seq_len=args.max_seq_len, index_char = index_char[0], args = args)
-
+    print(sample_strokes)
     strokes = to_normal_strokes(sample_strokes)
 
     draw_strokes(strokes)
@@ -265,20 +289,20 @@ if __name__ == "__main__":
         parser.add_argument('--data_dir', default='/home/lupin/Cinnamon/Flaxscanner/Drawing/data/')
         parser.add_argument('--model_dir', default='model/')
 
-    parser.add_argument('--mode', default='trai', type=str)
-    parser.add_argument('--num_epochs', default=40, type=int)
+    parser.add_argument('--mode', default='train', type=str)
+    parser.add_argument('--num_epochs', default= 100000, type=int)
     parser.add_argument('--hidden_size', default=500, type=int)
     parser.add_argument('--learning_rate', default=1e-4, type=float)
     parser.add_argument('--min_learning_rate', default=1e-6, type=float)
     parser.add_argument('--grad_clip', default=1.0, type=int)
     parser.add_argument('--decay_rate', default=0.9999, type=int)
     parser.add_argument('--dropout_rate', default=0.2, type=float)
-    parser.add_argument('--max_seq_len', default=300, type=int)
+    parser.add_argument('--max_seq_len', default=200, type=int)
     parser.add_argument('--num_mixture', default=30, type=int)
     parser.add_argument('--embedding_len', default=500, type=int)
     parser.add_argument('--trained_embedding', default=500, type=int)
     parser.add_argument('--batch_size', default=32, type=int)
-    parser.add_argument('--save_every', default=20, type=int)
+    parser.add_argument('--save_every', default=50, type=int)
     parser.add_argument('--num_gpu', default='0', type=int)
     parser.add_argument('--is_resume', default=False, type=bool)
 

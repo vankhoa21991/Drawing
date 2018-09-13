@@ -79,11 +79,11 @@ class Generation_model(object):
     # NB: the below are inner functions, not methods of Model
     def tf_1d_normal(x1, x2, mu1, mu2, s1, s2):
       """Returns result of eq # 24 of http://arxiv.org/abs/1308.0850."""
-      norm1 = tf.subtract(x1, mu1)
-      norm2 = tf.subtract(x2, mu2)
+      norm1 = tf.square(tf.subtract(x1, mu1))
+      norm2 = tf.square(tf.subtract(x2, mu2))
 
-      z1 = -1 * tf.square(tf.div(norm1, 2 * s1))
-      z2 = -1 * tf.square(tf.div(norm2, 2 * s2))
+      z1 = tf.exp(-1 *tf.div(norm1, 2 * tf.square(s1)))
+      z2 = tf.exp(-1 *tf.div(norm2, 2 * tf.square(s2)))
 
       denom1 = tf.sqrt(2 * np.pi) * s1
       denom2 = tf.sqrt(2 * np.pi) * s2
@@ -106,7 +106,7 @@ class Generation_model(object):
       # https://arxiv.org/pdf/1704.03477.pdf)
       Pd = tf.multiply(result0, z_pi)
       Pd = tf.reduce_sum(Pd, 1, keepdims=True)
-      logPd = -tf.log(Pd + epsilon)  # avoid log(0)
+      logPd = tf.log(Pd + epsilon)  # avoid log(0)
 
       # fs = 1.0 - pen_data[:, 2]  # use training model for this
       # fs = tf.reshape(fs, [-1, 1])
@@ -114,15 +114,14 @@ class Generation_model(object):
       # result1 = tf.multiply(logPd, fs)
 
       # result2: loss wrt pen state, (L_p in equation 9)
-      p = tf.nn.softmax_cross_entropy_with_logits(
-          labels=pen_data, logits=z_pen_logits)
-      p = tf.reshape(p, [-1, 1])
-      logp = tf.log(p)
-      w = tf.constant([1, 5, 100],dtype=tf.float32)
+      p = tf.nn.softmax(z_pen_logits)
+      logp = tf.log(p + epsilon)
+      w = tf.constant([100, 5, 1],dtype=tf.float32)
 
-      result2 = -tf.multiply(tf.multiply(w,pen_data),logp)
+      result2 = tf.multiply(tf.multiply(w,pen_data),logp)
+      result2 = tf.reduce_sum(result2, 1, keep_dims=True)
 
-      result = logPd + result2
+      result = -(logPd + result2)
       return result
 
     # below is where we need to do MDN (Mixture Density Network) splitting of
@@ -153,6 +152,8 @@ class Generation_model(object):
       z_pen_logits = z[:, 0:3]  # pen states
       z_pen = tf.nn.softmax(z_pen_logits)
       return  [z_pen, z_pen_logits]
+
+
 
     out_gmm = get_mixture_coef(o_gmm)
     [o_pi, o_mu1, o_mu2, o_sigma1, o_sigma2] = out_gmm
@@ -227,12 +228,19 @@ def sample(sess, model, seq_len=250, index_char=None, args = ''):
     tf.logging.info('Error with sampling ensemble.')
     return -1
 
+  def random_Pd(vec_mu, vec_sig, vec_pi):
+    out = []
+    for i in range(len(vec_pi)):
+      a = np.random.normal(vec_mu[i], vec_sig[i], 1)*vec_pi[i]
+      out.append(a)
+    return sum(out)
+
   prev_x = np.zeros((1, 1, 5), dtype=np.float32)
   prev_x[0, 0, 2] = 1  # initially, we want to see beginning of new stroke
   # if z is None:
   #   z = np.random.randn(1, model.hps.z_size)  # not used if unconditional
   #
-  prev_state = np.zeros([args.max_seq_len, 2*args.hidden_size])
+  prev_state = np.zeros([1, 2*args.hidden_size])
 
   strokes = np.zeros((seq_len, 5), dtype=np.float32)
   mixture_params = []
@@ -262,6 +270,7 @@ def sample(sess, model, seq_len=250, index_char=None, args = ''):
     idx = get_pi_idx(random.random(), o_pi[0], temp, greedy)
 
     idx_eos = get_pi_idx(random.random(), o_pen[0], temp, greedy)
+    # idx_eos = np.argmax(o_pen[i])
     eos = [0, 0, 0]
     eos[idx_eos] = 1
 
@@ -269,8 +278,8 @@ def sample(sess, model, seq_len=250, index_char=None, args = ''):
     #                                       o_sigma1[0][idx], o_sigma2[0][idx],
     #                                       np.sqrt(temp), greedy)
 
-    next_x1 = np.random.normal(o_mu1[0][idx], o_sigma1[0][idx],1)
-    next_x2 = np.random.normal(o_mu2[0][idx], o_sigma2[0][idx],1)
+    next_x1 = np.random.normal(o_mu1[0][idx], o_sigma1[0][idx])
+    next_x2 = np.random.normal(o_mu2[0][idx], o_sigma2[0][idx])
 
     strokes[i, :] = [next_x1, next_x2, eos[0], eos[1], eos[2]]
 
