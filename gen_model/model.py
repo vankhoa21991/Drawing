@@ -119,7 +119,7 @@ class Generation_model(object):
       w = tf.constant([1, 5, 100],dtype=tf.float32)
 
       result2 = tf.multiply(tf.multiply(w,pen_data),logp)
-      result2 = tf.reduce_sum(result2, 1, keep_dims=True)
+      result2 = tf.reduce_sum(result2, 1, keepdims=True)
 
       result = -tf.reduce_sum(logPd + result2)
       return result

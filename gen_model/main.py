@@ -270,7 +270,7 @@ def generate(args):
     #     draw_strokes(to_normal_strokes(q[i]),svg_fpath='sample/origin_'+ char[0] + '.svg')
 
     sample_strokes, m = sample(sess, sample_model, seq_len=args.max_seq_len, index_char = index_char[0], args = args)
-    print(sample_strokes)
+    #print(sample_strokes)
     strokes = to_normal_strokes(sample_strokes)
 
     draw_strokes(strokes)

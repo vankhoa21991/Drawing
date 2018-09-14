@@ -1,0 +1,2 @@
+model_checkpoint_path: "/mnt/DATA/lupin/Drawing/gen_model/model/vector-100"
+all_model_checkpoint_paths: "/mnt/DATA/lupin/Drawing/gen_model/model/vector-100"
