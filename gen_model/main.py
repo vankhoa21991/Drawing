@@ -62,6 +62,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
     valid_cost = 0.0
 
     # main train loop
+    embedding_init = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0,32)})
 
     start = time.time()
 
@@ -69,7 +70,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
 
         step = sess.run(model.global_step)
 
-        embedding_init = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0,32)})
+       
 
         curr_learning_rate = ((args.learning_rate - args.min_learning_rate) *
                               (args.decay_rate) ** step + args.min_learning_rate)
@@ -90,7 +91,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
         embedding_after = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0, 32)})
 
         a = abs(embedding_after - embedding_init)
-        print(np.max(a))
+        print(np.sum(a))
         if step % 20 == 0 and step > 0:
             end = time.time()
             time_taken = end - start
@@ -280,16 +281,16 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = False
+    server = True
 
     if server == True:
-        parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Drawing/recog_model/model/')
-        parser.add_argument('--model_dir', default='/mnt/DATA/lupin/Drawing/recog_model/model/')
+        parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Drawing/data/')
+        parser.add_argument('--model_dir', default='/mnt/DATA/lupin/Drawing/gen_model/model/')
     else:
         parser.add_argument('--data_dir', default='/home/lupin/Cinnamon/Flaxscanner/Drawing/data/')
         parser.add_argument('--model_dir', default='model/')
 
-    parser.add_argument('--mode', default='train', type=str)
+    parser.add_argument('--mode', default='tran', type=str)
     parser.add_argument('--num_epochs', default= 100000, type=int)
     parser.add_argument('--hidden_size', default=500, type=int)
     parser.add_argument('--learning_rate', default=1e-4, type=float)
@@ -301,9 +302,9 @@ if __name__ == "__main__":
     parser.add_argument('--num_mixture', default=30, type=int)
     parser.add_argument('--embedding_len', default=500, type=int)
     parser.add_argument('--trained_embedding', default=500, type=int)
-    parser.add_argument('--batch_size', default=32, type=int)
+    parser.add_argument('--batch_size', default=500, type=int)
     parser.add_argument('--save_every', default=50, type=int)
-    parser.add_argument('--num_gpu', default='0', type=int)
+    parser.add_argument('--num_gpu', default='1', type=int)
     parser.add_argument('--is_resume', default=False, type=bool)
 
     args = parser.parse_args()

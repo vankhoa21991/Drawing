@@ -116,7 +116,7 @@ class Generation_model(object):
       # result2: loss wrt pen state, (L_p in equation 9)
       p = tf.nn.softmax(z_pen_logits)
       logp = tf.log(p + epsilon)
-      w = tf.constant([100, 5, 1],dtype=tf.float32)
+      w = tf.constant([1, 5, 100],dtype=tf.float32)
 
       result2 = tf.multiply(tf.multiply(w,pen_data),logp)
       result2 = tf.reduce_sum(result2, 1, keep_dims=True)

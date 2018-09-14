@@ -153,7 +153,7 @@ class GRU_embedding():
       The datatype used for the variables and constants (optional).
   """
 
-  def __init__(self, x_t,num_units, pen_dim = 400, embeding_size = 4020, c='', state = []):
+  def __init__(self, x_t,num_units, pen_dim = 300, embeding_size = 4020, c='', state = []):
     self.c = c
     self.hidden_size = num_units                            # size RNN cell
     self.input_dimensions = x_t.get_shape().as_list()[2]    # size pen = 5
