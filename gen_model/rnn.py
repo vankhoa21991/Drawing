@@ -153,7 +153,7 @@ class GRU_embedding():
       The datatype used for the variables and constants (optional).
   """
 
-  def __init__(self, x_t,num_units, pen_dim = 400, embeding_size = 4020, c='', state = []):
+  def __init__(self, x_t,num_units, pen_dim = 300, embeding_size = 500, c='', state = []):
     self.c = c
     self.hidden_size = num_units                            # size RNN cell
     self.input_dimensions = x_t.get_shape().as_list()[2]    # size pen = 5
@@ -162,13 +162,13 @@ class GRU_embedding():
     self.pen_dim = pen_dim                                  # size pen in higher dimension
     self.embed_dim = embeding_size
 
-    w_init = None  # uniform
+    w_init = tf.truncated_normal_initializer(0,0.01)
 
-    h_init = lstm_ortho_initializer(1.0)
+    h_init = tf.truncated_normal_initializer(0,0.01)
 
     # Weights for input vectors of shape (input_dimensions, hidden_size)
-    self.Wd = tf.get_variable('Wd', [3, self.pen_dim], initializer=w_init)
-    self.Ws = tf.get_variable('Ws', [2, self.pen_dim], initializer=w_init)
+    self.Wd = tf.get_variable('Wd', [3, self.pen_dim], initializer=tf.truncated_normal_initializer(0, 0.01))
+    self.Ws = tf.get_variable('Ws', [2, self.pen_dim], initializer=tf.truncated_normal_initializer(0, 0.01))
     self.Wr = tf.get_variable('Wr', [self.hidden_size, self.hidden_size], initializer=w_init)
     self.Wz = tf.get_variable('Wz', [self.hidden_size, self.hidden_size], initializer=w_init)
     self.Wh = tf.get_variable('Wh', [self.hidden_size, self.hidden_size], initializer=w_init)
@@ -194,10 +194,10 @@ class GRU_embedding():
     self.V = tf.get_variable('V', [self.pen_dim, self.hidden_size], initializer=h_init)
     self.Vo = tf.get_variable('Vo', [self.pen_dim, self.hidden_size], initializer=h_init)
 
-    self.Mr = tf.get_variable('Mr', [self.hidden_size, self.hidden_size], initializer=h_init)
-    self.Mz = tf.get_variable('Mz', [self.hidden_size, self.hidden_size], initializer=h_init)
-    self.M = tf.get_variable('M', [self.hidden_size, self.hidden_size], initializer=h_init)
-    self.Mo = tf.get_variable('Mo', [self.hidden_size, self.hidden_size], initializer=h_init)
+    self.Mr = tf.get_variable('Mr', [self.embed_dim, self.hidden_size], initializer=tf.truncated_normal_initializer(0,0.01))
+    self.Mz = tf.get_variable('Mz', [self.embed_dim, self.hidden_size], initializer=tf.truncated_normal_initializer(0,0.01))
+    self.M = tf.get_variable('M', [self.embed_dim, self.hidden_size], initializer=tf.truncated_normal_initializer(0,0.01))
+    self.Mo = tf.get_variable('Mo', [self.embed_dim, self.hidden_size], initializer=tf.truncated_normal_initializer(0,0.01))
 
     # Put the time-dimension upfront for the scan operator
     # x_t = tf.transpose(x_t, [0, 2, 1], name='x_t')
@@ -225,9 +225,9 @@ class GRU_embedding():
     x_t: np.matrix
         The input vector.
     """
-    h_tm1 = tf.reshape(h_tm1, (2,-1,500))[0,:,:]
+    h_tm1 = tf.reshape(h_tm1, (2,-1,self.hidden_size))[0,:,:]
 
-    self.c_in = tf.reshape(c_in,(-1,500))
+    self.c_in = tf.reshape(c_in,(-1,self.embed_dim))
 
     # x_t, self.c_in = tf.split(t_in, [5, 500], 1)
 
