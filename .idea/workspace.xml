@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41121d4c-46bb-486c-81df-3375551ff1bb" name="Default" comment="finish GRU">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/rnn-from-scratch/lstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/rnn-from-scratch/lstm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/data_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/data_gen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gen_model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/model/checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/model/encode_kanji.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/model/events.out.tfevents.1536652792.lupincinnamon" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/model/vector-20.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/model/vector-20.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/model/vector-20.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/rnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +19,12 @@
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.3" value="4" />
           <entry key="project.open.time.4" value="12" />
           <entry key="project.open.time.5" value="7" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="30" />
+          <entry key="project.opened" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -63,9 +50,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="899" />
+          <entry key="Python Console" value="905" />
           <entry key="json" value="2" />
-          <entry key="py" value="13449" />
+          <entry key="py" value="13469" />
           <entry key="txt" value="10" />
         </counts>
       </usages-collector>
@@ -73,45 +60,31 @@
         <counts>
           <entry key="JSON" value="2" />
           <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Python" value="14348" />
+          <entry key="Python" value="14374" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_model/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="203">
-              <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
+              <caret line="214" selection-start-line="214" selection-end-line="214" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
-                <marker date="1536835289655" expanded="true" signature="8728:10984" ph="..." />
+                <marker date="1536835317883" expanded="true" signature="8733:10989" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.virtualenvs/py3/lib/python3.6/site-packages/tensorflow/python/client/session.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="1075" selection-start-line="1075" selection-end-line="1075" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gen_model/sample/sample.svg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_model/utils.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -119,37 +92,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_model/rnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2700">
-              <caret line="212" selection-start-line="212" selection-end-line="212" />
+            <state relative-caret-position="3060">
+              <caret line="236" column="13" selection-start-line="236" selection-start-column="13" selection-end-line="236" selection-end-column="13" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#10790#12625#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/rnn-from-scratch/lstm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="212" selection-start-line="212" selection-end-line="212" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_model/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3866">
-              <caret line="278" column="66" selection-start-line="278" selection-start-column="66" selection-end-line="278" selection-end-column="66" />
+            <state relative-caret-position="278">
+              <caret line="181" column="26" selection-start-line="181" selection-start-column="26" selection-end-line="181" selection-end-column="26" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
-                <marker date="1536827949815" expanded="true" signature="307:314" ph="..." />
-                <marker date="1536827949815" expanded="true" signature="429:432" ph="..." />
-                <marker date="1536827949815" expanded="true" signature="5759:5907" ph="..." />
+                <marker date="1536916273287" expanded="true" signature="307:314" ph="..." />
+                <marker date="1536916273287" expanded="true" signature="429:432" ph="..." />
+                <marker date="1536916273287" expanded="true" signature="5772:5920" ph="..." />
               </folding>
             </state>
           </provider>
@@ -209,9 +171,9 @@
         <option value="$PROJECT_DIR$/Test/rnn-from-scratch/lstm.py" />
         <option value="$PROJECT_DIR$/gen_model/rnn.py" />
         <option value="$PROJECT_DIR$/gen_model/data_gen.py" />
-        <option value="$PROJECT_DIR$/gen_model/model.py" />
         <option value="$PROJECT_DIR$/gen_model/utils.py" />
         <option value="$PROJECT_DIR$/gen_model/main.py" />
+        <option value="$PROJECT_DIR$/gen_model/model.py" />
       </list>
     </option>
   </component>
@@ -516,6 +478,11 @@
           <line>247</line>
           <option name="timeStamp" value="126" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gen_model/main.py</url>
+          <line>214</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -634,13 +601,7 @@ plt.show()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Drawing_recognition.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/Drawing_recognition.ipynb" />
     <entry file="file://$PROJECT_DIR$/recog_model/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -711,17 +672,7 @@ plt.show()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/test_GRU.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="265" column="25" selection-start-line="265" selection-start-column="25" selection-end-line="265" selection-end-column="25" />
-          <folding>
-            <element signature="e#29#52#0" expanded="true" />
-            <element signature="e#3026#6954#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/test_GRU.py" />
     <entry file="file://$USER_HOME$/.virtualenvs/py3/lib/python3.6/site-packages/numpy/lib/npyio.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -736,13 +687,7 @@ plt.show()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/rnn-from-scratch/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/rnn-from-scratch/data.py" />
     <entry file="file://$USER_HOME$/.virtualenvs/py3/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -818,18 +763,10 @@ plt.show()</expression-string>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_model/sample/origin_价.svg" />
-    <entry file="file://$PROJECT_DIR$/gen_model/sample/origin_!.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen_model/sample/origin_狙.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen_model/sample/origin_冯.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen_model/sample/origin_腹.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_model/sample/origin_!.svg" />
+    <entry file="file://$PROJECT_DIR$/gen_model/sample/origin_狙.svg" />
+    <entry file="file://$PROJECT_DIR$/gen_model/sample/origin_冯.svg" />
+    <entry file="file://$PROJECT_DIR$/gen_model/sample/origin_腹.svg" />
     <entry file="file://$USER_HOME$/.virtualenvs/py3/lib/python3.6/site-packages/svgwrite/drawing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1545">
@@ -837,15 +774,29 @@ plt.show()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_model/sample/sample.svg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/gen_model/sample/sample.svg" />
+    <entry file="file://$PROJECT_DIR$/Test/rnn-from-scratch/lstm.py" />
+    <entry file="file://$USER_HOME$/.virtualenvs/py3/lib/python3.6/site-packages/tensorflow/python/client/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="1075" selection-start-line="1075" selection-end-line="1075" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_model/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_model/rnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2700">
-          <caret line="212" selection-start-line="212" selection-end-line="212" />
+        <state relative-caret-position="3060">
+          <caret line="236" column="13" selection-start-line="236" selection-start-column="13" selection-end-line="236" selection-end-column="13" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#10790#12625#0" />
           </folding>
         </state>
       </provider>
@@ -857,50 +808,26 @@ plt.show()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/py3/lib/python3.6/site-packages/tensorflow/python/client/session.py">
+    <entry file="file://$PROJECT_DIR$/gen_model/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
-          <caret line="1075" selection-start-line="1075" selection-end-line="1075" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/rnn-from-scratch/lstm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="212" selection-start-line="212" selection-end-line="212" />
+          <caret line="214" selection-start-line="214" selection-end-line="214" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
+            <marker date="1536835317883" expanded="true" signature="8733:10989" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen_model/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_model/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3866">
-          <caret line="278" column="66" selection-start-line="278" selection-start-column="66" selection-end-line="278" selection-end-column="66" />
+        <state relative-caret-position="278">
+          <caret line="181" column="26" selection-start-line="181" selection-start-column="26" selection-end-line="181" selection-end-column="26" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-            <marker date="1536827949815" expanded="true" signature="307:314" ph="..." />
-            <marker date="1536827949815" expanded="true" signature="429:432" ph="..." />
-            <marker date="1536827949815" expanded="true" signature="5759:5907" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen_model/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-            <marker date="1536835289655" expanded="true" signature="8728:10984" ph="..." />
+            <marker date="1536916273287" expanded="true" signature="307:314" ph="..." />
+            <marker date="1536916273287" expanded="true" signature="429:432" ph="..." />
+            <marker date="1536916273287" expanded="true" signature="5772:5920" ph="..." />
           </folding>
         </state>
       </provider>
