@@ -121,7 +121,7 @@ class Generation_model(object):
       result2 = tf.multiply(tf.multiply(w,pen_data),logp)
       result2 = tf.reduce_sum(result2, 1, keep_dims=True)
 
-      result = -(logPd + result2)
+      result = -tf.reduce_sum(logPd + result2)
       return result
 
     # below is where we need to do MDN (Mixture Density Network) splitting of
@@ -179,7 +179,7 @@ class Generation_model(object):
     lossfunc = get_lossfunc(o_pi, o_mu1, o_mu2, o_sigma1, o_sigma2,
                             o_pen_logits, x1_data, x2_data, pen_data)
 
-    self.r_cost = tf.reduce_mean(lossfunc)
+    self.r_cost = lossfunc
 
     self.lr = tf.Variable(args.learning_rate, trainable=False)
 
