@@ -243,7 +243,7 @@ def generate(args):
     )
 
     # loads the weights from checkpoint into our model
-    # load_checkpoint(sess, FLAGS.log_root)
+    load_checkpoint(sess, FLAGS.log_root)
 
     q, x, s, index_char = data_set.random_batch()
 
