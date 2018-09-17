@@ -106,24 +106,24 @@ class Generation_model(object):
       return tf.multiply(result1,result2)
 
     def get_lossfunc(z_pi, z_mu1, z_mu2, z_sigma1, z_sigma2,
-                     z_pen_logits, x1_data, x2_data, pen_data):
+                     z_pen_logits, x1_data, x2_data, pen_data,pen_data_eos):
       """Returns a loss fn based on eq #26 of http://arxiv.org/abs/1308.0850."""
       # This represents the L_R only (i.e. does not include the KL loss term).
 
       # result0 = tf_2d_normal(x1_data, x2_data, z_mu1, z_mu2, z_sigma1, z_sigma2,
       #                        z_corr)
       #result0 = tf_1d_normal(x1_data, x2_data, z_mu1, z_mu2, z_sigma1, z_sigma2)
-      result0 = tf_normal(x1_data,z_mu1,z_sigma1)
-      result1 = tf_normal(x2_data,z_mu2,z_sigma2)
+      MDNx = tf_normal(x1_data,z_mu1,z_sigma1)
+      MDNy = tf_normal(x2_data,z_mu2,z_sigma2)
       epsilon = 1e-6
 
       # result1 is the loss wrt pen offset (L_s in equation 9 of
       # https://arxiv.org/pdf/1704.03477.pdf)
-      Pd = tf.multiply(tf.multiply(result0, z_pi),result1)
+      Pd = tf.multiply(tf.multiply(MDNx, z_pi),MDNy)
       Pd = tf.reduce_sum(Pd, 1, keepdims=True)
       logPd = -tf.log(Pd + epsilon)  # avoid log(0)
     
-      fs = tf.subtract(tf.constant(1.0),pen_data[:, 3])  # use training data for this
+      fs = tf.subtract(1.0,pen_data_eos)  # use training data for this
       fs = tf.reshape(fs, [-1, 1])
       # Zero out loss terms beyond N_s, the last actual stroke
       result1 = tf.multiply(logPd, fs)
@@ -151,7 +151,7 @@ class Generation_model(object):
       if not args.is_training:  # eval mode, mask eos columns
         result2 = tf.multiply(result2, fs)
       
-      return logPd,result2
+      return result1,result2
 
     # below is where we need to do MDN (Mixture Density Network) splitting of
     # distribution params
@@ -204,7 +204,7 @@ class Generation_model(object):
     pen_data = tf.concat([cont_data, eos_data, eoc_data], 1)
 
     self.Pd ,self.Ps = get_lossfunc(o_pi, o_mu1, o_mu2, o_sigma1, o_sigma2,
-                            o_pen_logits, x1_data, x2_data, pen_data)
+                            o_pen_logits, x1_data, x2_data, pen_data,eos_data)
 
     self.cost = tf.reduce_sum(self.Pd + self.Ps)
     
