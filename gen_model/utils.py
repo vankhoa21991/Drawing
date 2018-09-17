@@ -19,7 +19,7 @@ def load_data(data_dir='',model_dir=''):
     chars_pts, LB = [], []
     data = []
 
-    for file in list_files[:2]:
+    for file in list_files[:4]:
 
         if file[-9:] == '_lbls.txt':
             file_name = file[:3]

@@ -82,11 +82,12 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
             model.index_chars: index_chars,
         }
 
-        (train_cost, _, train_step, _) = sess.run([
+        (train_cost, _, train_step, _, pd, ps) = sess.run([
             model.cost,  model.final_state,
-            model.global_step, model.train_op], feed)
+            model.global_step, model.train_op, model.Pd, model.Ps], feed)
 
-       
+        print('Pd: ' + str(pd))
+        print('Ps: ' + str(ps))
         if step % (args.save_every/2)  == 0 and step > 0:
             
             embedding_after = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0, 32)})  
@@ -200,6 +201,7 @@ def trainer(args):
     reset_graph()
     # load model
     model = Generation_model(args=args,vocabulary=vocabulary)
+    args.is_training = False
     eval_model = Generation_model(args=args, reuse=True, vocabulary=vocabulary)
 
     # start session
@@ -288,7 +290,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = False
+    server = True
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Flaxscanner/Dataset/Drawing/')
@@ -299,7 +301,7 @@ if __name__ == "__main__":
         parser.add_argument('--sample_dir', default='sample/')
         parser.add_argument('--model_dir', default='/home/lupin/Cinnamon/Flaxscanner/Models/Drawing/gen_model/')
 
-    parser.add_argument('--mode', default='trai', type=str)
+    parser.add_argument('--mode', default='train', type=str)
     parser.add_argument('--num_epochs', default= 100000, type=int)
     parser.add_argument('--hidden_size', default=1000, type=int)
     parser.add_argument('--learning_rate', default=1e-3, type=float)
@@ -312,10 +314,11 @@ if __name__ == "__main__":
     parser.add_argument('--out_dim', default=1000, type=int)
     parser.add_argument('--num_mixture', default=30, type=int)
     parser.add_argument('--embedding_len', default=500, type=int)
-    parser.add_argument('--batch_size', default=32, type=int)
+    parser.add_argument('--batch_size', default=500, type=int)
+    parser.add_argument('--is_training', default=True, type=bool)
     parser.add_argument('--save_every', default=50, type=int)
     parser.add_argument('--num_gpu', default='2', type=int)
-    parser.add_argument('--is_resume', default=True, type=bool)
+    parser.add_argument('--is_resume', default=False, type=bool)
 
     args = parser.parse_args()
     os.environ["CUDA_VISIBLE_DEVICES"] = str(args.num_gpu)
