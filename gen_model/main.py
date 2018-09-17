@@ -266,6 +266,17 @@ def generate(args):
     #     draw_strokes(to_normal_strokes(q[i]),svg_fpath='sample/origin_'+ char[0] + '.svg')
 
     sample_strokes, m = sample(sess, sample_model, seq_len=args.max_seq_len, index_char = index_char[0], args = args)
+
+
+    l=0
+    for i in range(len(sample_strokes)):
+        if sample_strokes[i, 3] > 0:
+            l += 1
+        if l == len(sample_strokes):
+            l=0
+
+
+    plot_char(args.sample_dir,lines2pts([[sample_strokes]])[0][:l+1], label2char.get(index_char[0],None)[0])
     #print(sample_strokes)
     #strokes = to_normal_strokes(sample_strokes)
 
@@ -288,7 +299,7 @@ if __name__ == "__main__":
         parser.add_argument('--sample_dir', default='sample/')
         parser.add_argument('--model_dir', default='/home/lupin/Cinnamon/Flaxscanner/Models/Drawing/gen_model/')
 
-    parser.add_argument('--mode', default='train', type=str)
+    parser.add_argument('--mode', default='tran', type=str)
     parser.add_argument('--num_epochs', default= 100000, type=int)
     parser.add_argument('--hidden_size', default=1000, type=int)
     parser.add_argument('--learning_rate', default=1e-3, type=float)

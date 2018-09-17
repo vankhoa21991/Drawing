@@ -47,14 +47,8 @@ def load_data(data_dir='',model_dir=''):
     for w in range(len(chars_pts_after_clean)):
         for c in range(len(chars_pts_after_clean[w])):
             chars_pts_after_clean[w][c] = clean_double_points(chars_pts_after_clean[w][c])
-
-    for w in range(len(chars_pts_after_clean)):
-        for c in range(len(chars_pts_after_clean[w])):
             chars_pts_after_clean[w][c] = clean_one_point_strokes(chars_pts_after_clean[w][c])
-
-    for w in range(len(chars_pts_after_clean)):
-        for c in range(len(chars_pts_after_clean[w])):
-            chars_pts_after_clean[w][c] = clean_redundant_points(chars_pts_after_clean[w][c],0.9)
+            chars_pts_after_clean[w][c] = clean_redundant_points(chars_pts_after_clean[w][c], 0.9)
 
 
 
@@ -96,7 +90,7 @@ def load_data(data_dir='',model_dir=''):
         ALL_LINES += strokes5[id_person]
         ALL_LBLS += lbls_all[id_person]
 
-    # create_encode_decode_file(ALL_LBLS,model_dir)
+    create_encode_decode_file(ALL_LBLS,model_dir)
     length = [np.max([len(x) for x in ALL_LINES]), np.mean([len(x) for x in ALL_LINES])]
 
     print('Max length: ' + str(length[0]) + '  Average length: ' + str(int(length[1])))
@@ -122,7 +116,7 @@ def file_to_word_ids(label, word_to_id):
             print(word + 'not exist')
     return label_out
 
-def plot_char(char, lbl):
+def plot_char(folder, char, lbl):
     fig = plt.figure()
     ax = plt.subplot(111)
 
@@ -134,7 +128,7 @@ def plot_char(char, lbl):
     if lbl[0] == '/':
         lbl = 'sur'
     name = '_'+lbl[0]+ '_' + str(random.randint(0,1000000)) + '.png'
-    fig.savefig('/home/lupin/Cinnamon/Flaxscanner/Drawing/data/png/' + name)
+    fig.savefig(folder + name)
     # plt.show()
 
 def pts2lines(CHAR):
@@ -212,7 +206,7 @@ def strokes52lines(s5):
     for c in range(len(s5)):         # char c
         Char = []
         stroke = []
-        for s in range(len(s5[c])):  # stroke s
+        for s in range(1,len(s5[c])):  # stroke s
             if s == 0:
                 x1 = 0
                 x2 = s5[c][s][0]
