@@ -268,7 +268,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = True
+    server = False
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Drawing/data/')

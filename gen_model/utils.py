@@ -46,6 +46,10 @@ def load_data(data_dir='',model_dir=''):
 
     for w in range(len(chars_pts_after_clean)):
         for c in range(len(chars_pts_after_clean[w])):
+            chars_pts_after_clean[w][c] = clean_double_points(chars_pts_after_clean[w][c])
+
+    for w in range(len(chars_pts_after_clean)):
+        for c in range(len(chars_pts_after_clean[w])):
             chars_pts_after_clean[w][c] = clean_one_point_strokes(chars_pts_after_clean[w][c])
 
     for w in range(len(chars_pts_after_clean)):
@@ -317,6 +321,23 @@ def remove_empty_labels(chars, lbls):
             del lbls_out[i][j]
     return chars_out, lbls_out
 
+
+def clean_double_points(char_pts):
+    char_out = list(char_pts)
+
+
+    for s in range(len(char_out)):
+        index = []
+        for p in range(len(char_out[s])-1):
+            if char_out[s][p] == char_out[s][p + 1]:
+                print('Found double points')
+                index.append(p)
+        if index:
+            for inx in sorted(index, reverse=True):
+                del char_out[s][inx]
+
+    return char_out
+
 def clean_one_point_strokes(char_pts):
     char_out = list(char_pts)
 
@@ -325,9 +346,7 @@ def clean_one_point_strokes(char_pts):
         if len(char_out[s]) == 1:
             print('Found strokes with one point')
             index.append(s)
-        if char_out[s] == char_out[s - 1]:
-            print('Found double points')
-            index.append(s)
+
     if index:
         for inx in sorted(index, reverse=True):
             del char_out[inx]
