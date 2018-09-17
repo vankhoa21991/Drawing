@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="41121d4c-46bb-486c-81df-3375551ff1bb" name="Default" comment="finish GRU">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/data_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/data_gen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gen_model/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gen_model/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/utils.py" afterDir="false" />
     </list>
@@ -16,16 +17,16 @@
     <session id="56723511">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
+          <entry key="project.closed" value="30" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.3" value="4" />
-          <entry key="project.open.time.4" value="16" />
+          <entry key="project.open.time.4" value="17" />
           <entry key="project.open.time.5" value="8" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="36" />
+          <entry key="project.opened" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -51,9 +52,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="1216" />
+          <entry key="Python Console" value="1233" />
           <entry key="json" value="2" />
-          <entry key="py" value="14468" />
+          <entry key="py" value="14474" />
           <entry key="txt" value="10" />
         </counts>
       </usages-collector>
@@ -61,18 +62,18 @@
         <counts>
           <entry key="JSON" value="2" />
           <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Python" value="15684" />
+          <entry key="Python" value="15707" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_model/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2030">
-              <caret line="292" column="50" selection-start-line="292" selection-start-column="50" selection-end-line="292" selection-end-column="50" />
+            <state relative-caret-position="218">
+              <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="254" selection-end-column="101" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -89,11 +90,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_model/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="270" column="22" selection-start-line="270" selection-start-column="22" selection-end-line="270" selection-end-column="22" />
+            <state relative-caret-position="413">
+              <caret line="224" selection-start-line="224" selection-end-line="224" />
+              <folding>
+                <element signature="e#13724#14086#0" />
+                <element signature="e#14115#14672#0" />
+                <element signature="e#14711#15100#0" />
+                <element signature="e#15349#16871#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_model/rnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2955">
+            <state relative-caret-position="581">
               <caret line="229" column="52" selection-start-line="229" selection-start-column="52" selection-end-line="229" selection-end-column="52" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -113,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_model/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2685">
+            <state relative-caret-position="-1084">
               <caret line="190" column="46" selection-start-line="190" selection-start-column="46" selection-end-line="190" selection-end-column="46" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -127,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_model/data_gen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="66" column="6" selection-start-line="66" selection-start-column="6" selection-end-line="77" selection-end-column="50" />
+            <state relative-caret-position="251">
+              <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -176,11 +183,11 @@
         <option value="$PROJECT_DIR$/recog_model/main.py" />
         <option value="$PROJECT_DIR$/Test/test_GRU.py" />
         <option value="$PROJECT_DIR$/Test/rnn-from-scratch/lstm.py" />
-        <option value="$PROJECT_DIR$/gen_model/data_gen.py" />
         <option value="$PROJECT_DIR$/gen_model/model.py" />
         <option value="$PROJECT_DIR$/gen_model/rnn.py" />
-        <option value="$PROJECT_DIR$/gen_model/main.py" />
+        <option value="$PROJECT_DIR$/gen_model/data_gen.py" />
         <option value="$PROJECT_DIR$/gen_model/utils.py" />
+        <option value="$PROJECT_DIR$/gen_model/main.py" />
       </list>
     </option>
   </component>
@@ -233,6 +240,12 @@
               <item name="Drawing" type="462c0819:PsiDirectoryNode" />
               <item name="gen_model" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Drawing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Drawing" type="462c0819:PsiDirectoryNode" />
+              <item name="gen_model" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -424,7 +437,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13169399" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -486,9 +498,19 @@
           <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gen_model/utils.py</url>
-          <line>269</line>
+          <url>file://$PROJECT_DIR$/gen_model/main.py</url>
+          <line>262</line>
           <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gen_model/main.py</url>
+          <line>256</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gen_model/main.py</url>
+          <line>252</line>
+          <option name="timeStamp" value="151" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -779,16 +801,6 @@ plt.show()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_model/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2030">
-          <caret line="292" column="50" selection-start-line="292" selection-start-column="50" selection-end-line="292" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/py3/lib/python3.6/site-packages/tensorflow/python/client/session.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19035">
@@ -796,19 +808,9 @@ plt.show()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_model/rnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2955">
-          <caret line="229" column="52" selection-start-line="229" selection-start-column="52" selection-end-line="229" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen_model/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2685">
+        <state relative-caret-position="-1084">
           <caret line="190" column="46" selection-start-line="190" selection-start-column="46" selection-end-line="190" selection-end-column="46" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
@@ -820,15 +822,41 @@ plt.show()</expression-string>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_model/data_gen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="66" column="6" selection-start-line="66" selection-start-column="6" selection-end-line="77" selection-end-column="50" />
+        <state relative-caret-position="251">
+          <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_model/rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="229" column="52" selection-start-line="229" selection-start-column="52" selection-end-line="229" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_model/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="270" column="22" selection-start-line="270" selection-start-column="22" selection-end-line="270" selection-end-column="22" />
+        <state relative-caret-position="413">
+          <caret line="224" selection-start-line="224" selection-end-line="224" />
+          <folding>
+            <element signature="e#13724#14086#0" />
+            <element signature="e#14115#14672#0" />
+            <element signature="e#14711#15100#0" />
+            <element signature="e#15349#16871#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_model/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="254" selection-end-column="101" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

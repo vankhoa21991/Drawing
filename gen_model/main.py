@@ -244,13 +244,17 @@ def generate(args):
     )
 
     # loads the weights from checkpoint into our model
-    load_checkpoint(sess, FLAGS.log_root)
+    # load_checkpoint(sess, FLAGS.log_root)
 
     q, x, s, index_char = data_set.random_batch()
 
     print(label2char.get(index_char[0],None)[0])
 
-    draw_strokes(to_normal_strokes(x[0]), svg_fpath='sample/origin_' + label2char.get(index_char[0],None)[0] + '.svg')
+    line_rebuild = strokes52lines(x)
+
+    plot_char(lines2pts([line_rebuild])[0], 'sample/origin_' + label2char.get(index_char[0],None)[0])
+
+    # draw_strokes(to_normal_strokes(x[0]), svg_fpath='sample/origin_' + label2char.get(index_char[0],None)[0] + '.svg')
     # 0: ve 1: nhac len
     # for i in range(len(q)):
     #     char = label2char.get(index_char[i], None)
@@ -277,7 +281,7 @@ if __name__ == "__main__":
         parser.add_argument('--data_dir', default='/home/lupin/Cinnamon/Flaxscanner/Drawing/data/')
         parser.add_argument('--model_dir', default='model/')
 
-    parser.add_argument('--mode', default='train', type=str)
+    parser.add_argument('--mode', default='tran', type=str)
     parser.add_argument('--num_epochs', default= 100000, type=int)
     parser.add_argument('--hidden_size', default=1000, type=int)
     parser.add_argument('--learning_rate', default=1e-3, type=float)

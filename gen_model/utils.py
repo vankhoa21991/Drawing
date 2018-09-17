@@ -19,7 +19,7 @@ def load_data(data_dir='',model_dir=''):
     chars_pts, LB = [], []
     data = []
 
-    for file in list_files[:50]:
+    for file in list_files[:2]:
 
         if file[-9:] == '_lbls.txt':
             file_name = file[:3]
@@ -448,8 +448,8 @@ def to_normal_strokes(big_stroke):
     l = len(big_stroke)
   result = np.zeros((l, 3))
   result[:, 0:2] = big_stroke[0:l, 0:2]
-  result[:, 2] = 1-big_stroke[0:l, 2]
-  result[-1, 2] = 1 # end char
+  result[:, 2] = big_stroke[0:l, 3]
+  # result[-1, 2] = 1 # end char
   return result
 
 def draw_lines(Lines):
