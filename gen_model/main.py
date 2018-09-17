@@ -252,7 +252,13 @@ def generate(args):
 
     line_rebuild = strokes52lines(x)
 
-    plot_char(lines2pts([line_rebuild])[0], 'sample/origin_' + label2char.get(index_char[0],None)[0])
+    l=0
+    for i in range(len(x[0])):
+        if x[0][i, 3] > 0:
+            l += 1
+
+
+    plot_char(lines2pts(line_rebuild)[0][:l+1], 'sample/origin_' + label2char.get(index_char[0],None)[0])
 
     # draw_strokes(to_normal_strokes(x[0]), svg_fpath='sample/origin_' + label2char.get(index_char[0],None)[0] + '.svg')
     # 0: ve 1: nhac len
@@ -278,8 +284,9 @@ if __name__ == "__main__":
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Drawing/data/')
         parser.add_argument('--model_dir', default='/mnt/DATA/lupin/Drawing/gen_model/model/')
     else:
-        parser.add_argument('--data_dir', default='/home/lupin/Cinnamon/Flaxscanner/Drawing/data/')
-        parser.add_argument('--model_dir', default='model/')
+        parser.add_argument('--data_dir', default='/home/lupin/Cinnamon/Flaxscanner/Dataset/Drawing/')
+        parser.add_argument('--sample_dir', default='sample/')
+        parser.add_argument('--model_dir', default='/home/lupin/Cinnamon/Flaxscanner/Models/Drawing/gen_model/')
 
     parser.add_argument('--mode', default='tran', type=str)
     parser.add_argument('--num_epochs', default= 100000, type=int)
