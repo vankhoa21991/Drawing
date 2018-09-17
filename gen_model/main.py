@@ -60,7 +60,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
     valid_cost = 0.0
 
     # main train loop
-    embedding_init = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0,32)})
+    embedding_init = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0,args.batch_size)})
 
     start = time.time()
 
@@ -90,7 +90,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
         print('Ps: ' + str(ps))
         if step % (args.save_every/2)  == 0 and step > 0:
             
-            embedding_after = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0, 32)})  
+            embedding_after = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0, args.batch_size)})
             print('Change in embedding matrix: ' + str(np.sum(abs(embedding_after - embedding_init))))
 
             end = time.time()

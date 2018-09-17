@@ -23,10 +23,10 @@ class Generation_model(object):
 
     self.global_step = tf.Variable(0, name='global_step', trainable=False)
 
-    self.sequence_lengths = tf.placeholder(dtype=tf.int32, shape=[None,], name='seq_len')
-    self.input_data = tf.placeholder(dtype=tf.float32,shape=[None, None, 5], name='input')
+    self.sequence_lengths = tf.placeholder(dtype=tf.int32, shape=[args.batch_size,], name='seq_len')
+    self.input_data = tf.placeholder(dtype=tf.float32,shape=[args.batch_size, args.max_seq_len+1, 5], name='input')
 
-    self.index_chars = tf.placeholder(dtype=tf.int32, shape=[None,], name='char_index')
+    self.index_chars = tf.placeholder(dtype=tf.int32, shape=[args.batch_size,], name='char_index')
 
     # The target/expected vectors of strokes
     self.output_x = self.input_data[:, 1:args.max_seq_len + 1, :]
@@ -128,10 +128,10 @@ class Generation_model(object):
       # Zero out loss terms beyond N_s, the last actual stroke
       result1 = tf.multiply(logPd, fs)
 
-      # fs = 1.0 - pen_data[:, 2]  # use training model for this
-      # fs = tf.reshape(fs, [-1, 1])
+      fs = 1.0 - pen_data[:, 2]  # use training model for this
+      fs = tf.reshape(fs, [-1, 1])
       # Zero out loss terms beyond N_s, the last actual stroke
-      # result1 = tf.multiply(logPd, fs)
+      result1 = tf.multiply(result1, fs)
 
       # result2: loss wrt pen state, (L_p in equation 9)
       #p = tf.nn.softmax(z_pen_logits)
