@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41121d4c-46bb-486c-81df-3375551ff1bb" name="Default" comment="finish GRU">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gen_model/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/rnn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gen_model/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +15,7 @@
     <session id="56723511">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="26" />
+          <entry key="project.closed" value="27" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
@@ -55,7 +52,7 @@
         <counts>
           <entry key="Python Console" value="1216" />
           <entry key="json" value="2" />
-          <entry key="py" value="14322" />
+          <entry key="py" value="14337" />
           <entry key="txt" value="10" />
         </counts>
       </usages-collector>
@@ -63,7 +60,7 @@
         <counts>
           <entry key="JSON" value="2" />
           <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Python" value="15538" />
+          <entry key="Python" value="15553" />
         </counts>
       </usages-collector>
     </session>
@@ -73,11 +70,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_model/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
+            <state relative-caret-position="273">
+              <caret line="274" column="9" lean-forward="true" selection-start-line="274" selection-start-column="9" selection-end-line="274" selection-end-column="9" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
-                <marker date="1537166886483" expanded="true" signature="7802:10058" ph="..." />
+                <marker date="1537167308883" expanded="true" signature="7802:10058" ph="..." />
               </folding>
             </state>
           </provider>
@@ -95,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_model/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="389" lean-forward="true" selection-start-line="389" selection-end-line="389" />
+            <state relative-caret-position="353">
+              <caret line="99" column="37" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -105,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/gen_model/rnn.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1080">
-              <caret line="229" column="52" lean-forward="true" selection-start-line="229" selection-start-column="52" selection-end-line="229" selection-end-column="52" />
+              <caret line="229" column="52" selection-start-line="229" selection-start-column="52" selection-end-line="229" selection-end-column="52" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -117,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/gen_model/model.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="190" column="46" lean-forward="true" selection-start-line="190" selection-start-column="46" selection-end-line="190" selection-end-column="46" />
+              <caret line="190" column="46" selection-start-line="190" selection-start-column="46" selection-end-line="190" selection-end-column="46" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
                 <element signature="e#5328#5986#0" />
@@ -183,9 +180,9 @@
         <option value="$PROJECT_DIR$/Test/test_GRU.py" />
         <option value="$PROJECT_DIR$/Test/rnn-from-scratch/lstm.py" />
         <option value="$PROJECT_DIR$/gen_model/data_gen.py" />
-        <option value="$PROJECT_DIR$/gen_model/utils.py" />
         <option value="$PROJECT_DIR$/gen_model/model.py" />
         <option value="$PROJECT_DIR$/gen_model/rnn.py" />
+        <option value="$PROJECT_DIR$/gen_model/utils.py" />
         <option value="$PROJECT_DIR$/gen_model/main.py" />
       </list>
     </option>
@@ -430,14 +427,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13169399" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13169399" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32540542" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32540542" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.28324324" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -797,7 +793,7 @@ plt.show()</expression-string>
     <entry file="file://$PROJECT_DIR$/gen_model/model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="190" column="46" lean-forward="true" selection-start-line="190" selection-start-column="46" selection-end-line="190" selection-end-column="46" />
+          <caret line="190" column="46" selection-start-line="190" selection-start-column="46" selection-end-line="190" selection-end-column="46" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
             <element signature="e#5328#5986#0" />
@@ -812,7 +808,7 @@ plt.show()</expression-string>
     <entry file="file://$PROJECT_DIR$/gen_model/rnn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
-          <caret line="229" column="52" lean-forward="true" selection-start-line="229" selection-start-column="52" selection-end-line="229" selection-end-column="52" />
+          <caret line="229" column="52" selection-start-line="229" selection-start-column="52" selection-end-line="229" selection-end-column="52" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -821,18 +817,18 @@ plt.show()</expression-string>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_model/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="389" lean-forward="true" selection-start-line="389" selection-end-line="389" />
+        <state relative-caret-position="353">
+          <caret line="99" column="37" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_model/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
+        <state relative-caret-position="273">
+          <caret line="274" column="9" lean-forward="true" selection-start-line="274" selection-start-column="9" selection-end-line="274" selection-end-column="9" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-            <marker date="1537166886483" expanded="true" signature="7802:10058" ph="..." />
+            <marker date="1537167308883" expanded="true" signature="7802:10058" ph="..." />
           </folding>
         </state>
       </provider>

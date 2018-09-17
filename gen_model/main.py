@@ -270,8 +270,8 @@ if __name__ == "__main__":
     server = False
 
     if server == True:
-        parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Drawing/recog_model/model/')
-        parser.add_argument('--model_dir', default='/mnt/DATA/lupin/Drawing/recog_model/model/')
+        parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Drawing/data/')
+        parser.add_argument('--model_dir', default='/mnt/DATA/lupin/Drawing/gen_model/model/')
     else:
         parser.add_argument('--data_dir', default='/home/lupin/Cinnamon/Flaxscanner/Drawing/data/')
         parser.add_argument('--model_dir', default='model/')

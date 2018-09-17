@@ -97,7 +97,7 @@ def load_data(data_dir='',model_dir=''):
     print('Max length: ' + str(length[0]) + '  Average length: ' + str(int(length[1])))
 
     # load encode file
-    char2label = json.load(open(data_dir + 'encode_kanji.json'))
+    char2label = json.load(open(model_dir + 'encode_kanji.json'))
     label2char = {}
     for k, v in char2label.items():
         label2char[v] = k
