@@ -86,12 +86,11 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
             model.cost,  model.final_state,
             model.global_step, model.train_op], feed)
 
-        embedding_after = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0, 32)})
-
-        a = abs(embedding_after - embedding_init)
-        print(np.sum(a))
-
+       
         if step % (args.save_every/2)  == 0 and step > 0:
+            
+            embedding_after = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0, 32)})  
+            print('Change in embedding matrix: ' + str(np.sum(abs(embedding_after - embedding_init))))
 
             end = time.time()
             time_taken = end - start
@@ -258,7 +257,7 @@ def generate(args):
             l += 1
 
 
-    plot_char(lines2pts(line_rebuild)[0][:l+1], 'sample/origin_' + label2char.get(index_char[0],None)[0])
+    plot_char(args.sample_dir,lines2pts(line_rebuild)[0][:l+1], label2char.get(index_char[0],None)[0])
 
     # draw_strokes(to_normal_strokes(x[0]), svg_fpath='sample/origin_' + label2char.get(index_char[0],None)[0] + '.svg')
     # 0: ve 1: nhac len
@@ -268,9 +267,9 @@ def generate(args):
 
     sample_strokes, m = sample(sess, sample_model, seq_len=args.max_seq_len, index_char = index_char[0], args = args)
     #print(sample_strokes)
-    strokes = to_normal_strokes(sample_strokes)
+    #strokes = to_normal_strokes(sample_strokes)
 
-    draw_strokes(strokes)
+    #draw_strokes(strokes)
 
 if __name__ == "__main__":
     import argparse
@@ -281,14 +280,15 @@ if __name__ == "__main__":
     server = False
 
     if server == True:
-        parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Drawing/data/')
-        parser.add_argument('--model_dir', default='/mnt/DATA/lupin/Drawing/gen_model/model/')
+        parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Flaxscanner/Dataset/Drawing/')
+        parser.add_argument('--sample_dir', default='sample/')
+        parser.add_argument('--model_dir', default='/mnt/DATA/lupin/Flaxscanner/Models/Drawing/gen_model/')
     else:
         parser.add_argument('--data_dir', default='/home/lupin/Cinnamon/Flaxscanner/Dataset/Drawing/')
         parser.add_argument('--sample_dir', default='sample/')
         parser.add_argument('--model_dir', default='/home/lupin/Cinnamon/Flaxscanner/Models/Drawing/gen_model/')
 
-    parser.add_argument('--mode', default='tran', type=str)
+    parser.add_argument('--mode', default='train', type=str)
     parser.add_argument('--num_epochs', default= 100000, type=int)
     parser.add_argument('--hidden_size', default=1000, type=int)
     parser.add_argument('--learning_rate', default=1e-3, type=float)
