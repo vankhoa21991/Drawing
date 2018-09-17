@@ -290,7 +290,7 @@ if __name__ == "__main__":
     parser.add_argument('--out_dim', default=1000, type=int)
     parser.add_argument('--num_mixture', default=30, type=int)
     parser.add_argument('--embedding_len', default=500, type=int)
-    parser.add_argument('--batch_size', default=500, type=int)
+    parser.add_argument('--batch_size', default=32, type=int)
     parser.add_argument('--save_every', default=50, type=int)
     parser.add_argument('--num_gpu', default='2', type=int)
     parser.add_argument('--is_resume', default=False, type=bool)

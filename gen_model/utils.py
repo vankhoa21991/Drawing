@@ -266,6 +266,10 @@ def normalize(Lines):
                 dxL.append((1 /3) * leng * ((x2 - mux) ** 2 + (x1 - mux) ** 2 + (x1 - mux) * (x2 - mux)))
         deltax = np.sqrt(np.sum(dxL) / np.sum(Length))
 
+        if deltax == 0:
+            print('Found deltax equal 0')
+            deltax = 1
+
 
         for s in range(len(Lines[c])):  # stroke: Lines[c][s]
             # normalize
