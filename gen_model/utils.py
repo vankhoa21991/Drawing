@@ -19,7 +19,7 @@ def load_data(data_dir='',model_dir=''):
     chars_pts, LB = [], []
     data = []
 
-    for file in list_files[:2]:
+    for file in list_files[:50]:
 
         if file[-9:] == '_lbls.txt':
             file_name = file[:3]
@@ -90,7 +90,7 @@ def load_data(data_dir='',model_dir=''):
         ALL_LINES += strokes5[id_person]
         ALL_LBLS += lbls_all[id_person]
 
-    create_encode_decode_file(ALL_LBLS,model_dir)
+    #create_encode_decode_file(ALL_LBLS,model_dir)
     length = [np.max([len(x) for x in ALL_LINES]), np.mean([len(x) for x in ALL_LINES])]
 
     print('Max length: ' + str(length[0]) + '  Average length: ' + str(int(length[1])))
