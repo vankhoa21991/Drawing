@@ -121,7 +121,7 @@ class Generation_model(object):
       # result2: loss wrt pen state, (L_p in equation 9)
       p = tf.nn.softmax(z_pen_logits)
       logp = tf.log(p + epsilon)
-      w = tf.constant([1, 5, 100],dtype=tf.float32)
+      w = tf.constant([100, 5, 1],dtype=tf.float32)
 
       result2 = tf.multiply(tf.multiply(w,pen_data),logp)
       result2 = tf.reduce_sum(result2, 1, keepdims=True)
@@ -236,7 +236,7 @@ def sample(sess, model, seq_len=250, index_char=None, args = ''):
     return sum(out)
 
   prev_x = np.zeros((1, 1, 5), dtype=np.float32)
-  prev_x[0, 0, 2] = 1  # initially, we want to see beginning of new stroke
+  #prev_x[0, 0, 2] = 1  # initially, we want to see beginning of new stroke
   # if z is None:
   #   z = np.random.randn(1, model.hps.z_size)  # not used if unconditional
   #
