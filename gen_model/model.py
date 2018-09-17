@@ -41,19 +41,24 @@ class Generation_model(object):
 
     chars = tf.nn.embedding_lookup(self.embedding_matrix, self.index_chars)
 
-    self.initial_state = tf.placeholder(shape=[None, 2*args.hidden_size], dtype=tf.float32, name='initial_state')
+    self.initial_state = tf.placeholder(shape=[None, args.out_dim + args.hidden_size], dtype=tf.float32, name='initial_state')
 
     # if args.dropout_rate > 0:
     #   cell = tf.contrib.rnn.DropoutWrapper(cell, output_keep_prob=args.dropout_rate)
 
-    self.cell = rnn.GRU_embedding(x_t=self.input_x,num_units=args.hidden_size, c = chars, state = self.initial_state)
+    self.cell = rnn.GRU_embedding(x_t=self.input_x,
+                                  num_units=args.hidden_size,
+                                  c = chars,
+                                  state = self.initial_state,
+                                  pen_dim=args.pen_dim,
+                                  out_dim = args.out_dim)
     # self.cell = rnn.GRU(x_t=self.input_x, hidden_size=args.hidden_size)
     # self.initial_state = self.cell.zero_state(batch_size=args.batch_size, dtype=tf.float32)
 
 
-    output = tf.reshape(self.cell.out, (2,-1,500))[1,:,:]
-    output = tf.reshape(output, [-1, args.hidden_size])
-    last_state = tf.reshape(self.cell.out, (2, -1, 500))[0, :, :]
+    output = tf.reshape(self.cell.out, (2,-1, args.hidden_size))[1,:,:]
+    output = tf.reshape(output, [-1, args.out_dim])
+    # last_state = tf.reshape(self.cell.out, (2, -1, 500))[0, :, :]
 
     self.num_mixture = args.num_mixture
 
@@ -65,16 +70,16 @@ class Generation_model(object):
     n_state = 3
 
     with tf.variable_scope('RNN'):
-      self.W_gmm_ = tf.get_variable('w_gmm', [args.hidden_size, n_direction], initializer=None)
+      self.W_gmm_ = tf.get_variable('w_gmm', [args.out_dim, n_direction], initializer=None)
       self.b_gmm = tf.get_variable('b_gmm', [n_direction], initializer=None)
 
-      self.W_state = tf.get_variable('w_state', [args.hidden_size, n_state], initializer=None)
+      self.W_state = tf.get_variable('w_state', [args.out_dim, n_state], initializer=None)
       self.b_state = tf.get_variable('b_state', [n_state], initializer=None)
 
     o_gmm = tf.nn.xw_plus_b(output, self.W_gmm_, self.b_gmm)
     o_state = tf.nn.xw_plus_b(output,self.W_state, self.b_state)
 
-    self.final_state = tf.reshape(self.cell.out,(-1,2*args.hidden_size))
+    self.final_state = tf.reshape(self.cell.out,(-1,args.hidden_size + args.out_dim))
 
     # NB: the below are inner functions, not methods of Model
     def tf_1d_normal(x1, x2, mu1, mu2, s1, s2):
@@ -90,7 +95,7 @@ class Generation_model(object):
 
       result1 = tf.div(z1, denom1)
       result2 = tf.div(z2, denom2)
-      return result1*result2
+      return tf.multiply(result1,result2)
 
     def get_lossfunc(z_pi, z_mu1, z_mu2, z_sigma1, z_sigma2,
                      z_pen_logits, x1_data, x2_data, pen_data):
@@ -149,11 +154,9 @@ class Generation_model(object):
 
     def get_state_coef(output):
       z = output
-      z_pen_logits = z[:, 0:3]  # pen states
+      z_pen_logits = z  # pen states
       z_pen = tf.nn.softmax(z_pen_logits)
       return  [z_pen, z_pen_logits]
-
-
 
     out_gmm = get_mixture_coef(o_gmm)
     [o_pi, o_mu1, o_mu2, o_sigma1, o_sigma2] = out_gmm
@@ -173,18 +176,15 @@ class Generation_model(object):
 
     # reshape target model so that it is compatible with prediction shape
     target = tf.reshape(self.output_x, [-1, 5])
-    [x1_data, x2_data, eos_data, eoc_data, cont_data] = tf.split(target, 5, 1)
-    pen_data = tf.concat([eos_data, eoc_data, cont_data], 1)
+    [x1_data, x2_data, cont_data, eos_data, eoc_data] = tf.split(target, 5, 1)
+    pen_data = tf.concat([cont_data, eos_data, eoc_data], 1)
 
     lossfunc = get_lossfunc(o_pi, o_mu1, o_mu2, o_sigma1, o_sigma2,
                             o_pen_logits, x1_data, x2_data, pen_data)
 
-    self.r_cost = lossfunc
+    self.cost = lossfunc
 
     self.lr = tf.Variable(args.learning_rate, trainable=False)
-
-
-    self.cost = self.r_cost
 
     optimizer = tf.train.AdamOptimizer(self.lr)
 
