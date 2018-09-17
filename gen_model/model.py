@@ -134,9 +134,9 @@ class Generation_model(object):
       result1 = tf.multiply(result1, fs)
 
       # result2: loss wrt pen state, (L_p in equation 9)
-      #p = tf.nn.softmax(z_pen_logits)
-      #logp = tf.log(p + epsilon)
-      #w = tf.constant([1, 5, 100],dtype=tf.float32)
+      p = tf.nn.softmax(z_pen_logits)
+      logp = tf.log(p + epsilon)
+      w = tf.constant([1, 5, 100],dtype=tf.float32)
 
       #result2 = tf.multiply(tf.multiply(w,pen_data),logp)
       #result2 = -tf.reduce_sum(result2, 1, keepdims=True)
@@ -146,10 +146,10 @@ class Generation_model(object):
       #result2 = -tf.log(Ps + epsilon)  # avoid log(0)
         
       result2 = tf.nn.softmax_cross_entropy_with_logits(
-          labels=pen_data, logits=z_pen_logits)
+          labels=tf.multiply(w,pen_data), logits=z_pen_logits)
       result2 = tf.reshape(result2, [-1, 1])
-      if not args.is_training:  # eval mode, mask eos columns
-        result2 = tf.multiply(result2, fs)
+      #if not args.is_training:  # eval mode, mask eos columns
+       # result2 = tf.multiply(result2, fs)
       
       return result1,result2
 
