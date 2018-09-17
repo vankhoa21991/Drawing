@@ -325,6 +325,9 @@ def clean_one_point_strokes(char_pts):
         if len(char_out[s]) == 1:
             print('Found strokes with one point')
             index.append(s)
+        if char_out[s] == char_out[s - 1]:
+            print('Found double points')
+            index.append(s)
     if index:
         for inx in sorted(index, reverse=True):
             del char_out[inx]
