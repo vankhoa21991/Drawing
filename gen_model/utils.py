@@ -18,6 +18,7 @@ def load_data(data_dir='',model_dir=''):
     chars, lbls = [], []
     chars_pts, LB = [], []
     data = []
+
     for file in list_files[:50]:
 
         if file[-9:] == '_lbls.txt':
@@ -71,15 +72,24 @@ def load_data(data_dir='',model_dir=''):
     #     for c in range(len(chars_pts_normalized[i])):
     #         plot_char(chars_pts_normalized[i][c], lbls_all[i][c])
 
-
-    Lines_input = []
+    strokes5 = []
+    line_rebuild = []
     for i in range(len(Lines_normalized)):
-        Lines_input.append(lines2strokes5(Lines_normalized[i]))
+        li = Lines_normalized[i]
+        s5 = lines2strokes5(li)
+        line_rebuild = strokes52lines(s5)
+
+        # plot_char(lines2pts([line_rebuild])[0], 'bc')
+        # diff = li - line_rebuild
+
+        strokes5.append(s5)
+
+    #draw_lines(strokes5)
 
     ALL_LINES = []
     ALL_LBLS = []
     for id_person in range(len(lbls_all)):
-        ALL_LINES += Lines_input[id_person]
+        ALL_LINES += strokes5[id_person]
         ALL_LBLS += lbls_all[id_person]
 
     # create_encode_decode_file(ALL_LBLS,model_dir)
@@ -191,6 +201,33 @@ def lines2strokes5(Lines_in):
 
         Chars.append(Char)
     return Chars
+
+def strokes52lines(s5):
+    # stroke 5: chars # [dx,dy ,s1, s2, s3]
+    Lines = []
+    for c in range(len(s5)):         # char c
+        Char = []
+        stroke = []
+        for s in range(len(s5[c])):  # stroke s
+            if s == 0:
+                x1 = 0
+                x2 = s5[c][s][0]
+                y1 = 0
+                y2 = s5[c][s][1]
+            else:
+                x1 = sum([s5[c][l][0]  for l in range(s)])
+                x2 = sum([s5[c][l][0]  for l in range(s+1)])
+                y1 = sum([s5[c][l][1]  for l in range(s)])
+                y2 = sum([s5[c][l][1]  for l in range(s+1)])
+            if s5[c][s][2] == 1:
+                stroke.append([x1,x2,y1,y2])
+            else:
+                Char.append(stroke)
+                stroke = []
+
+
+        Lines.append(Char)
+    return Lines
 
 def normalize(Lines):
     for c in range(len(Lines)):  # char: LInes[c]
@@ -389,6 +426,28 @@ def to_normal_strokes(big_stroke):
   result[-1, 2] = 1 # end char
   return result
 
+def draw_lines(Lines):
+    max_len = 200
+    result = np.zeros(( max_len +1, 5), dtype=float)
+    l = len(Lines[0][0])
+    assert l <= max_len
+    for i in range(l):
+        result[i, 0:2] = Lines[0][0][i][0:2]
+        result[i, 3] = Lines[0][0][i][3]
+        result[i, 2] = Lines[0][0][i][2]  # 1 - result[i, 0:l, 2]
+    result[l - 1, 4] = 1
+    # put in the first token, as described in sketch-rnn methodology
+    result[1:, :] = result[:-1, :]
+    result[0, :] = 0
+    result[0, 2] = 1
+    result[0, 3] = 0
+    result[0, 4] = 0
+
+    q =to_normal_strokes(result)
+    draw_strokes(q)
+
+
+
 def get_bounds(data, factor=10):
   """Return bounds of data."""
   min_x = 0
@@ -431,29 +490,39 @@ def draw_strokes(data,
 
   strokes = []
   stroke = []
+
+  data = np.delete(data, 0, 0)
+
   for i in range(len(data)):
     stroke.append(data[i])
     if data[i,2] == 1:
       strokes.append(stroke)
       stroke = []
 
-
+  deltax = 0
+  deltay = 0
   for stroke in strokes:
-    lift_pen = 1
-    for point in stroke:
-      if (lift_pen == 1):
-        command = "m"
-        lift_pen = 0
-      elif (command != "l"):
-        command = "l"
-      else:
-        command = ""
-      x = float(point[0]) / 0.2
-      y = float(point[1]) / 0.1
-      p += command + str(x) + "," + str(y) + " "
-    the_color = "black"
-    # stroke_width = random.uniform(0.5, 1.4)
-    dwg.add(dwg.path(p).stroke(the_color, stroke_width).fill("none"))
+      lift_pen = 1
+
+      for point in stroke:
+          if (lift_pen == 1):
+              command = "m"
+              lift_pen = 0
+          elif (command != "l"):
+              command = "l"
+          else:
+              command = ""
+          x = float(point[0]) / factor
+          y = float(point[1]) / factor
+          p += command + str(x) + "," + str(y) + " "
+
+          deltax += x
+          deltay += y
+
+      the_color = "black"
+      # stroke_width = random.uniform(0.5, 1.4)
+      dwg.add(dwg.path(p).stroke(the_color, stroke_width).fill("none"))
+      p = "M%s,%s " % (abs_x + deltax, abs_y + deltay)
 
   # create simple filter to blur rectangle
   blur6_filter = dwg.defs.add(dwg.filter())

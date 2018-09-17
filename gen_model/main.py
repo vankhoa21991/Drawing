@@ -29,16 +29,14 @@ def evaluate_model(sess, model, data_set):
     feed = {model.input_data: x,
             model.sequence_lengths: s,
             model.index_chars: index_chars,
-            model.initial_state: np.zeros([args.max_seq_len, 2 * args.hidden_size]),
+            model.initial_state: np.zeros([args.max_seq_len, args.out_dim + args.hidden_size]),
             }
 
-    (cost, r_cost) = sess.run([model.cost, model.r_cost], feed)
+    cost = sess.run(model.cost, feed)
     total_cost += cost
-    total_r_cost += r_cost
 
   total_cost /= (data_set.num_batches)
-  total_r_cost /= (data_set.num_batches)
-  return (total_cost, total_r_cost)
+  return total_cost
 
 def train(sess, model, eval_model, train_set, valid_set, test_set,args):
     summary_writer = tf.summary.FileWriter(FLAGS.log_root)
@@ -80,27 +78,26 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
             model.input_data: x,
             model.sequence_lengths: s,
             model.lr: curr_learning_rate,
-            model.initial_state: np.zeros([args.max_seq_len, 2*args.hidden_size]),
+            model.initial_state: np.zeros([args.max_seq_len, args.out_dim+args.hidden_size]),
             model.index_chars: index_chars,
         }
 
-        (train_cost, r_cost, _, train_step, _) = sess.run([
-            model.cost, model.r_cost, model.final_state,
+        (train_cost, _, train_step, _) = sess.run([
+            model.cost,  model.final_state,
             model.global_step, model.train_op], feed)
 
         embedding_after = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0, 32)})
 
         a = abs(embedding_after - embedding_init)
         print(np.sum(a))
-        if step % 20 == 0 and step > 0:
+
+        if step % (args.save_every/2)  == 0 and step > 0:
+
             end = time.time()
             time_taken = end - start
 
             cost_summ = tf.summary.Summary()
             cost_summ.value.add(tag='Train_Cost', simple_value=float(train_cost))
-            reconstr_summ = tf.summary.Summary()
-            reconstr_summ.value.add(
-                tag='Train_Reconstr_Cost', simple_value=float(r_cost))
             lr_summ = tf.summary.Summary()
             lr_summ.value.add(
                 tag='Learning_Rate', simple_value=float(curr_learning_rate))
@@ -109,15 +106,14 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
                 tag='Time_Taken_Train', simple_value=float(time_taken))
 
             output_format = ('step: %d, lr: %.6f,  cost: %.4f, '
-                             'recon: %.4f, train_time_taken: %.4f')
+                             'train_time_taken: %.4f')
             output_values = (step, curr_learning_rate,  train_cost,
-                             r_cost, time_taken)
+                            time_taken)
             output_log = output_format % output_values
 
             tf.logging.info(output_log)
 
             summary_writer.add_summary(cost_summ, train_step)
-            summary_writer.add_summary(reconstr_summ, train_step)
             summary_writer.add_summary(lr_summ, train_step)
             summary_writer.add_summary(time_summ, train_step)
             summary_writer.flush()
@@ -125,7 +121,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
 
         if step % args.save_every == 0 and step > 0:
 
-            (valid_cost, valid_r_cost) = evaluate_model(sess, eval_model, valid_set)
+            (valid_cost) = evaluate_model(sess, eval_model, valid_set)
 
             end = time.time()
             time_taken_valid = end - start
@@ -134,23 +130,20 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
             valid_cost_summ = tf.summary.Summary()
             valid_cost_summ.value.add(
                 tag='Valid_Cost', simple_value=float(valid_cost))
-            valid_reconstr_summ = tf.summary.Summary()
-            valid_reconstr_summ.value.add(
-                tag='Valid_Reconstr_Cost', simple_value=float(valid_r_cost))
+
             valid_time_summ = tf.summary.Summary()
             valid_time_summ.value.add(
                 tag='Time_Taken_Valid', simple_value=float(time_taken_valid))
 
-            output_format = ('best_valid_cost: %0.4f, valid_cost: %.4f, valid_recon: '
-                             '%.4f,  valid_time_taken: %.4f')
+            output_format = ('best_valid_cost: %0.4f, valid_cost: %.4f, '
+                             ' valid_time_taken: %.4f')
             output_values = (min(best_valid_cost, valid_cost), valid_cost,
-                             valid_r_cost, time_taken_valid)
+                             time_taken_valid)
             output_log = output_format % output_values
 
             tf.logging.info(output_log)
 
             summary_writer.add_summary(valid_cost_summ, train_step)
-            summary_writer.add_summary(valid_reconstr_summ, train_step)
             summary_writer.add_summary(valid_time_summ, train_step)
             summary_writer.flush()
 
@@ -172,7 +165,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
                 summary_writer.add_summary(best_valid_cost_summ, train_step)
                 summary_writer.flush()
 
-                (eval_cost, eval_r_cost) = evaluate_model(sess, eval_model, test_set)
+                (eval_cost) = evaluate_model(sess, eval_model, test_set)
 
                 end = time.time()
                 time_taken_eval = end - start
@@ -180,22 +173,18 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
 
                 eval_cost_summ = tf.summary.Summary()
                 eval_cost_summ.value.add(tag='Eval_Cost', simple_value=float(eval_cost))
-                eval_reconstr_summ = tf.summary.Summary()
-                eval_reconstr_summ.value.add(
-                    tag='Eval_Reconstr_Cost', simple_value=float(eval_r_cost))
                 eval_time_summ = tf.summary.Summary()
                 eval_time_summ.value.add(
                     tag='Time_Taken_Eval', simple_value=float(time_taken_eval))
 
-                output_format = ('eval_cost: %.4f, eval_recon: %.4f, '
+                output_format = ('eval_cost: %.4f, '
                                  'eval_time_taken: %.4f')
-                output_values = (eval_cost, eval_r_cost, time_taken_eval)
+                output_values = (eval_cost, time_taken_eval)
                 output_log = output_format % output_values
 
                 tf.logging.info(output_log)
 
                 summary_writer.add_summary(eval_cost_summ, train_step)
-                summary_writer.add_summary(eval_reconstr_summ, train_step)
                 summary_writer.add_summary(eval_time_summ, train_step)
                 summary_writer.flush()
 
@@ -291,12 +280,14 @@ if __name__ == "__main__":
     parser.add_argument('--mode', default='train', type=str)
     parser.add_argument('--num_epochs', default= 100000, type=int)
     parser.add_argument('--hidden_size', default=1000, type=int)
-    parser.add_argument('--learning_rate', default=0.001, type=float)
+    parser.add_argument('--learning_rate', default=1e-3, type=float)
     parser.add_argument('--min_learning_rate', default=1e-6, type=float)
     parser.add_argument('--grad_clip', default=1.0, type=int)
     parser.add_argument('--decay_rate', default=0.9999, type=int)
     parser.add_argument('--dropout_rate', default=0.2, type=float)
-    parser.add_argument('--max_seq_len', default=160, type=int)
+    parser.add_argument('--max_seq_len', default=200, type=int)
+    parser.add_argument('--pen_dim', default=300, type=int)
+    parser.add_argument('--out_dim', default=1000, type=int)
     parser.add_argument('--num_mixture', default=30, type=int)
     parser.add_argument('--embedding_len', default=500, type=int)
     parser.add_argument('--batch_size', default=512, type=int)
