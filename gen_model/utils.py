@@ -18,7 +18,8 @@ def load_data(data_dir='',model_dir=''):
     chars, lbls = [], []
     chars_pts, LB = [], []
     data = []
-    for file in list_files[:1]:
+
+    for file in list_files[:50]:
 
         if file[-9:] == '_lbls.txt':
             file_name = file[:3]
@@ -49,7 +50,7 @@ def load_data(data_dir='',model_dir=''):
 
     for w in range(len(chars_pts_after_clean)):
         for c in range(len(chars_pts_after_clean[w])):
-            chars_pts_after_clean[w][c] = clean_redundant_points(chars_pts_after_clean[w][c],0.99)
+            chars_pts_after_clean[w][c] = clean_redundant_points(chars_pts_after_clean[w][c],0.9)
 
 
 
@@ -353,7 +354,7 @@ def clean_redundant_points(char_pts, Tcos):
 
     # get width and height of a character
     width, height = get_width_height(char_pts)
-    Tdis = 0.01*np.max([width,height])
+    Tdis = 0.05*np.max([width,height])
 
     strokes = []
     for s in range(len(char_pts)):

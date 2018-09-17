@@ -60,6 +60,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
     valid_cost = 0.0
 
     # main train loop
+    embedding_init = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0,32)})
 
     start = time.time()
 
@@ -67,7 +68,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
 
         step = sess.run(model.global_step)
 
-        embedding_init = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0,32)})
+       
 
         curr_learning_rate = ((args.learning_rate - args.min_learning_rate) *
                               (args.decay_rate) ** step + args.min_learning_rate)
@@ -89,7 +90,9 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
 
         a = abs(embedding_after - embedding_init)
         print(np.sum(a))
+
         if step % (args.save_every/2)  == 0 and step > 0:
+
             end = time.time()
             time_taken = end - start
 
@@ -191,10 +194,8 @@ def trainer(args):
     stroke_train, stroke_val, label_train, label_val, label2char, char2label, max_len,_,_ = load_data(args.data_dir, args.model_dir)
     vocabulary = len(label2char)
 
-    train_set = DataLoader(stroke_train, label_train, batch_size=args.batch_size,
-               max_seq_length=args.max_seq_len, embedding_len = args.embedding_len, trained_embedding= args.trained_embedding, vocabulary = vocabulary)
-    valid_set = DataLoader(stroke_val, label_val, batch_size=args.batch_size,
-               max_seq_length=args.max_seq_len, embedding_len = args.embedding_len, trained_embedding=args.trained_embedding, vocabulary = vocabulary)
+    train_set = DataLoader(stroke_train, label_train, batch_size=args.batch_size, max_seq_length=args.max_seq_len, embedding_len = args.embedding_len, vocabulary = vocabulary)
+    valid_set = DataLoader(stroke_val, label_val, batch_size=args.batch_size, max_seq_length=args.max_seq_len, embedding_len = args.embedding_len, vocabulary = vocabulary)
     test_set = valid_set
 
     reset_graph()
@@ -220,15 +221,15 @@ def generate(args):
 
     test_set = DataLoader(stroke_val, label_val, batch_size=args.batch_size,
                            max_seq_length=args.max_seq_len, embedding_len=args.embedding_len,
-                           trained_embedding=args.trained_embedding, vocabulary=vocabulary)
+                           vocabulary=vocabulary)
 
     train_set = DataLoader(stroke_train, label_train, batch_size=args.batch_size,
                           max_seq_length=args.max_seq_len, embedding_len=args.embedding_len,
-                          trained_embedding=args.trained_embedding, vocabulary=vocabulary)
+                          vocabulary=vocabulary)
 
     data_set = DataLoader(all_strokes, all_lbls, batch_size=args.batch_size,
                            max_seq_length=args.max_seq_len, embedding_len=args.embedding_len,
-                           trained_embedding=args.trained_embedding, vocabulary=vocabulary)
+                           vocabulary=vocabulary)
     # construct the sketch-rnn model here:
     reset_graph()
 
@@ -256,7 +257,7 @@ def generate(args):
     #     draw_strokes(to_normal_strokes(q[i]),svg_fpath='sample/origin_'+ char[0] + '.svg')
 
     sample_strokes, m = sample(sess, sample_model, seq_len=args.max_seq_len, index_char = index_char[0], args = args)
-    print(sample_strokes)
+    #print(sample_strokes)
     strokes = to_normal_strokes(sample_strokes)
 
     draw_strokes(strokes)
@@ -267,7 +268,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = False
+    server = True
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Drawing/data/')
@@ -289,8 +290,7 @@ if __name__ == "__main__":
     parser.add_argument('--out_dim', default=1000, type=int)
     parser.add_argument('--num_mixture', default=30, type=int)
     parser.add_argument('--embedding_len', default=500, type=int)
-    parser.add_argument('--trained_embedding', default=500, type=int)
-    parser.add_argument('--batch_size', default=32, type=int)
+    parser.add_argument('--batch_size', default=512, type=int)
     parser.add_argument('--save_every', default=50, type=int)
     parser.add_argument('--num_gpu', default='0', type=int)
     parser.add_argument('--is_resume', default=False, type=bool)
