@@ -21,7 +21,6 @@ class DataLoader(object):
                max_seq_length=250,
                limit=1000,
                embedding_len = 500,
-               trained_embedding=False,
                vocabulary = 0):
     self.batch_size = batch_size  # minibatch size
     self.max_seq_length = max_seq_length  # N_max in sketch-rnn paper
@@ -35,12 +34,6 @@ class DataLoader(object):
     self.charlabel = charlabel
     self.num_batches = int(len(charlabel) / self.batch_size)
     self.pad_strokes = sequence.pad_sequences(strokes, maxlen=max_seq_length, dtype='float')
-
-
-    if trained_embedding == True:
-        self.embedding_matrix = np.random.uniform(low=0, high=1, size=(vocabulary, embedding_len))
-    else:
-        self.embedding_matrix = np.random.uniform(low=0, high=1, size=(vocabulary, embedding_len ))
 
 
   def _get_batch_from_indices(self, indices):

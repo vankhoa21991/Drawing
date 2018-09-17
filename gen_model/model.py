@@ -267,10 +267,11 @@ def sample(sess, model, seq_len=250, index_char=None, args = ''):
       greedy = False
       temp = 1.0
 
-    idx = get_pi_idx(random.random(), o_pi[0], temp, greedy)
-
-    idx_eos = get_pi_idx(random.random(), o_pen[0], temp, greedy)
-    # idx_eos = np.argmax(o_pen[i])
+    #idx = get_pi_idx(random.random(), o_pi[0], temp, greedy)
+    idx = np.argmax(o_pi[0])
+    #idx_eos = get_pi_idx(random.random(), o_pen[0], temp, greedy)
+    
+    idx_eos = np.argmax(o_pen[0])
     eos = [0, 0, 0]
     eos[idx_eos] = 1
 

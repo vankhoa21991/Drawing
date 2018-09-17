@@ -205,10 +205,8 @@ def trainer(args):
     stroke_train, stroke_val, label_train, label_val, label2char, char2label, max_len,_,_ = load_data(args.data_dir, args.model_dir)
     vocabulary = len(label2char)
 
-    train_set = DataLoader(stroke_train, label_train, batch_size=args.batch_size,
-               max_seq_length=args.max_seq_len, embedding_len = args.embedding_len, trained_embedding= args.trained_embedding, vocabulary = vocabulary)
-    valid_set = DataLoader(stroke_val, label_val, batch_size=args.batch_size,
-               max_seq_length=args.max_seq_len, embedding_len = args.embedding_len, trained_embedding=args.trained_embedding, vocabulary = vocabulary)
+    train_set = DataLoader(stroke_train, label_train, batch_size=args.batch_size, max_seq_length=args.max_seq_len, embedding_len = args.embedding_len, vocabulary = vocabulary)
+    valid_set = DataLoader(stroke_val, label_val, batch_size=args.batch_size, max_seq_length=args.max_seq_len, embedding_len = args.embedding_len, vocabulary = vocabulary)
     test_set = valid_set
 
     reset_graph()
@@ -234,15 +232,15 @@ def generate(args):
 
     test_set = DataLoader(stroke_val, label_val, batch_size=args.batch_size,
                            max_seq_length=args.max_seq_len, embedding_len=args.embedding_len,
-                           trained_embedding=args.trained_embedding, vocabulary=vocabulary)
+                           vocabulary=vocabulary)
 
     train_set = DataLoader(stroke_train, label_train, batch_size=args.batch_size,
                           max_seq_length=args.max_seq_len, embedding_len=args.embedding_len,
-                          trained_embedding=args.trained_embedding, vocabulary=vocabulary)
+                          vocabulary=vocabulary)
 
     data_set = DataLoader(all_strokes, all_lbls, batch_size=args.batch_size,
                            max_seq_length=args.max_seq_len, embedding_len=args.embedding_len,
-                           trained_embedding=args.trained_embedding, vocabulary=vocabulary)
+                           vocabulary=vocabulary)
     # construct the sketch-rnn model here:
     reset_graph()
 
@@ -290,21 +288,20 @@ if __name__ == "__main__":
         parser.add_argument('--data_dir', default='/home/lupin/Cinnamon/Flaxscanner/Drawing/data/')
         parser.add_argument('--model_dir', default='model/')
 
-    parser.add_argument('--mode', default='tran', type=str)
+    parser.add_argument('--mode', default='train', type=str)
     parser.add_argument('--num_epochs', default= 100000, type=int)
     parser.add_argument('--hidden_size', default=1000, type=int)
-    parser.add_argument('--learning_rate', default=1e-4, type=float)
+    parser.add_argument('--learning_rate', default=0.001, type=float)
     parser.add_argument('--min_learning_rate', default=1e-6, type=float)
     parser.add_argument('--grad_clip', default=1.0, type=int)
     parser.add_argument('--decay_rate', default=0.9999, type=int)
     parser.add_argument('--dropout_rate', default=0.2, type=float)
-    parser.add_argument('--max_seq_len', default=200, type=int)
+    parser.add_argument('--max_seq_len', default=160, type=int)
     parser.add_argument('--num_mixture', default=30, type=int)
     parser.add_argument('--embedding_len', default=500, type=int)
-    parser.add_argument('--trained_embedding', default=500, type=int)
-    parser.add_argument('--batch_size', default=500, type=int)
+    parser.add_argument('--batch_size', default=512, type=int)
     parser.add_argument('--save_every', default=50, type=int)
-    parser.add_argument('--num_gpu', default='1', type=int)
+    parser.add_argument('--num_gpu', default='0', type=int)
     parser.add_argument('--is_resume', default=False, type=bool)
 
     args = parser.parse_args()
