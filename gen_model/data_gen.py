@@ -56,7 +56,7 @@ class DataLoader(object):
   def random_batch(self):
     """Return a randomised portion of the training model."""
     idx = np.random.permutation(range(0, len(self.strokes)))[0:self.batch_size]
-    idx = list(range(30,30+32,1))
+    #idx = list(range(30,30+32,1))
     return self._get_batch_from_indices(idx)
 
   def pad_batch(self, batch, max_len):

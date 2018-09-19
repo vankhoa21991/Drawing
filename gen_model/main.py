@@ -259,7 +259,7 @@ def generate(args):
             l += 1
 
 
-    plot_char(args.sample_dir,lines2pts(line_rebuild)[0][:l+1], label2char.get(index_char[0],None)[0])
+    #plot_char(args.sample_dir,lines2pts(line_rebuild)[0][:l+1], label2char.get(index_char[0],None)[0])
 
     # draw_strokes(to_normal_strokes(x[0]), svg_fpath='sample/origin_' + label2char.get(index_char[0],None)[0] + '.svg')
     # 0: ve 1: nhac len
@@ -290,7 +290,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = True
+    server = False
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Flaxscanner/Dataset/Drawing/')
@@ -314,7 +314,7 @@ if __name__ == "__main__":
     parser.add_argument('--out_dim', default=1000, type=int)
     parser.add_argument('--num_mixture', default=30, type=int)
     parser.add_argument('--embedding_len', default=500, type=int)
-    parser.add_argument('--batch_size', default=500, type=int)
+    parser.add_argument('--batch_size', default=32, type=int)
     parser.add_argument('--is_training', default=True, type=bool)
     parser.add_argument('--save_every', default=50, type=int)
     parser.add_argument('--num_gpu', default='3', type=int)
