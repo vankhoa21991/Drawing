@@ -158,7 +158,7 @@ class Generation_model(object):
     
       result2 = tf.nn.softmax_cross_entropy_with_logits(
            labels=pen_data, logits=z_pen_logits)
-      pen_data_weighting = pen_data[:, 0]+5*pen_data[:, 1]+100*pen_data[:, 2]
+      pen_data_weighting = pen_data[:, 0]+5*pen_data[:, 1]+30*pen_data[:, 2]
       result2 = tf.multiply(result2, pen_data_weighting)
       
       if not args.is_training:  # eval mode, mask eos columns

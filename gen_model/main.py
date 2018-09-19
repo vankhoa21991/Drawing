@@ -318,7 +318,7 @@ if __name__ == "__main__":
     parser.add_argument('--is_training', default=True, type=bool)
     parser.add_argument('--save_every', default=50, type=int)
     parser.add_argument('--num_gpu', default='3', type=int)
-    parser.add_argument('--is_resume', default=True, type=bool)
+    parser.add_argument('--is_resume', default=False, type=bool)
 
     args = parser.parse_args()
     os.environ["CUDA_VISIBLE_DEVICES"] = str(args.num_gpu)
