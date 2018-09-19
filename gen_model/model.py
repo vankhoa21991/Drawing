@@ -23,10 +23,10 @@ class Generation_model(object):
 
     self.global_step = tf.Variable(0, name='global_step', trainable=False)
 
-    self.sequence_lengths = tf.placeholder(dtype=tf.int32, shape=[args.batch_size,], name='seq_len')
-    self.input_data = tf.placeholder(dtype=tf.float32,shape=[args.batch_size, args.max_seq_len+1, 5], name='input')
+    self.sequence_lengths = tf.placeholder(dtype=tf.int32, shape=[None,], name='seq_len')
+    self.input_data = tf.placeholder(dtype=tf.float32,shape=[None, None, 5], name='input')
 
-    self.index_chars = tf.placeholder(dtype=tf.int32, shape=[args.batch_size,], name='char_index')
+    self.index_chars = tf.placeholder(dtype=tf.int32, shape=[None,], name='char_index')
 
     # The target/expected vectors of strokes
     self.output_x = self.input_data[:, 1:args.max_seq_len + 1, :]
@@ -310,11 +310,11 @@ def sample(sess, model, seq_len=250, index_char=None, args = ''):
       greedy = False
       temp = 1.0
 
-    #idx = get_pi_idx(random.random(), o_pi[0], temp, greedy)
-    idx = np.argmax(o_pi[0])
-    #idx_eos = get_pi_idx(random.random(), o_pen[0], temp, greedy)
+    idx = get_pi_idx(random.random(), o_pi[0], temp, greedy)
+    #idx = np.argmax(o_pi[0])
+    idx_eos = get_pi_idx(random.random(), o_pen[0], temp, greedy)
     
-    idx_eos = np.argmax(o_pen[0])
+    #idx_eos = np.argmax(o_pen[0])
     eos = [0, 0, 0]
     eos[idx_eos] = 1
 
