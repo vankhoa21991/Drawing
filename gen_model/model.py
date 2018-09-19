@@ -121,22 +121,22 @@ class Generation_model(object):
       # https://arxiv.org/pdf/1704.03477.pdf)
       Pd = tf.multiply(tf.multiply(MDNx, z_pi),MDNy)
       Pd = tf.reduce_sum(Pd, 1, keepdims=True)
-      logPd = -tf.log(Pd + epsilon)  # avoid log(0)
-    
-      fs = tf.subtract(1.0,pen_data_eos)  # use training data for this
-      fs = tf.reshape(fs, [-1, 1])
+      result1 = -tf.log(Pd + epsilon)  # avoid log(0)
+      result_shape = tf.reduce_mean(result1)
+      #fs = tf.subtract(1.0,pen_data_eos)  # use training data for this
+      #fs = tf.reshape(fs, [-1, 1])
       # Zero out loss terms beyond N_s, the last actual stroke
-      result1 = tf.multiply(logPd, fs)
+      #result1 = tf.multiply(logPd, fs)
 
-      fs = 1.0 - pen_data[:, 2]  # use training model for this
-      fs = tf.reshape(fs, [-1, 1])
+      #fs = 1.0 - pen_data[:, 2]  # use training model for this
+      #fs = tf.reshape(fs, [-1, 1])
       # Zero out loss terms beyond N_s, the last actual stroke
-      result1 = tf.multiply(result1, fs)
+      #result1 = tf.multiply(result1, fs)
 
       # result2: loss wrt pen state, (L_p in equation 9)
-      p = tf.nn.softmax(z_pen_logits)
-      logp = tf.log(p + epsilon)
-      w = tf.constant([1, 5, 100],dtype=tf.float32)
+      #p = tf.nn.softmax(z_pen_logits)
+      #logp = tf.log(p + epsilon)
+      #w = tf.constant([1, 5, 30],dtype=tf.float32)
 
       #result2 = tf.multiply(tf.multiply(w,pen_data),logp)
       #result2 = -tf.reduce_sum(result2, 1, keepdims=True)
@@ -145,13 +145,20 @@ class Generation_model(object):
       #Ps = tf.reduce_sum(Ps, 1, keepdims=True)
       #result2 = -tf.log(Ps + epsilon)  # avoid log(0)
         
-      result2 = tf.nn.softmax_cross_entropy_with_logits(
-          labels=tf.multiply(w,pen_data), logits=z_pen_logits)
-      result2 = tf.reshape(result2, [-1, 1])
+      #result2 = tf.nn.softmax_cross_entropy_with_logits(
+        #  labels=tf.multiply(w,pen_data), logits=z_pen_logits)
+      #result2 = tf.reshape(result2, [-1, 1])
       #if not args.is_training:  # eval mode, mask eos columns
        # result2 = tf.multiply(result2, fs)
+    
+      result2 = tf.nn.softmax_cross_entropy_with_logits(
+           labels=pen_data, logits=z_pen_logits)
+      pen_data_weighting = pen_data[:, 0]+2*pen_data[:, 1]+50*pen_data[:, 2]
+      result2 = tf.multiply(result2, pen_data_weighting)
+      result_pen = tf.reduce_mean(result2)
       
-      return result1,result2
+      result = result_shape + result_pen
+      return result, result_shape,result_pen
 
     # below is where we need to do MDN (Mixture Density Network) splitting of
     # distribution params
@@ -203,13 +210,13 @@ class Generation_model(object):
     [x1_data, x2_data, cont_data, eos_data, eoc_data] = tf.split(target, 5, 1)
     pen_data = tf.concat([cont_data, eos_data, eoc_data], 1)
 
-    self.Pd ,self.Ps = get_lossfunc(o_pi, o_mu1, o_mu2, o_sigma1, o_sigma2,
+    [lossfunc, loss_shape, loss_pen]= get_lossfunc(o_pi, o_mu1, o_mu2, o_sigma1, o_sigma2,
                             o_pen_logits, x1_data, x2_data, pen_data,eos_data)
 
-    self.cost = tf.reduce_sum(self.Pd + self.Ps)
+    self.cost = lossfunc
     
-    self.Pd = tf.reduce_sum(self.Pd)
-    self.Ps = tf.reduce_sum(self.Ps)
+    self.Pd = loss_shape
+    self.Ps = loss_pen
 
     self.lr = tf.Variable(args.learning_rate, trainable=False)
 

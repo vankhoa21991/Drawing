@@ -27,7 +27,7 @@ class DataLoader(object):
     # Removes large gaps in the model. x and y offsets are clamped to have
     # absolute value no greater than this limit.
     self.limit = limit
-    self.start_stroke_token = [0, 0, 1, 0, 0]  # S_0 in sketch-rnn paper
+    self.start_stroke_token = [0, 0, 0, 0, 0]  # S_0 in sketch-rnn paper
     # sets self.strokes (list of ndarrays, one per sketch, in stroke-3 format,
     # sorted by size)
     self.strokes = strokes
@@ -69,7 +69,7 @@ class DataLoader(object):
       result[i, 0:l, 0:2] = batch[i][:, 0:2]
       result[i, 0:l, 3] = batch[i][:, 3]
       result[i, 0:l, 2] = batch[i][:, 2] #1 - result[i, 0:l, 2]
-      result[i, l-1:, 4] = 1
+      result[i, l-1, 4] = 1
       # put in the first token, as described in sketch-rnn methodology
       result[i, 1:, :] = result[i, :-1, :]
       result[i, 0, :] = 0
