@@ -122,6 +122,11 @@ class Generation_model(object):
       Pd = tf.multiply(tf.multiply(MDNx, z_pi),MDNy)
       Pd = tf.reduce_sum(Pd, 1, keepdims=True)
       result1 = -tf.log(Pd + epsilon)  # avoid log(0)
+    
+      fs = 1.0 - pen_data[:, 2]  # use training model for this
+      fs = tf.reshape(fs, [-1, 1])
+      result1 = tf.multiply(result1, fs)
+        
       result_shape = tf.reduce_mean(result1)
       #fs = tf.subtract(1.0,pen_data_eos)  # use training data for this
       #fs = tf.reshape(fs, [-1, 1])
@@ -153,8 +158,12 @@ class Generation_model(object):
     
       result2 = tf.nn.softmax_cross_entropy_with_logits(
            labels=pen_data, logits=z_pen_logits)
-      pen_data_weighting = pen_data[:, 0]+2*pen_data[:, 1]+50*pen_data[:, 2]
+      pen_data_weighting = pen_data[:, 0]+5*pen_data[:, 1]+100*pen_data[:, 2]
       result2 = tf.multiply(result2, pen_data_weighting)
+      
+      if not args.is_training:  # eval mode, mask eos columns
+        result2 = tf.multiply(result2, fs)
+    
       result_pen = tf.reduce_mean(result2)
       
       result = result_shape + result_pen

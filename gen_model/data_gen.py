@@ -69,7 +69,7 @@ class DataLoader(object):
       result[i, 0:l, 0:2] = batch[i][:, 0:2]
       result[i, 0:l, 3] = batch[i][:, 3]
       result[i, 0:l, 2] = batch[i][:, 2] #1 - result[i, 0:l, 2]
-      result[i, l-1, 4] = 1
+      result[i, l-1:, 4] = 1
       # put in the first token, as described in sketch-rnn methodology
       result[i, 1:, :] = result[i, :-1, :]
       result[i, 0, :] = 0
