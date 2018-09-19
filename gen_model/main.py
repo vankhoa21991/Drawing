@@ -56,7 +56,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
     summary_writer.flush()
 
     # setup eval stats
-    best_valid_cost = 100000000.0  # set a large init value
+    best_valid_cost = 10000000000000.0  # set a large init value
     valid_cost = 0.0
 
     # main train loop
@@ -86,10 +86,10 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
             model.cost,  model.final_state,
             model.global_step, model.train_op, model.Pd, model.Ps], feed)
 
-        print('Pd: ' + str(pd))
-        print('Ps: ' + str(ps))
+        
         if step % (args.save_every/2)  == 0 and step > 0:
-            
+            print('Pd: ' + str(pd))
+            print('Ps: ' + str(ps))
             embedding_after = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0, args.batch_size)})
             print('Change in embedding matrix: ' + str(np.sum(abs(embedding_after - embedding_init))))
 
@@ -290,7 +290,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = False
+    server = True
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Flaxscanner/Dataset/Drawing/')
@@ -304,7 +304,7 @@ if __name__ == "__main__":
     parser.add_argument('--mode', default='tran', type=str)
     parser.add_argument('--num_epochs', default= 100000, type=int)
     parser.add_argument('--hidden_size', default=1000, type=int)
-    parser.add_argument('--learning_rate', default=1e-3, type=float)
+    parser.add_argument('--learning_rate', default=1e-4, type=float)
     parser.add_argument('--min_learning_rate', default=1e-6, type=float)
     parser.add_argument('--grad_clip', default=1.0, type=int)
     parser.add_argument('--decay_rate', default=0.9999, type=int)
@@ -314,11 +314,11 @@ if __name__ == "__main__":
     parser.add_argument('--out_dim', default=1000, type=int)
     parser.add_argument('--num_mixture', default=30, type=int)
     parser.add_argument('--embedding_len', default=500, type=int)
-    parser.add_argument('--batch_size', default=32, type=int)
+    parser.add_argument('--batch_size', default=500, type=int)
     parser.add_argument('--is_training', default=True, type=bool)
     parser.add_argument('--save_every', default=50, type=int)
-    parser.add_argument('--num_gpu', default='2', type=int)
-    parser.add_argument('--is_resume', default=False, type=bool)
+    parser.add_argument('--num_gpu', default='3', type=int)
+    parser.add_argument('--is_resume', default=True, type=bool)
 
     args = parser.parse_args()
     os.environ["CUDA_VISIBLE_DEVICES"] = str(args.num_gpu)
