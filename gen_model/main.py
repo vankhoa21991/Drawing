@@ -255,11 +255,11 @@ def generate(args):
 
     l=0
     for i in range(len(x[0])):
-        if x[0][i, 3] > 0:
+        if x[0][i, 2] > 0:
             l += 1
 
 
-    #plot_char(args.sample_dir,lines2pts(line_rebuild)[0][:l+1], label2char.get(index_char[0],None)[0])
+    plot_char(args.sample_dir,lines2pts(line_rebuild)[0][:l-1], label2char.get(index_char[0],None)[0])
 
     # draw_strokes(to_normal_strokes(x[0]), svg_fpath='sample/origin_' + label2char.get(index_char[0],None)[0] + '.svg')
     # 0: ve 1: nhac len
@@ -272,13 +272,13 @@ def generate(args):
 
     l=0
     for i in range(len(sample_strokes)):
-        if sample_strokes[i, 3] > 0:
+        if sample_strokes[i, 2] > 0:
             l += 1
         if l == len(sample_strokes):
             l=0
 
 
-    plot_char(args.sample_dir,lines2pts([[sample_strokes]])[0][:l+1], label2char.get(index_char[0],None)[0])
+    plot_char(args.sample_dir,lines2pts([[sample_strokes]])[0][:l-1], label2char.get(index_char[0],None)[0])
     #print(sample_strokes)
     #strokes = to_normal_strokes(sample_strokes)
 
@@ -301,7 +301,7 @@ if __name__ == "__main__":
         parser.add_argument('--sample_dir', default='sample/')
         parser.add_argument('--model_dir', default='/home/lupin/Cinnamon/Flaxscanner/Models/Drawing/gen_model/')
 
-    parser.add_argument('--mode', default='train', type=str)
+    parser.add_argument('--mode', default='tran', type=str)
     parser.add_argument('--num_epochs', default= 100000, type=int)
     parser.add_argument('--hidden_size', default=1000, type=int)
     parser.add_argument('--learning_rate', default=2e-3, type=float)

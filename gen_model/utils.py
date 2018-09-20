@@ -217,7 +217,7 @@ def strokes52lines(s5):
                 x2 = sum([s5[c][l][0]  for l in range(s+1)])
                 y1 = sum([s5[c][l][1]  for l in range(s)])
                 y2 = sum([s5[c][l][1]  for l in range(s+1)])
-            if s5[c][s][2] == 1:
+            if s5[c][s][3] == 1:
                 stroke.append([x1,x2,y1,y2])
             else:
                 Char.append(stroke)
