@@ -21,7 +21,8 @@ FLAGS = tf.app.flags.FLAGS
 def evaluate_model(sess, model, data_set):
   """Returns the average weighted cost, reconstruction cost and KL cost."""
   total_cost = 0.0
-  total_r_cost = 0.0
+  total_pd = 0.0
+  total_ps = 0.0
   for batch in range(data_set.num_batches):
 
     unused_orig_x, x, s,index_chars = data_set.random_batch()
@@ -32,8 +33,13 @@ def evaluate_model(sess, model, data_set):
             model.initial_state: np.zeros([args.max_seq_len, args.out_dim + args.hidden_size]),
             }
 
-    cost = sess.run(model.cost, feed)
+    [cost,pd,ps] = sess.run([model.cost,model.Pd, model.Ps], feed)
     total_cost += cost
+    total_pd += pd
+    total_ps += ps
+    
+  print('Pd: ' + str(total_pd))
+  print('Ps: ' + str(total_ps))
 
   total_cost /= (data_set.num_batches)
   return total_cost
@@ -88,8 +94,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
 
         
         if step % (args.save_every/2)  == 0 and step > 0:
-            print('Pd: ' + str(pd))
-            print('Ps: ' + str(ps))
+            
             embedding_after = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0, args.batch_size)})
             print('Change in embedding matrix: ' + str(np.sum(abs(embedding_after - embedding_init))))
 

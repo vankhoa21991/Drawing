@@ -23,10 +23,10 @@ class Generation_model(object):
 
     self.global_step = tf.Variable(0, name='global_step', trainable=False)
 
-    self.sequence_lengths = tf.placeholder(dtype=tf.int32, shape=[None,], name='seq_len')
-    self.input_data = tf.placeholder(dtype=tf.float32,shape=[None, None, 5], name='input')
+    self.sequence_lengths = tf.placeholder(dtype=tf.int32, shape=[args.batch_size,], name='seq_len')
+    self.input_data = tf.placeholder(dtype=tf.float32,shape=[args.batch_size, args.max_seq_len+1, 5], name='input')
 
-    self.index_chars = tf.placeholder(dtype=tf.int32, shape=[None,], name='char_index')
+    self.index_chars = tf.placeholder(dtype=tf.int32, shape=[args.batch_size,], name='char_index')
 
     # The target/expected vectors of strokes
     self.output_x = self.input_data[:, 1:args.max_seq_len + 1, :]
@@ -41,7 +41,7 @@ class Generation_model(object):
 
     chars = tf.nn.embedding_lookup(self.embedding_matrix, self.index_chars)
 
-    self.initial_state = tf.placeholder(shape=[None, args.out_dim + args.hidden_size], dtype=tf.float32, name='initial_state')
+    self.initial_state = tf.placeholder(shape=[args.max_seq_len, args.out_dim + args.hidden_size], dtype=tf.float32, name='initial_state')
 
     # if args.dropout_rate > 0:
     #   cell = tf.contrib.rnn.DropoutWrapper(cell, output_keep_prob=args.dropout_rate)
@@ -158,7 +158,7 @@ class Generation_model(object):
     
       result2 = tf.nn.softmax_cross_entropy_with_logits(
            labels=pen_data, logits=z_pen_logits)
-      pen_data_weighting = pen_data[:, 0]+5*pen_data[:, 1]+30*pen_data[:, 2]
+      pen_data_weighting = pen_data[:, 0]+5*pen_data[:, 1]+60*pen_data[:, 2]
       result2 = tf.multiply(result2, pen_data_weighting)
       
       if not args.is_training:  # eval mode, mask eos columns
