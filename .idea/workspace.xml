@@ -2,35 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41121d4c-46bb-486c-81df-3375551ff1bb" name="Default" comment="finish GRU">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/data_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/data_gen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gen_model/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/_!_626854.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/_亡_856051.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/_亡_908604.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/_佛_349430.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/_厩_823872.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/_嚏_30165.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/_埂_111261.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/_域_893667.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/_悉_669110.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/_朦_541679.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/_梨_821713.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/_稿_233983.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/_腺_971583.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/_菜_470568.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/_躯_156819.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/_躯_533356.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/_迫_885643.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/origin_!.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/origin_丹.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/origin_嗦.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/origin_工.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/origin_条.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/origin_桂.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/origin_澎.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/origin_痹.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_model/sample/sample.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gen_model/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_model/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,11 +68,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_model/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1920">
-              <caret line="143" column="39" lean-forward="true" selection-start-line="143" selection-start-column="39" selection-end-line="143" selection-end-column="39" />
+            <state relative-caret-position="1455">
+              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -116,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_model/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-555">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="281">
+              <caret line="541" column="21" lean-forward="true" selection-start-line="541" selection-start-column="21" selection-end-line="541" selection-end-column="21" />
               <folding>
                 <element signature="e#5296#6255#0" />
               </folding>
@@ -200,8 +173,8 @@
         <option value="$PROJECT_DIR$/gen_model/rnn.py" />
         <option value="$PROJECT_DIR$/gen_model/model.py" />
         <option value="$PROJECT_DIR$/gen_model/data_gen.py" />
-        <option value="$PROJECT_DIR$/gen_model/utils.py" />
         <option value="$PROJECT_DIR$/gen_model/main.py" />
+        <option value="$PROJECT_DIR$/gen_model/utils.py" />
       </list>
     </option>
   </component>
@@ -497,12 +470,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gen_model/main.py</url>
-          <line>202</line>
+          <line>208</line>
           <option name="timeStamp" value="128" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gen_model/main.py</url>
-          <line>280</line>
+          <line>286</line>
           <option name="timeStamp" value="129" />
         </line-breakpoint>
       </breakpoints>
@@ -733,22 +706,22 @@ plt.show()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_model/utils.py">
+    <entry file="file://$PROJECT_DIR$/gen_model/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-555">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="1455">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
           <folding>
-            <element signature="e#5296#6255#0" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_model/main.py">
+    <entry file="file://$PROJECT_DIR$/gen_model/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1920">
-          <caret line="143" column="39" lean-forward="true" selection-start-line="143" selection-start-column="39" selection-end-line="143" selection-end-column="39" />
+        <state relative-caret-position="281">
+          <caret line="541" column="21" lean-forward="true" selection-start-line="541" selection-start-column="21" selection-end-line="541" selection-end-column="21" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#5296#6255#0" />
           </folding>
         </state>
       </provider>
