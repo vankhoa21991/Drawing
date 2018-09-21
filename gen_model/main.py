@@ -32,8 +32,10 @@ def evaluate_model(sess, model, data_set):
             model.initial_state: np.zeros([args.max_seq_len, args.out_dim + args.hidden_size]),
             }
 
-    cost = sess.run(model.cost, feed)
+    [cost,pd,ps] = sess.run([model.cost, model.Pd, model.Ps], feed)
     total_cost += cost
+    print('Pd: ' + str(pd))
+    print('Ps: ' + str(ps))
 
   total_cost /= (data_set.num_batches)
   return total_cost
@@ -88,8 +90,6 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
 
         
         if step % (args.save_every/2)  == 0 and step > 0:
-            print('Pd: ' + str(pd))
-            print('Ps: ' + str(ps))
             embedding_after = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0, args.batch_size)})
             print('Change in embedding matrix: ' + str(np.sum(abs(embedding_after - embedding_init))))
 
@@ -259,7 +259,7 @@ def generate(args):
             l += 1
 
 
-    plot_char(args.sample_dir,lines2pts(line_rebuild)[0][:l-1], label2char.get(index_char[0],None)[0])
+    plot_char(args.sample_dir,lines2pts(line_rebuild)[0][1:l], label2char.get(index_char[0],None)[0])
 
     # draw_strokes(to_normal_strokes(x[0]), svg_fpath='sample/origin_' + label2char.get(index_char[0],None)[0] + '.svg')
     # 0: ve 1: nhac len
@@ -277,8 +277,8 @@ def generate(args):
         if l == len(sample_strokes):
             l=0
 
-
-    plot_char(args.sample_dir,lines2pts([[sample_strokes]])[0][:l-1], label2char.get(index_char[0],None)[0])
+    line_rebuild_gen = strokes52lines([sample_strokes])
+    plot_char(args.sample_dir,lines2pts(line_rebuild_gen)[0][:l], label2char.get(index_char[0],None)[0])
     #print(sample_strokes)
     #strokes = to_normal_strokes(sample_strokes)
 
@@ -290,7 +290,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = True
+    server = False
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Flaxscanner/Dataset/Drawing/')
@@ -314,7 +314,7 @@ if __name__ == "__main__":
     parser.add_argument('--out_dim', default=1000, type=int)
     parser.add_argument('--num_mixture', default=30, type=int)
     parser.add_argument('--embedding_len', default=500, type=int)
-    parser.add_argument('--batch_size', default=250, type=int)
+    parser.add_argument('--batch_size', default=32, type=int)
     parser.add_argument('--is_training', default=True, type=bool)
     parser.add_argument('--save_every', default=50, type=int)
     parser.add_argument('--num_gpu', default='3', type=int)
