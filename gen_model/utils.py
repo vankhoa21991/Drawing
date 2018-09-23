@@ -19,7 +19,7 @@ def load_data(data_dir='',model_dir=''):
     chars_pts, LB = [], []
     data = []
 
-    for file in list_files[:100]:
+    for file in list_files[:5]:
 
         if file[-9:] == '_lbls.txt':
             file_name = file[:3]
@@ -206,7 +206,7 @@ def strokes52lines(s5):
     for c in range(len(s5)):         # char c
         Char = []
         stroke = []
-        for s in range(1,len(s5[c])):  # stroke s
+        for s in range(0,len(s5[c])):  # stroke s
             if s == 0:
                 x1 = 0
                 x2 = s5[c][s][0]
@@ -217,8 +217,10 @@ def strokes52lines(s5):
                 x2 = sum([s5[c][l][0]  for l in range(s+1)])
                 y1 = sum([s5[c][l][1]  for l in range(s)])
                 y2 = sum([s5[c][l][1]  for l in range(s+1)])
-            if s5[c][s][2] == 1:
+            if s5[c][s][3] == 1:
                 stroke.append([x1,x2,y1,y2])
+            elif s5[c][s][4] == 1:
+                break
             else:
                 Char.append(stroke)
                 stroke = []

@@ -280,7 +280,7 @@ def sample(sess, model, seq_len=250, index_char=None, args = ''):
     return sum(out)
 
   prev_x = np.zeros((1, 1, 5), dtype=np.float32)
-  #prev_x[0, 0, 2] = 1  # initially, we want to see beginning of new stroke
+  prev_x[0, 0, 2] = 1  # initially, we want to see beginning of new stroke
   # if z is None:
   #   z = np.random.randn(1, model.hps.z_size)  # not used if unconditional
   #
