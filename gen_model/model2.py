@@ -117,7 +117,7 @@ class Generation_model(object):
 
 
           result = result1 + result2
-          return result
+          return result, result1, result2
 
         # below is where we need to do MDN (Mixture Density Network) splitting of
         # distribution params
@@ -160,9 +160,11 @@ class Generation_model(object):
         [x1_data, x2_data, eos_data, eoc_data, cont_data] = tf.split(target, 5, 1)
         pen_data = tf.concat([eos_data, eoc_data, cont_data], 1)
 
-        lossfunc = get_lossfunc(o_pi, o_mu1, o_mu2, o_sigma1, o_sigma2, o_corr,
+        lossfunc, pd, ps = get_lossfunc(o_pi, o_mu1, o_mu2, o_sigma1, o_sigma2, o_corr,
                                 o_pen_logits, x1_data, x2_data, pen_data)
 
+        self.Pd = tf.reduce_mean(pd)
+        self.Ps = tf.reduce_mean(ps)
         self.cost = tf.reduce_mean(lossfunc)
 
         self.lr = tf.Variable(args.learning_rate, trainable=False)

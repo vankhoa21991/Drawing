@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 from utils import *
 from data_gen import *
-from model import *
+from model2 import *
 
 tf.logging.set_verbosity(tf.logging.INFO)
 FLAGS = tf.app.flags.FLAGS
@@ -81,6 +81,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
                               (args.decay_rate) ** step + args.min_learning_rate)
 
         _, x, s, index_chars = train_set.random_batch()
+
         feed = {
             model.input_data: x,
             model.sequence_lengths: s,
@@ -307,7 +308,7 @@ if __name__ == "__main__":
         parser.add_argument('--sample_dir', default='sample/')
         parser.add_argument('--model_dir', default='/home/lupin/Cinnamon/Flaxscanner/Models/Drawing/gen_model/')
 
-    parser.add_argument('--mode', default='tran', type=str)
+    parser.add_argument('--mode', default='train', type=str)
     parser.add_argument('--num_epochs', default= 100000, type=int)
     parser.add_argument('--hidden_size', default=1000, type=int)
     parser.add_argument('--learning_rate', default=1e-3, type=float)
@@ -324,7 +325,7 @@ if __name__ == "__main__":
     parser.add_argument('--is_training', default=True, type=bool)
     parser.add_argument('--save_every', default=50, type=int)
     parser.add_argument('--num_gpu', default='3', type=int)
-    parser.add_argument('--is_resume', default=True, type=bool)
+    parser.add_argument('--is_resume', default=False, type=bool)
 
     args = parser.parse_args()
     os.environ["CUDA_VISIBLE_DEVICES"] = str(args.num_gpu)
