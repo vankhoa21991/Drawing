@@ -170,7 +170,13 @@ class Generation_model(object):
         self.lr = tf.Variable(args.learning_rate, trainable=False)
         optimizer = tf.train.AdamOptimizer(self.lr)
 
-        self.train_op = optimizer.minimize(self.cost, global_step=self.global_step)
+        #self.train_op = optimizer.minimize(self.cost, global_step=self.global_step)
+        
+        gvs = optimizer.compute_gradients(self.cost)
+        g = args.grad_clip
+        capped_gvs = [(tf.clip_by_value(grad, -g, g), var) for grad, var in gvs]
+        self.train_op = optimizer.apply_gradients(
+          capped_gvs, global_step=self.global_step, name='train_step')
 
 
 def sample(sess, model, seq_len=250, temperature=1.0, greedy_mode=False,

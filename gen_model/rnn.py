@@ -171,7 +171,6 @@ class GRU_embedding():
     self.Ws = tf.get_variable('Ws', [2, self.pen_dim], initializer=init)
     self.Wr = tf.get_variable('Wr', [self.hidden_size, self.hidden_size], initializer=init)
     self.Wz = tf.get_variable('Wz', [self.hidden_size, self.hidden_size], initializer=init)
-    self.Wh = tf.get_variable('Wh', [self.hidden_size, self.hidden_size], initializer=init)
     self.W = tf.get_variable('W', [self.hidden_size, self.hidden_size], initializer=init)
     self.Wo = tf.get_variable('Wo', [self.hidden_size, self.out_dim], initializer=init)
 
