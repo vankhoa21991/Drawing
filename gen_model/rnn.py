@@ -461,3 +461,42 @@ def scan(fn, elems, initializer=None, parallel_iterations=10, back_prop=True,
       varscope.set_caching_device(None)
 
     return output_pack(results_flat)
+
+def super_linear(x,
+                 output_size,
+                 scope=None,
+                 reuse=False,
+                 init_w='ortho',
+                 weight_start=0.0,
+                 use_bias=True,
+                 bias_start=0.0,
+                 input_size=None):
+  """Performs linear operation. Uses ortho init defined earlier."""
+  shape = x.get_shape().as_list()
+  with tf.variable_scope(scope or 'linear'):
+    if reuse is True:
+      tf.get_variable_scope().reuse_variables()
+
+    w_init = None  # uniform
+    if input_size is None:
+      x_size = shape[1]
+    else:
+      x_size = input_size
+    if init_w == 'zeros':
+      w_init = tf.constant_initializer(0.0)
+    elif init_w == 'constant':
+      w_init = tf.constant_initializer(weight_start)
+    elif init_w == 'gaussian':
+      w_init = tf.random_normal_initializer(stddev=weight_start)
+    elif init_w == 'ortho':
+      w_init = lstm_ortho_initializer(1.0)
+
+    w = tf.get_variable(
+        'super_linear_w', [x_size, output_size], tf.float32, initializer=w_init)
+    if use_bias:
+      b = tf.get_variable(
+          'super_linear_b', [output_size],
+          tf.float32,
+          initializer=tf.constant_initializer(bias_start))
+      return tf.matmul(x, w) + b
+    return tf.matmul(x, w)

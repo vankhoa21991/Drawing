@@ -30,7 +30,7 @@ def evaluate_model(sess, model, data_set):
     feed = {model.input_data: x,
             model.sequence_lengths: s,
             model.index_chars: index_chars,
-            model.initial_state: np.zeros([args.max_seq_len, args.out_dim + args.hidden_size]),
+            # model.initial_state: np.zeros([args.max_seq_len, args.out_dim + args.hidden_size]),
             }
 
 
@@ -76,11 +76,13 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
 
     start = time.time()
 
+    train_writer = tf.summary.FileWriter('', sess.graph)
+
     for _ in range(args.num_epochs):
 
         step = sess.run(model.global_step)
 
-       
+        merge = tf.summary.merge_all()
 
         curr_learning_rate = ((args.learning_rate - args.min_learning_rate) *
                               (args.decay_rate) ** step + args.min_learning_rate)
@@ -91,15 +93,16 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
             model.input_data: x,
             model.sequence_lengths: s,
             model.lr: curr_learning_rate,
-            model.initial_state: np.zeros([args.max_seq_len, args.out_dim+args.hidden_size]),
+            # model.initial_state: np.zeros([args.max_seq_len, args.out_dim+args.hidden_size]),
             model.index_chars: index_chars,
         }
 
-        (train_cost, _, train_step, _, pd, ps) = sess.run([
+        (summary,train_cost, _, train_step, _, pd, ps) = sess.run([merge,
             model.cost,  model.final_state,
             model.global_step, model.train_op, model.Pd, model.Ps], feed)
 
-        
+        train_writer.add_summary(summary, step)
+
         if step % (args.save_every/2)  == 0 and step > 0:
 
             embedding_after = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0, args.batch_size)})
@@ -310,7 +313,7 @@ if __name__ == "__main__":
     else:
         parser.add_argument('--data_dir', default='/home/lupin/Cinnamon/Flaxscanner/Dataset/Drawing/')
         parser.add_argument('--sample_dir', default='sample/')
-        parser.add_argument('--model_dir', default='/home/lupin/Cinnamon/Flaxscanner/Models/Drawing/gen_model/')
+        parser.add_argument('--model_dir', default='/home/lupin/Cinnamon/Flaxscanner/Models/Drawing/gen_model2/')
 
     parser.add_argument('--mode', default='train', type=str)
     parser.add_argument('--num_epochs', default= 100000, type=int)
