@@ -213,7 +213,6 @@ def trainer(args):
     reset_graph()
     # load model
     model = Generation_model(args=args,vocabulary=vocabulary)
-    args.is_training = False
     eval_model = Generation_model(args=args, reuse=True, vocabulary=vocabulary)
 
     # start session
