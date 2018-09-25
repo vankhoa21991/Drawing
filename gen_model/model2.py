@@ -43,11 +43,14 @@ class Generation_model(object):
 
         chars = tf.nn.embedding_lookup(self.embedding_matrix, self.index_chars)
 
-        self.initial_state = tf.nn.tanh(rnn.super_linear(chars,
-                                                         args.out_dim + args.hidden_size,
-                                                         init_w='gaussian',
-                                                         weight_start=0.001,
-                                                         input_size = args.embedding_len))
+        # self.initial_state = tf.nn.tanh(rnn.super_linear(chars,
+        #                                                  args.out_dim + args.hidden_size,
+        #                                                  init_w='gaussian',
+        #                                                  weight_start=0.001,
+        #                                                  input_size = args.embedding_len))
+
+        self.initial_state = tf.placeholder(shape=[args.max_seq_len, args.out_dim + args.hidden_size], dtype=tf.float32,
+                                            name='initial_state')
 
         # if args.dropout_rate > 0:
         #   cell = tf.contrib.rnn.DropoutWrapper(cell, output_keep_prob=args.dropout_rate)

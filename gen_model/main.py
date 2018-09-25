@@ -30,7 +30,7 @@ def evaluate_model(sess, model, data_set):
     feed = {model.input_data: x,
             model.sequence_lengths: s,
             model.index_chars: index_chars,
-            # model.initial_state: np.zeros([args.max_seq_len, args.out_dim + args.hidden_size]),
+            model.initial_state: np.zeros([args.max_seq_len, args.out_dim + args.hidden_size]),
             }
 
 
@@ -93,7 +93,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
             model.input_data: x,
             model.sequence_lengths: s,
             model.lr: curr_learning_rate,
-            # model.initial_state: np.zeros([args.max_seq_len, args.out_dim+args.hidden_size]),
+            model.initial_state: np.zeros([args.max_seq_len, args.out_dim+args.hidden_size]),
             model.index_chars: index_chars,
         }
 
@@ -216,7 +216,6 @@ def trainer(args):
     reset_graph()
     # load model
     model = Generation_model(args=args,vocabulary=vocabulary)
-    args.is_training = False
     eval_model = Generation_model(args=args, reuse=True, vocabulary=vocabulary)
 
     # start session
@@ -256,7 +255,7 @@ def generate(args):
     sess.run(tf.global_variables_initializer())
 
     print(
-        f"The embedding matrix: {sess.run(model.embedding_matrix, feed_dict={model.index_chars: [1,2,3,4,5]})}"
+        "The embedding matrix: " + sess.run(model.embedding_matrix, feed_dict={model.index_chars: [1,2,3,4,5]})
     )
 
     # loads the weights from checkpoint into our model
@@ -305,7 +304,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = True
+    server = False
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Flaxscanner/Dataset/Drawing/')
@@ -329,7 +328,7 @@ if __name__ == "__main__":
     parser.add_argument('--out_dim', default=1000, type=int)
     parser.add_argument('--num_mixture', default=30, type=int)
     parser.add_argument('--embedding_len', default=500, type=int)
-    parser.add_argument('--batch_size', default=500, type=int)
+    parser.add_argument('--batch_size', default=32, type=int)
     parser.add_argument('--is_training', default=True, type=bool)
     parser.add_argument('--save_every', default=50, type=int)
     parser.add_argument('--num_gpu', default='1', type=int)
