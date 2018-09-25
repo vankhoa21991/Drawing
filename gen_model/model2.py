@@ -23,10 +23,10 @@ class Generation_model(object):
 
         self.global_step = tf.Variable(0, name='global_step', trainable=False)
 
-        self.sequence_lengths = tf.placeholder(dtype=tf.int32, shape=[None, ], name='seq_len')
-        self.input_data = tf.placeholder(dtype=tf.float32, shape=[None, None, 5], name='input')
+        self.sequence_lengths = tf.placeholder(dtype=tf.int32, shape=[args.batch_size, ], name='seq_len')
+        self.input_data = tf.placeholder(dtype=tf.float32, shape=[args.batch_size, args.max_seq_len+1, 5], name='input')
 
-        self.index_chars = tf.placeholder(dtype=tf.int32, shape=[None, ], name='char_index')
+        self.index_chars = tf.placeholder(dtype=tf.int32, shape=[args.batch_size, ], name='char_index')
 
         # The target/expected vectors of strokes
         self.output_x = self.input_data[:, 1:args.max_seq_len + 1, :]
@@ -39,10 +39,15 @@ class Generation_model(object):
 
         self.embedding_matrix = tf.get_variable('embedding_matrix', [self.vocab, args.embedding_len], initializer=None)
 
+        tf.summary.histogram('emmatrix', self.embedding_matrix)
+
         chars = tf.nn.embedding_lookup(self.embedding_matrix, self.index_chars)
 
-        self.initial_state = tf.placeholder(shape=[None, args.out_dim + args.hidden_size], dtype=tf.float32,
-                                            name='initial_state')
+        self.initial_state = tf.nn.tanh(rnn.super_linear(chars,
+                                                         args.out_dim + args.hidden_size,
+                                                         init_w='gaussian',
+                                                         weight_start=0.001,
+                                                         input_size = args.embedding_len))
 
         # if args.dropout_rate > 0:
         #   cell = tf.contrib.rnn.DropoutWrapper(cell, output_keep_prob=args.dropout_rate)
@@ -170,11 +175,17 @@ class Generation_model(object):
         self.lr = tf.Variable(args.learning_rate, trainable=False)
         optimizer = tf.train.AdamOptimizer(self.lr)
 
-        self.train_op = optimizer.minimize(self.cost, global_step=self.global_step)
+        # self.train_op = optimizer.minimize(self.cost, global_step=self.global_step)
+
+        gvs = optimizer.compute_gradients(self.cost)
+        g = args.grad_clip
+        capped_gvs = [(tf.clip_by_value(grad, -g, g), var) for grad, var in gvs]
+        self.train_op = optimizer.apply_gradients(
+            capped_gvs, global_step=self.global_step, name='train_step')
 
 
 def sample(sess, model, seq_len=250, temperature=1.0, greedy_mode=False,
-           z=None):
+           index_char=None):
   """Samples a sequence from a pre-trained model."""
 
   def adjust_temp(pi_pdf, temp):
@@ -212,10 +223,7 @@ def sample(sess, model, seq_len=250, temperature=1.0, greedy_mode=False,
   if z is None:
     z = np.random.randn(1, model.hps.z_size)  # not used if unconditional
 
-  if not model.hps.conditional:
-    prev_state = sess.run(model.initial_state)
-  else:
-    prev_state = sess.run(model.initial_state, feed_dict={model.batch_z: z})
+  prev_state = sess.run(model.initial_state, feed_dict={model.index_chars: index_char})
 
   strokes = np.zeros((seq_len, 5), dtype=np.float32)
   mixture_params = []
@@ -223,19 +231,13 @@ def sample(sess, model, seq_len=250, temperature=1.0, greedy_mode=False,
   temp = 1.0
 
   for i in range(seq_len):
-    if not model.hps.conditional:
-      feed = {
-          model.input_x: prev_x,
-          model.sequence_lengths: [1],
-          model.initial_state: prev_state
-      }
-    else:
-      feed = {
+
+    feed = {
           model.input_x: prev_x,
           model.sequence_lengths: [1],
           model.initial_state: prev_state,
-          model.batch_z: z
-      }
+          model.index_chars: index_char
+    }
 
     params = sess.run([
         model.pi, model.mu1, model.mu2, model.sigma1, model.sigma2, model.corr,
