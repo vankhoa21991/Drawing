@@ -184,6 +184,7 @@ class Generation_model(object):
             capped_gvs, global_step=self.global_step, name='train_step')
 
 
+
 def sample(sess, model, seq_len=250, temperature=1.0, greedy_mode=False,
            index_char=None):
   """Samples a sequence from a pre-trained model."""

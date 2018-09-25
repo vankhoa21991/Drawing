@@ -77,6 +77,7 @@ class DataLoader(object):
       result[i, 0, 2] = self.start_stroke_token[2]  # setting S_0 from paper.
       result[i, 0, 3] = self.start_stroke_token[3]
       result[i, 0, 4] = self.start_stroke_token[4]
+    assert not np.any(np.isnan(result))
     return result
 
   def get_batch(self, idx):
