@@ -255,7 +255,9 @@ def generate(args):
     sess.run(tf.global_variables_initializer())
 
     print(
-        "The embedding matrix: " + {sess.run(model.embedding_matrix, feed_dict={model.index_chars: [1,2,3,4,5]})}
+
+        "The embedding matrix: " + sess.run(model.embedding_matrix, feed_dict={model.index_chars: [1,2,3,4,5]})
+
     )
 
     # loads the weights from checkpoint into our model
