@@ -30,7 +30,7 @@ def evaluate_model(sess, model, data_set):
     feed = {model.input_data: x,
             model.sequence_lengths: s,
             model.index_chars: index_chars,
-            # model.initial_state: np.zeros([args.max_seq_len, args.out_dim + args.hidden_size]),
+            model.initial_state: np.zeros([args.max_seq_len, args.out_dim + args.hidden_size]),
             }
 
 
@@ -76,7 +76,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
 
     start = time.time()
 
-    train_writer = tf.summary.FileWriter('', sess.graph)
+    train_writer = tf.summary.FileWriter('logs', sess.graph)
 
     for _ in range(args.num_epochs):
 
@@ -93,7 +93,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
             model.input_data: x,
             model.sequence_lengths: s,
             model.lr: curr_learning_rate,
-            # model.initial_state: np.zeros([args.max_seq_len, args.out_dim+args.hidden_size]),
+            model.initial_state: np.zeros([args.max_seq_len, args.out_dim+args.hidden_size]),
             model.index_chars: index_chars,
         }
 
@@ -255,7 +255,7 @@ def generate(args):
     sess.run(tf.global_variables_initializer())
 
     print(
-        f"The embedding matrix: {sess.run(model.embedding_matrix, feed_dict={model.index_chars: [1,2,3,4,5]})}"
+        "The embedding matrix: " + {sess.run(model.embedding_matrix, feed_dict={model.index_chars: [1,2,3,4,5]})}
     )
 
     # loads the weights from checkpoint into our model
@@ -328,7 +328,7 @@ if __name__ == "__main__":
     parser.add_argument('--out_dim', default=1000, type=int)
     parser.add_argument('--num_mixture', default=30, type=int)
     parser.add_argument('--embedding_len', default=500, type=int)
-    parser.add_argument('--batch_size', default=500, type=int)
+    parser.add_argument('--batch_size', default=200, type=int)
     parser.add_argument('--is_training', default=True, type=bool)
     parser.add_argument('--save_every', default=50, type=int)
     parser.add_argument('--num_gpu', default='1', type=int)

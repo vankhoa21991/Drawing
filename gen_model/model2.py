@@ -42,12 +42,13 @@ class Generation_model(object):
         tf.summary.histogram('emmatrix', self.embedding_matrix)
 
         chars = tf.nn.embedding_lookup(self.embedding_matrix, self.index_chars)
-
-        self.initial_state = tf.nn.tanh(rnn.super_linear(chars,
-                                                         args.out_dim + args.hidden_size,
-                                                         init_w='gaussian',
-                                                         weight_start=0.001,
-                                                         input_size = args.embedding_len))
+        
+        self.initial_state = tf.placeholder(shape=[args.max_seq_len, args.out_dim + args.hidden_size], dtype=tf.float32, name='initial_state')
+        #self.initial_state = tf.nn.tanh(rnn.super_linear(chars,
+        #                                                 args.out_dim + args.hidden_size,
+         #                                                init_w='gaussian',
+          #                                               weight_start=0.001,
+           #                                              input_size = args.embedding_len))
 
         # if args.dropout_rate > 0:
         #   cell = tf.contrib.rnn.DropoutWrapper(cell, output_keep_prob=args.dropout_rate)
@@ -171,6 +172,12 @@ class Generation_model(object):
         self.Pd = tf.reduce_mean(pd)
         self.Ps = tf.reduce_mean(ps)
         self.cost = tf.reduce_mean(lossfunc)
+        
+        #tf.summary.histogram('loss', self.cost)
+        
+        #tf.summary.histogram('loss_PD', self.Pd)
+        
+        #tf.summary.histogram('loss_PS', self.Ps)
 
         self.lr = tf.Variable(args.learning_rate, trainable=False)
         optimizer = tf.train.AdamOptimizer(self.lr)
