@@ -4,6 +4,7 @@ from __future__ import print_function
 import random
 import numpy as np
 from keras.preprocessing import sequence
+from keras.utils import to_categorical
 import tensorflow as tf
 import os
 import six
@@ -30,6 +31,7 @@ class DataLoader(object):
     self.start_stroke_token = [0, 0, 1, 0, 0]  # S_0 in sketch-rnn paper
     # sets self.strokes (list of ndarrays, one per sketch, in stroke-3 format,
     # sorted by size)
+    self.vocabulary = vocabulary
     self.strokes = strokes
     self.charlabel = charlabel
     self.num_batches = int(len(charlabel) / self.batch_size)
@@ -50,6 +52,7 @@ class DataLoader(object):
       length = len(data_copy)
       seq_len.append(length)
     seq_len = np.array(seq_len, dtype=int)
+    #embed_vec = to_categorical(embed_vec, num_classes=self.vocabulary)
     # We return three things: stroke-3 format, stroke-5 format, list of seq_len.
     return x_batch, self.pad_batch(x_batch, self.max_seq_length), seq_len, embed_vec
 

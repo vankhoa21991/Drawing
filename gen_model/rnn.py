@@ -479,7 +479,7 @@ def super_linear(x,
 
     w_init = None  # uniform
     if input_size is None:
-      x_size = shape[1]
+      x_size = shape[0]
     else:
       x_size = input_size
     if init_w == 'zeros':
@@ -498,5 +498,5 @@ def super_linear(x,
           'super_linear_b', [output_size],
           tf.float32,
           initializer=tf.constant_initializer(bias_start))
-      return tf.matmul(x, w) + b
+      return tf.matmul(tf.transpose(x), w) + b
     return tf.matmul(x, w)

@@ -39,18 +39,18 @@ class Generation_model(object):
 
         self.embedding_matrix = tf.get_variable('embedding_matrix', [self.vocab, args.embedding_len], initializer=None)
 
-        tf.summary.histogram('emmatrix', self.embedding_matrix)
+        #tf.summary.histogram('emmatrix', self.embedding_matrix)
 
         chars = tf.nn.embedding_lookup(self.embedding_matrix, self.index_chars)
 
-        # self.initial_state = tf.nn.tanh(rnn.super_linear(chars,
-        #                                                  args.out_dim + args.hidden_size,
-        #                                                  init_w='gaussian',
-        #                                                  weight_start=0.001,
-        #                                                  input_size = args.embedding_len))
+        self.initial_state = tf.nn.tanh(rnn.super_linear(tf.reshape(self.input_x,(-1,args.max_seq_len)),
+                                                          args.out_dim + args.hidden_size,
+                                                          init_w='gaussian',
+                                                          weight_start=0.001,
+                                                          input_size = None))
 
-        self.initial_state = tf.placeholder(shape=[args.max_seq_len, args.out_dim + args.hidden_size], dtype=tf.float32,
-                                            name='initial_state')
+        #self.initial_state = tf.placeholder(shape=[args.max_seq_len, args.out_dim + args.hidden_size], dtype=tf.float32,
+         #                                   name='initial_state')
 
         # if args.dropout_rate > 0:
         #   cell = tf.contrib.rnn.DropoutWrapper(cell, output_keep_prob=args.dropout_rate)
@@ -60,6 +60,7 @@ class Generation_model(object):
                                       c=chars,
                                       state=self.initial_state,
                                       pen_dim=args.pen_dim,
+                                      embeding_size=args.embedding_len,
                                       out_dim=args.out_dim)
         # self.cell = rnn.GRU(x_t=self.input_x, hidden_size=args.hidden_size)
         # self.initial_state = self.cell.zero_state(batch_size=args.batch_size, dtype=tf.float32)
