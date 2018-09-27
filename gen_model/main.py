@@ -30,7 +30,7 @@ def evaluate_model(sess, model, data_set):
     feed = {model.input_data: x,
             model.sequence_lengths: s,
             model.index_chars: index_chars,
-            # model.initial_state: np.zeros([args.max_seq_len, args.out_dim + args.hidden_size]),
+            #model.initial_state: np.zeros([args.max_seq_len, args.out_dim + args.hidden_size]),
             }
 
 
@@ -72,17 +72,17 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
     valid_cost = 0.0
 
     # main train loop
-    embedding_init = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0,args.batch_size)})
+    embedding_init = sess.run(model.embedding_matrix, feed_dict={})
 
     start = time.time()
 
-    train_writer = tf.summary.FileWriter('logs', sess.graph)
+    #train_writer = tf.summary.FileWriter('logs', sess.graph)
 
     for _ in range(args.num_epochs):
 
         step = sess.run(model.global_step)
 
-        merge = tf.summary.merge_all()
+        #merge = tf.summary.merge_all()
 
         curr_learning_rate = ((args.learning_rate - args.min_learning_rate) *
                               (args.decay_rate) ** step + args.min_learning_rate)
@@ -93,19 +93,21 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
             model.input_data: x,
             model.sequence_lengths: s,
             model.lr: curr_learning_rate,
-            # model.initial_state: np.zeros([args.max_seq_len, args.out_dim+args.hidden_size]),
-            model.index_chars: index_chars,
+
+            #model.initial_state: np.zeros([args.max_seq_len, args.out_dim+args.hidden_size]),
+            model.index_chars: index_chars
+
         }
 
-        (summary,train_cost, _, train_step, _, pd, ps) = sess.run([merge,
-            model.cost,  model.final_state,
-            model.global_step, model.train_op, model.Pd, model.Ps], feed)
+        (train_cost, _, train_step, _, pd, ps) = sess.run([model.cost,  model.final_state, 
+                                                           model.global_step, model.train_op, 
+                                                           model.Pd, model.Ps], feed)
 
-        train_writer.add_summary(summary, step)
+        #train_writer.add_summary(summary, step)
 
         if step % (args.save_every/2)  == 0 and step > 0:
 
-            embedding_after = sess.run(model.embedding_matrix, feed_dict={model.index_chars: range(0, args.batch_size)})
+            embedding_after = sess.run(model.embedding_matrix, feed_dict={})
             print('Change in embedding matrix: ' + str(np.sum(abs(embedding_after - embedding_init))))
 
             end = time.time()
@@ -255,7 +257,9 @@ def generate(args):
     sess.run(tf.global_variables_initializer())
 
     print(
+
         "The embedding matrix: " + sess.run(model.embedding_matrix, feed_dict={model.index_chars: [1,2,3,4,5]})
+
     )
 
     # loads the weights from checkpoint into our model
@@ -304,12 +308,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = False
+    server = True
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Flaxscanner/Dataset/Drawing/')
         parser.add_argument('--sample_dir', default='sample/')
-        parser.add_argument('--model_dir', default='/mnt/DATA/lupin/Flaxscanner/Models/Drawing/gen_model/')
+        parser.add_argument('--model_dir', default='/mnt/DATA/lupin/Flaxscanner/Models/Drawing/gen_model2/')
     else:
         parser.add_argument('--data_dir', default='/home/lupin/Cinnamon/Flaxscanner/Dataset/Drawing/')
         parser.add_argument('--sample_dir', default='sample/')
@@ -317,17 +321,19 @@ if __name__ == "__main__":
 
     parser.add_argument('--mode', default='train', type=str)
     parser.add_argument('--num_epochs', default= 100000, type=int)
-    parser.add_argument('--hidden_size', default=1000, type=int)
-    parser.add_argument('--learning_rate', default=1e-4, type=float)
-    parser.add_argument('--min_learning_rate', default=1e-6, type=float)
+
+    parser.add_argument('--hidden_size', default=300, type=int)
+    parser.add_argument('--learning_rate', default=1e-5, type=float)
+    parser.add_argument('--min_learning_rate', default=1e-8, type=float)
+
     parser.add_argument('--grad_clip', default=1.0, type=int)
     parser.add_argument('--decay_rate', default=0.9999, type=int)
     parser.add_argument('--dropout_rate', default=0.2, type=float)
-    parser.add_argument('--max_seq_len', default=156, type=int)
+    parser.add_argument('--max_seq_len', default=50, type=int)
     parser.add_argument('--pen_dim', default=300, type=int)
-    parser.add_argument('--out_dim', default=1000, type=int)
-    parser.add_argument('--num_mixture', default=30, type=int)
-    parser.add_argument('--embedding_len', default=500, type=int)
+    parser.add_argument('--out_dim', default=300, type=int)
+    parser.add_argument('--num_mixture', default=20, type=int)
+    parser.add_argument('--embedding_len', default=50, type=int)
     parser.add_argument('--batch_size', default=32, type=int)
     parser.add_argument('--is_training', default=True, type=bool)
     parser.add_argument('--save_every', default=50, type=int)
