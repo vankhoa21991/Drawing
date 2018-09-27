@@ -30,7 +30,7 @@ def evaluate_model(sess, model, data_set):
     feed = {model.input_data: x,
             model.sequence_lengths: s,
             model.index_chars: index_chars,
-            model.initial_state: np.zeros([args.max_seq_len, args.out_dim + args.hidden_size]),
+            # model.initial_state: np.zeros([args.max_seq_len, args.out_dim + args.hidden_size]),
             }
 
 
@@ -76,7 +76,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
 
     start = time.time()
 
-    train_writer = tf.summary.FileWriter('', sess.graph)
+    train_writer = tf.summary.FileWriter('logs', sess.graph)
 
     for _ in range(args.num_epochs):
 
@@ -93,7 +93,7 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
             model.input_data: x,
             model.sequence_lengths: s,
             model.lr: curr_learning_rate,
-            model.initial_state: np.zeros([args.max_seq_len, args.out_dim+args.hidden_size]),
+            # model.initial_state: np.zeros([args.max_seq_len, args.out_dim+args.hidden_size]),
             model.index_chars: index_chars,
         }
 
@@ -318,7 +318,7 @@ if __name__ == "__main__":
     parser.add_argument('--mode', default='train', type=str)
     parser.add_argument('--num_epochs', default= 100000, type=int)
     parser.add_argument('--hidden_size', default=1000, type=int)
-    parser.add_argument('--learning_rate', default=1e-5, type=float)
+    parser.add_argument('--learning_rate', default=1e-4, type=float)
     parser.add_argument('--min_learning_rate', default=1e-6, type=float)
     parser.add_argument('--grad_clip', default=1.0, type=int)
     parser.add_argument('--decay_rate', default=0.9999, type=int)
