@@ -30,7 +30,7 @@ def evaluate_model(sess, model, data_set):
     feed = {model.input_data: x,
             model.sequence_lengths: s,
             model.index_chars: index_chars,
-            #model.initial_state: np.zeros([args.max_seq_len, args.out_dim + args.hidden_size]),
+            model.initial_state: np.zeros([args.max_seq_len, args.out_dim + args.hidden_size]),
             }
 
 
@@ -93,8 +93,10 @@ def train(sess, model, eval_model, train_set, valid_set, test_set,args):
             model.input_data: x,
             model.sequence_lengths: s,
             model.lr: curr_learning_rate,
-            #model.initial_state: np.zeros([args.max_seq_len, args.out_dim+args.hidden_size]),
+
+            model.initial_state: np.zeros([args.max_seq_len, args.out_dim+args.hidden_size]),
             model.index_chars: index_chars
+
         }
 
         (train_cost, _, train_step, _, pd, ps) = sess.run([model.cost,  model.final_state, 
@@ -249,16 +251,18 @@ def generate(args):
     reset_graph()
 
     model = Generation_model(args=args, vocabulary=vocabulary)
+    args.is_training = False
+    args.batch_size = 1
     sample_model = Generation_model(args=args, reuse=True, vocabulary=vocabulary)
 
     sess = tf.InteractiveSession()
     sess.run(tf.global_variables_initializer())
 
-    print(
-
-        "The embedding matrix: " + sess.run(model.embedding_matrix, feed_dict={model.index_chars: [1,2,3,4,5]})
-
-    )
+    # print(
+    #
+    #     "The embedding matrix: " + sess.run(model.embedding_matrix, feed_dict={})
+    #
+    # )
 
     # loads the weights from checkpoint into our model
     load_checkpoint(sess, FLAGS.log_root)
@@ -294,7 +298,7 @@ def generate(args):
             l=0
 
     line_rebuild_gen = strokes52lines([sample_strokes])
-    plot_char(args.sample_dir,lines2pts(line_rebuild_gen)[0][:l], label2char.get(index_char[0],None)[0])
+    plot_char(args.sample_dir,lines2pts(line_rebuild_gen)[0][1:l], label2char.get(index_char[0],None)[0])
     #print(sample_strokes)
     #strokes = to_normal_strokes(sample_strokes)
 
@@ -306,7 +310,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = True
+    server = False
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Flaxscanner/Dataset/Drawing/')
@@ -319,13 +323,15 @@ if __name__ == "__main__":
 
     parser.add_argument('--mode', default='train', type=str)
     parser.add_argument('--num_epochs', default= 100000, type=int)
-    parser.add_argument('--hidden_size', default=300, type=int)
+
+    parser.add_argument('--hidden_size', default=500, type=int)
     parser.add_argument('--learning_rate', default=1e-5, type=float)
     parser.add_argument('--min_learning_rate', default=1e-8, type=float)
+
     parser.add_argument('--grad_clip', default=1.0, type=int)
     parser.add_argument('--decay_rate', default=0.9999, type=int)
     parser.add_argument('--dropout_rate', default=0.2, type=float)
-    parser.add_argument('--max_seq_len', default=50, type=int)
+    parser.add_argument('--max_seq_len', default=60, type=int)
     parser.add_argument('--pen_dim', default=300, type=int)
     parser.add_argument('--out_dim', default=300, type=int)
     parser.add_argument('--num_mixture', default=20, type=int)

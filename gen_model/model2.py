@@ -24,7 +24,7 @@ class Generation_model(object):
         self.global_step = tf.Variable(0, name='global_step', trainable=False)
 
         self.sequence_lengths = tf.placeholder(dtype=tf.int32, shape=[args.batch_size, ], name='seq_len')
-        self.input_data = tf.placeholder(dtype=tf.float32, shape=[args.batch_size, args.max_seq_len+1, 5], name='input')
+        self.input_data = tf.placeholder(dtype=tf.float32, shape=[args.batch_size, None, 5], name='input')
 
         self.index_chars = tf.placeholder(dtype=tf.int32, shape=[args.batch_size, ], name='char_index')
 
@@ -43,14 +43,16 @@ class Generation_model(object):
 
         chars = tf.nn.embedding_lookup(self.embedding_matrix, self.index_chars)
 
-        self.initial_state = tf.nn.tanh(rnn.super_linear(tf.reshape(self.input_x,(-1,args.max_seq_len)),
-                                                          args.out_dim + args.hidden_size,
-                                                          init_w='gaussian',
-                                                          weight_start=0.001,
-                                                          input_size = None))
+        # if args.is_training:
+        #     self.initial_state = tf.nn.tanh(rnn.super_linear(tf.reshape(self.input_x,(-1,args.max_seq_len)),
+        #                                                   args.out_dim + args.hidden_size,
+        #                                                   init_w='gaussian',
+        #                                                   weight_start=0.001,
+        #                                                   input_size = None))
+        # else:
+        self.initial_state = tf.placeholder(shape=[args.max_seq_len, args.hidden_size + args.out_dim], dtype=tf.float32,
+                                            name='initial_state')
 
-        #self.initial_state = tf.placeholder(shape=[args.max_seq_len, args.out_dim + args.hidden_size], dtype=tf.float32,
-         #                                   name='initial_state')
 
         # if args.dropout_rate > 0:
         #   cell = tf.contrib.rnn.DropoutWrapper(cell, output_keep_prob=args.dropout_rate)
@@ -65,7 +67,8 @@ class Generation_model(object):
         # self.cell = rnn.GRU(x_t=self.input_x, hidden_size=args.hidden_size)
         # self.initial_state = self.cell.zero_state(batch_size=args.batch_size, dtype=tf.float32)
 
-        output = tf.reshape(self.cell.out, (2, -1, args.hidden_size))[1, :, :]
+        # output = tf.reshape(self.cell.out, (2, -1, args.hidden_size))[1, :, :]
+        output = tf.transpose(tf.nn.embedding_lookup(tf.transpose(self.cell.out), tf.range(args.hidden_size,args.hidden_size + args.out_dim)))
         output = tf.reshape(output, [-1, args.out_dim])
         # last_state = tf.reshape(self.cell.out, (2, -1, 500))[0, :, :]
 
@@ -123,9 +126,9 @@ class Generation_model(object):
           result2 = tf.nn.softmax_cross_entropy_with_logits(
               labels=pen_data, logits=z_pen_logits)
           result2 = tf.reshape(result2, [-1, 1])
-            
+
           if not args.is_training:  # eval mode, mask eos columns
-             result2 = tf.multiply(result2, fs)
+              result2 = tf.multiply(result2, fs)
 
           result = result1 + result2
           return result, result1, result2
@@ -198,7 +201,7 @@ class Generation_model(object):
 
 
 def sample(sess, model, seq_len=250, temperature=1.0, greedy_mode=False,
-           index_char=None):
+           index_char=None, args=[]):
   """Samples a sequence from a pre-trained model."""
 
   def adjust_temp(pi_pdf, temp):
@@ -233,10 +236,8 @@ def sample(sess, model, seq_len=250, temperature=1.0, greedy_mode=False,
 
   prev_x = np.zeros((1, 1, 5), dtype=np.float32)
   prev_x[0, 0, 2] = 1  # initially, we want to see beginning of new stroke
-  if z is None:
-    z = np.random.randn(1, model.hps.z_size)  # not used if unconditional
 
-  prev_state = sess.run(model.initial_state, feed_dict={model.index_chars: index_char})
+  prev_state = np.zeros([args.max_seq_len, args.out_dim+args.hidden_size])
 
   strokes = np.zeros((seq_len, 5), dtype=np.float32)
   mixture_params = []
@@ -249,7 +250,7 @@ def sample(sess, model, seq_len=250, temperature=1.0, greedy_mode=False,
           model.input_x: prev_x,
           model.sequence_lengths: [1],
           model.initial_state: prev_state,
-          model.index_chars: index_char
+          model.index_chars: [index_char]
     }
 
     params = sess.run([
