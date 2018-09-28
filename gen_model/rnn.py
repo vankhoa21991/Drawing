@@ -224,7 +224,8 @@ class GRU_embedding():
     x_t: np.matrix
         The input vector.
     """
-    h_tm1 = tf.reshape(h_tm1, (2,-1,self.hidden_size))[0,:,:]
+    # h_tm1 = tf.reshape(h_tm1, (2,-1,self.hidden_size))[0,:,:]
+    h_tm1 = tf.transpose(tf.nn.embedding_lookup(tf.transpose(h_tm1), tf.range(0, self.hidden_size)))
 
     self.c_in = tf.reshape(c_in,(-1,self.embed_dim))
 
