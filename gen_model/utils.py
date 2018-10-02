@@ -19,7 +19,7 @@ def load_data(data_dir='',model_dir=''):
     chars_pts, LB = [], []
     data = []
 
-    for file in list_files[:1000]:
+    for file in list_files[:4]:
 
         if file[-9:] == '_lbls.txt':
             file_name = file[:3]
@@ -48,7 +48,7 @@ def load_data(data_dir='',model_dir=''):
         for c in range(len(chars_pts_after_clean[w])):
             chars_pts_after_clean[w][c] = clean_double_points(chars_pts_after_clean[w][c])
             chars_pts_after_clean[w][c] = clean_one_point_strokes(chars_pts_after_clean[w][c])
-            chars_pts_after_clean[w][c] = clean_redundant_points(chars_pts_after_clean[w][c], 0.9)
+            chars_pts_after_clean[w][c] = clean_redundant_points(chars_pts_after_clean[w][c], 0.95)
 
 
 
@@ -70,24 +70,24 @@ def load_data(data_dir='',model_dir=''):
     #     for c in range(len(chars_pts_normalized[i])):
     #         plot_char(chars_pts_normalized[i][c], lbls_all[i][c])
 
-    strokes5 = []
+    strokes3 = []
     line_rebuild = []
     for i in range(len(Lines_normalized)):
         li = Lines_normalized[i]
-        s5 = lines2strokes5(li)
-        line_rebuild = strokes52lines(s5)
+        s3 = lines2strokes3(li)
+        # line_rebuild = strokes52lines(s5)
 
         # plot_char(lines2pts([line_rebuild])[0], 'bc')
         # diff = li - line_rebuild
 
-        strokes5.append(s5)
+        strokes3.append(s3)
 
     #draw_lines(strokes5)
 
     ALL_LINES = []
     ALL_LBLS = []
     for id_person in range(len(lbls_all)):
-        ALL_LINES += strokes5[id_person]
+        ALL_LINES += strokes3[id_person]
         ALL_LBLS += lbls_all[id_person]
 
     #create_encode_decode_file(ALL_LBLS,model_dir)
@@ -195,6 +195,33 @@ def lines2strokes5(Lines_in):
                     dx = Lines_in[c][s + 1][0][0] - Lines_in[c][s][l][1]
                     dy = Lines_in[c][s + 1][0][2] - Lines_in[c][s][l][3]
                     si = [0, 1, 0]
+                    Char.append([dx, dy] + si)
+
+        Chars.append(Char)
+    return Chars
+
+def lines2strokes3(Lines_in):
+    # Lines in: chars # [x1, x2 ,y1, y2]
+    Chars = []
+    for c in range(len(Lines_in)):         # char c
+        Char = []
+        for s in range(len(Lines_in[c])):  # stroke s
+            for l in range(len(Lines_in[c][s])):
+
+                dx = Lines_in[c][s][l][1] - Lines_in[c][s][l][0]
+                dy = Lines_in[c][s][l][3] - Lines_in[c][s][l][2]
+
+                if l == len(Lines_in[c][s]) - 1 and s == len(Lines_in[c]) - 1:   # end of char:
+                    si = [1]
+                else:
+                    si = [0]
+
+                Char.append([dx, dy] + si)
+
+                if l == len(Lines_in[c][s]) - 1 and s != len(Lines_in[c]) - 1:   # end of stroke
+                    dx = Lines_in[c][s + 1][0][0] - Lines_in[c][s][l][1]
+                    dy = Lines_in[c][s + 1][0][2] - Lines_in[c][s][l][3]
+                    si = [1]
                     Char.append([dx, dy] + si)
 
         Chars.append(Char)
@@ -378,7 +405,7 @@ def clean_redundant_points(char_pts, Tcos):
 
     # get width and height of a character
     width, height = get_width_height(char_pts)
-    Tdis = 0.05*np.max([width,height])
+    Tdis = 0.01*np.max([width,height])
 
     strokes = []
     for s in range(len(char_pts)):

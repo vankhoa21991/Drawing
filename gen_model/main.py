@@ -267,39 +267,52 @@ def generate(args):
     # loads the weights from checkpoint into our model
     load_checkpoint(sess, FLAGS.log_root)
 
-    q, x, s, index_char = data_set.random_batch()
+    index = random.randint(0,len(train_set.charlabel))
+    index_char = train_set.charlabel[index]
+    x = train_set.strokes[index]
+    label = label2char[index_char][0]
 
-    print(label2char.get(index_char[0],None)[0])
+    print(label)
 
-    line_rebuild = strokes52lines(x)
+    sample_strokes, m = sample(sess, sample_model, seq_len=args.max_seq_len, temperature=0.9, index_char = index_char, args=args)
 
-    l=0
-    for i in range(len(x[0])):
-        if x[0][i, 2] > 0:
-            l += 1
+    sample_strokes[:, 2] = sample_strokes[:, 3]  # change because we don't input the sequence, so we don't change at the to_big_stroke
 
+    strokes = to_normal_strokes(sample_strokes)
 
-    plot_char(args.sample_dir,lines2pts(line_rebuild)[0][1:l], label2char.get(index_char[0],None)[0])
-
-    # draw_strokes(to_normal_strokes(x[0]), svg_fpath='sample/origin_' + label2char.get(index_char[0],None)[0] + '.svg')
-    # 0: ve 1: nhac len
-    # for i in range(len(q)):
-    #     char = label2char.get(index_char[i], None)
-    #     draw_strokes(to_normal_strokes(q[i]),svg_fpath='sample/origin_'+ char[0] + '.svg')
-
-    sample_strokes, m = sample(sess, sample_model, seq_len=args.max_seq_len, index_char = index_char[0], args = args)
+    draw_strokes(x, svg_fpath='sample/origin_' + label + '.svg')
+    draw_strokes(strokes, svg_fpath='sample/gen_' + label + '.svg')
 
 
-    l=0
-    for i in range(len(sample_strokes)):
-        if sample_strokes[i, 2] > 0:
-            l += 1
-        if l == len(sample_strokes):
-            l=0
+    # line_rebuild = strokes52lines(x)
 
-    line_rebuild_gen = strokes52lines([sample_strokes])
-    plot_char(args.sample_dir,lines2pts(line_rebuild_gen)[0][1:l], label2char.get(index_char[0],None)[0])
-    #print(sample_strokes)
+    # l=0
+    # for i in range(len(x[0])):
+    #     if x[0][i, 2] > 0:
+    #         l += 1
+    #
+    #
+    # plot_char(args.sample_dir,lines2pts(line_rebuild)[0][1:l], label2char.get(index_char[0],None)[0])
+    #
+    # # draw_strokes(to_normal_strokes(x[0]), svg_fpath='sample/origin_' + label2char.get(index_char[0],None)[0] + '.svg')
+    # # 0: ve 1: nhac len
+    # # for i in range(len(q)):
+    # #     char = label2char.get(index_char[i], None)
+    # #     draw_strokes(to_normal_strokes(q[i]),svg_fpath='sample/origin_'+ char[0] + '.svg')
+    #
+    # sample_strokes, m = sample(sess, sample_model, seq_len=args.max_seq_len, index_char = index_char[0], args = args)
+    #
+    #
+    # l=0
+    # for i in range(len(sample_strokes)):
+    #     if sample_strokes[i, 2] > 0:
+    #         l += 1
+    #     if l == len(sample_strokes):
+    #         l=0
+    #
+    # line_rebuild_gen = strokes52lines([sample_strokes])
+    # plot_char(args.sample_dir,lines2pts(line_rebuild_gen)[0][1:l+1], label2char.get(index_char[0],None)[0])
+    # print(sample_strokes)
     #strokes = to_normal_strokes(sample_strokes)
 
     #draw_strokes(strokes)
@@ -310,7 +323,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = True
+    server = False
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Flaxscanner/Dataset/Drawing/')

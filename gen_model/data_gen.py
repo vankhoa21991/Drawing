@@ -32,11 +32,38 @@ class DataLoader(object):
     # sets self.strokes (list of ndarrays, one per sketch, in stroke-3 format,
     # sorted by size)
     self.vocabulary = vocabulary
-    self.strokes = strokes
-    self.charlabel = charlabel
+    # self.strokes = strokes
+    # self.charlabel = charlabel
     self.num_batches = int(len(charlabel) / self.batch_size)
     self.pad_strokes = sequence.pad_sequences(strokes, maxlen=max_seq_length, dtype='float')
+    self.preprocess(strokes=strokes, charlabel=charlabel)
 
+  def preprocess(self, strokes, charlabel):
+    """Remove entries from strokes having > max_seq_length points."""
+    raw_data = []
+    seq_len = []
+    count_data = 0
+    self.charlabel = []
+    for i in range(len(strokes)):
+      if len(charlabel) > 2:
+        self.charlabel.append(charlabel[i])
+      data = strokes[i]
+      if len(data) <= (self.max_seq_length):
+        count_data += 1
+        # removes large gaps from the data
+        # data = np.minimum(data, self.limit)
+        # data = np.maximum(data, -self.limit)
+        data = np.array(data, dtype=np.float32)
+        # data[:, 0:2] /= self.scale_factor
+        raw_data.append(data)
+        seq_len.append(len(data))
+    seq_len = np.array(seq_len)  # nstrokes for each sketch
+    idx = np.argsort(seq_len)
+    self.strokes = []
+    for i in range(len(seq_len)):
+      self.strokes.append(raw_data[i])  # modified: origin idx[i]
+    print("total images <= max_seq_len is %d" % count_data)
+    self.num_batches = int(count_data / self.batch_size)
 
   def _get_batch_from_indices(self, indices):
     """Given a list of indices, return the potentially augmented batch."""
