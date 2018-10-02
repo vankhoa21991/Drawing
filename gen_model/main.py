@@ -310,7 +310,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = False
+    server = True
 
     if server == True:
         parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Flaxscanner/Dataset/Drawing/')
@@ -322,11 +322,11 @@ if __name__ == "__main__":
         parser.add_argument('--model_dir', default='/home/lupin/Cinnamon/Flaxscanner/Models/Drawing/gen_model2/')
 
     parser.add_argument('--mode', default='train', type=str)
-    parser.add_argument('--num_epochs', default= 100000, type=int)
+    parser.add_argument('--num_epochs', default= 3000000, type=int)
 
-    parser.add_argument('--hidden_size', default=500, type=int)
-    parser.add_argument('--learning_rate', default=1e-5, type=float)
-    parser.add_argument('--min_learning_rate', default=1e-8, type=float)
+    parser.add_argument('--hidden_size', default=1000, type=int)
+    parser.add_argument('--learning_rate', default=1e-3, type=float)
+    parser.add_argument('--min_learning_rate', default=1e-10, type=float)
 
     parser.add_argument('--grad_clip', default=1.0, type=int)
     parser.add_argument('--decay_rate', default=0.9999, type=int)
@@ -334,13 +334,13 @@ if __name__ == "__main__":
     parser.add_argument('--max_seq_len', default=60, type=int)
     parser.add_argument('--pen_dim', default=300, type=int)
     parser.add_argument('--out_dim', default=300, type=int)
-    parser.add_argument('--num_mixture', default=20, type=int)
-    parser.add_argument('--embedding_len', default=50, type=int)
-    parser.add_argument('--batch_size', default=32, type=int)
+    parser.add_argument('--num_mixture', default=60, type=int)
+    parser.add_argument('--embedding_len', default=500, type=int)
+    parser.add_argument('--batch_size', default=100, type=int)
     parser.add_argument('--is_training', default=True, type=bool)
-    parser.add_argument('--save_every', default=50, type=int)
-    parser.add_argument('--num_gpu', default='1', type=int)
-    parser.add_argument('--is_resume', default=False, type=bool)
+    parser.add_argument('--save_every', default=500, type=int)
+    parser.add_argument('--num_gpu', default='3', type=int)
+    parser.add_argument('--is_resume', default=True, type=bool)
 
     args = parser.parse_args()
     os.environ["CUDA_VISIBLE_DEVICES"] = str(args.num_gpu)
