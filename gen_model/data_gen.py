@@ -35,7 +35,7 @@ class DataLoader(object):
     # self.strokes = strokes
     # self.charlabel = charlabel
     self.num_batches = int(len(charlabel) / self.batch_size)
-    self.pad_strokes = sequence.pad_sequences(strokes, maxlen=max_seq_length, dtype='float')
+    # self.pad_strokes = sequence.pad_sequences(strokes, maxlen=max_seq_length, dtype='float')
     self.preprocess(strokes=strokes, charlabel=charlabel)
 
   def preprocess(self, strokes, charlabel):

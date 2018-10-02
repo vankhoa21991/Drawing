@@ -279,8 +279,9 @@ def generate(args):
     sample_strokes[:, 2] = sample_strokes[:, 3]  # change because we don't input the sequence, so we don't change at the to_big_stroke
 
     strokes = to_normal_strokes(sample_strokes)
+    x_strokes = to_normal_strokes(x)
 
-    draw_strokes(x, svg_fpath='sample/origin_' + label + '.svg')
+    draw_strokes(x_strokes, svg_fpath='sample/origin_' + label + '.svg')
     draw_strokes(strokes, svg_fpath='sample/gen_' + label + '.svg')
 
 
@@ -353,7 +354,7 @@ if __name__ == "__main__":
     parser.add_argument('--is_training', default=True, type=bool)
     parser.add_argument('--save_every', default=500, type=int)
     parser.add_argument('--num_gpu', default='3', type=int)
-    parser.add_argument('--is_resume', default=True, type=bool)
+    parser.add_argument('--is_resume', default=False, type=bool)
 
     args = parser.parse_args()
     os.environ["CUDA_VISIBLE_DEVICES"] = str(args.num_gpu)

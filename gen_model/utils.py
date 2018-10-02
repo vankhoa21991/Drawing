@@ -74,7 +74,7 @@ def load_data(data_dir='',model_dir=''):
     line_rebuild = []
     for i in range(len(Lines_normalized)):
         li = Lines_normalized[i]
-        s3 = lines2strokes3(li)
+        s3 = lines2strokes5(li)
         # line_rebuild = strokes52lines(s5)
 
         # plot_char(lines2pts([line_rebuild])[0], 'bc')
@@ -90,7 +90,7 @@ def load_data(data_dir='',model_dir=''):
         ALL_LINES += strokes3[id_person]
         ALL_LBLS += lbls_all[id_person]
 
-    #create_encode_decode_file(ALL_LBLS,model_dir)
+    create_encode_decode_file(ALL_LBLS,model_dir)
     length = [np.max([len(x) for x in ALL_LINES]), np.mean([len(x) for x in ALL_LINES])]
 
     print('Max length: ' + str(length[0]) + '  Average length: ' + str(int(length[1])))
