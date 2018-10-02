@@ -48,7 +48,7 @@ def load_data(data_dir='',model_dir=''):
         for c in range(len(chars_pts_after_clean[w])):
             chars_pts_after_clean[w][c] = clean_double_points(chars_pts_after_clean[w][c])
             chars_pts_after_clean[w][c] = clean_one_point_strokes(chars_pts_after_clean[w][c])
-            chars_pts_after_clean[w][c] = clean_redundant_points(chars_pts_after_clean[w][c], 0.95)
+            chars_pts_after_clean[w][c] = clean_redundant_points(chars_pts_after_clean[w][c], 0.99)
 
 
 
@@ -343,7 +343,7 @@ def remove_empty_labels(chars, lbls):
     lbls_out = lbls[:]
     for i in range(len(lbls_out)):
 
-        index = [k for k, x in enumerate(lbls_out[i]) if x == ''or len(x) == 1 ]
+        index = [k for k, x in enumerate(lbls_out[i]) if x == ''or len(x) > 1 ]
 
         for j in sorted(index, reverse=True):
             del chars_out[i][j]
@@ -401,11 +401,11 @@ def get_width_height(char_pts):
             py.append(char_pts[s][p][1])
     return np.max(px) - np.min(px), np.max(py) - np.min(py)
 
-def clean_redundant_points(char_pts, Tcos):
+def clean_redundant_points(char_pts, Tcos, dis = 0.01):
 
     # get width and height of a character
     width, height = get_width_height(char_pts)
-    Tdis = 0.01*np.max([width,height])
+    Tdis = dis*np.max([width,height])
 
     strokes = []
     for s in range(len(char_pts)):
