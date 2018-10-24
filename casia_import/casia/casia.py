@@ -11,6 +11,7 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 import _pickle as pickle
+import re
 
 
 def my_load_gnt_file(filename):
@@ -281,23 +282,12 @@ def extract_casia_offline(folder):
             IMGS += imgs
             LBLS += lbls
 
-            # for i in range(len(imgs)):
-                # imgs[i].save(folder + lbls[i] + "_" + f + "_" + str(i) + ".png")
+            for i in range(len(imgs)):
+                if lbls[i][0].isalpha():
+                    imgs[i].save(folder + lbls[i][0] + "_" + f + "_" + str(i) + ".png")
 
-            # for _ in idx:
-            #     img.append(imgs[_])
-            #     lbl.append(lbls[_])
-            # imgs = img
-            # lbls = lbl
-            #
-            # for i in range(len(imgs)):
-            #     if i >= 10:
-            #         break
-            #     imgs[i].save(folder + lbls[i] + "_" + f + "_" + str(i) + ".png")
-            #     if lbls[i] not in list_labels:
-            #         list_labels.append(lbls[i])
-            #
-            # print(f, len(lbls))
+
+            print(f, len(lbls))
 
         except Exception as e:
             print("error at :" + f)
@@ -332,5 +322,6 @@ if __name__ == '__main__':
     # OFFLINE
 
     folder = "/mnt/DATA/lupin/Dataset/CASIA_HW1.0/"
+    folder = "/home/lupin/Cinnamon/Flaxscanner/Dataset/CASIA/Offline/data_gnt/"
     IMGS, LBLS = extract_casia_offline(folder)
     IMGS
