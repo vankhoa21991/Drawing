@@ -13,7 +13,7 @@ import svgwrite
 import random
 import re
 
-def load_data(data_dir='',model_dir=''):
+def load_data(data_dir='',model_dir='', input_char=''):
     list_files = os.listdir(data_dir)
     list_files = sorted(list_files)
     chars, lbls = [], []
@@ -45,7 +45,7 @@ def load_data(data_dir='',model_dir=''):
     chars_pts_before_clean = chars_pts_all
     lbls_before_clean = lbls_all
 
-    chars_pts_after_clean, lbls_after_clean = remove_empty_labels(chars_pts_before_clean, lbls_before_clean)
+    chars_pts_after_clean, lbls_after_clean = remove_empty_labels(chars_pts_before_clean, lbls_before_clean, input_char)
 
     for w in range(len(chars_pts_after_clean)):
         for c in range(len(chars_pts_after_clean[w])):
@@ -69,9 +69,9 @@ def load_data(data_dir='',model_dir=''):
 
         Lines_normalized.append(lines_after_normalize)
 
-    for i in range(len(chars_pts_normalized)):
-        for c in range(len(chars_pts_normalized[i])):
-            plot_char('',chars_pts_normalized[i][c], lbls_all[i][c], draw=False)
+    # for i in range(len(chars_pts_normalized)):
+    #     for c in range(len(chars_pts_normalized[i])):
+    #         plot_char('',chars_pts_normalized[i][c], lbls_all[i][c], draw=False)
 
     strokes5 = []
     line_rebuild = []
@@ -319,12 +319,12 @@ def extract_line(Lines_in):
         Lines.append(Line)
     return Lines
 
-def remove_empty_labels(chars, lbls):
+def remove_empty_labels(chars, lbls, input_char = ''):
     chars_out = list(chars)
     lbls_out = lbls[:]
     for i in range(len(lbls_out)):
 
-        index = [k for k, x in enumerate(lbls_out[i]) if x == '' or len(x) == 1 or x[0]!= 'b']
+        index = [k for k, x in enumerate(lbls_out[i]) if x == '' or len(x) == 1 or x[0]!= input_char]
 
         for j in sorted(index, reverse=True):
             del chars_out[i][j]

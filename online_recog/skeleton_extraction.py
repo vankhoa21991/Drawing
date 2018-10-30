@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from skimage.util import invert
 from skimage import io
 import numpy as np
+
 def test():
     # Invert the horse image
     image = invert(data.horse())
@@ -71,13 +72,11 @@ def ske_ext(file_dir, draw = True):
         fig.tight_layout()
         plt.show()
 
-
-
     return ske
 
 if __name__ == '__main__':
     # test()
     folder = "/home/lupin/Cinnamon/Flaxscanner/Dataset/CASIA/Offline/data_png/"
-    file = "b_735-f.gnt_63.png"
+    file = "畿_779-f.gnt_19.png"
 
     ske = ske_ext(folder + file)
