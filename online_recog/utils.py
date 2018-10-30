@@ -11,20 +11,16 @@ import json
 import io
 import svgwrite
 import random
-from char_code import *
+import re
 
-def load_data(data_dir='',model_dir=''):
+def load_data(data_dir='',model_dir='', input_char=''):
     list_files = os.listdir(data_dir)
     list_files = sorted(list_files)
     chars, lbls = [], []
     chars_pts, LB = [], []
     data = []
 
-<<<<<<< HEAD
-    for file in list_files[:100]:
-=======
-    for file in list_files[:10]:
->>>>>>> 1bb71c494a82f744890124240a2d05b53ca575b0
+    for file in list_files[:1]:
 
         if file[-9:] == '_lbls.txt':
             file_name = file[:3]
@@ -44,10 +40,12 @@ def load_data(data_dir='',model_dir=''):
 
     chars_pts_all, lbls_all = chars, lbls
 
+    # p = re.compile('/b/')
+
     chars_pts_before_clean = chars_pts_all
     lbls_before_clean = lbls_all
 
-    chars_pts_after_clean, lbls_after_clean = remove_empty_labels(chars_pts_before_clean, lbls_before_clean)
+    chars_pts_after_clean, lbls_after_clean = remove_empty_labels(chars_pts_before_clean, lbls_before_clean, input_char)
 
     for w in range(len(chars_pts_after_clean)):
         for c in range(len(chars_pts_after_clean[w])):
@@ -73,44 +71,21 @@ def load_data(data_dir='',model_dir=''):
 
     # for i in range(len(chars_pts_normalized)):
     #     for c in range(len(chars_pts_normalized[i])):
-    #         plot_char(chars_pts_normalized[i][c], lbls_all[i][c])
+    #         plot_char('',chars_pts_normalized[i][c], lbls_all[i][c], draw=False)
 
-    strokes3 = []
+    strokes5 = []
     line_rebuild = []
     for i in range(len(Lines_normalized)):
         li = Lines_normalized[i]
-        s3 = lines2strokes5(li)
+        s5 = lines2strokes5(li)
         # line_rebuild = strokes52lines(s5)
 
         # plot_char(lines2pts([line_rebuild])[0], 'bc')
         # diff = li - line_rebuild
 
-        strokes3.append(s3)
+        strokes5.append(s5)
 
-    #draw_lines(strokes5)
-
-    ALL_LINES = []
-    ALL_LBLS = []
-    for id_person in range(len(lbls_all)):
-        ALL_LINES += strokes3[id_person]
-        ALL_LBLS += lbls_all[id_person]
-
-    create_encode_decode_file(ALL_LBLS,model_dir)
-    length = [np.max([len(x) for x in ALL_LINES]), np.mean([len(x) for x in ALL_LINES])]
-
-    print('Max length: ' + str(length[0]) + '  Average length: ' + str(int(length[1])))
-
-    # load encode file
-    char2label = json.load(open(model_dir + 'encode_kanji.json'))
-    label2char = {}
-    for k, v in char2label.items():
-        label2char[v] = k
-
-    ALL_LBLS_ENCODED = file_to_word_ids(ALL_LBLS, char2label)
-
-    stroke_train, stroke_val, label_train, label_val = train_test_split(ALL_LINES, ALL_LBLS_ENCODED, test_size=0.08,random_state=1)
-
-    return stroke_train, stroke_val, label_train, label_val, label2char, char2label, length, ALL_LINES, ALL_LBLS_ENCODED
+    return chars_pts_normalized
 
 def file_to_word_ids(label, word_to_id):
     label_out = []
@@ -121,7 +96,7 @@ def file_to_word_ids(label, word_to_id):
             print(word + 'not exist')
     return label_out
 
-def plot_char(folder, char, lbl):
+def plot_char(folder, char, lbl, draw = True):
     fig = plt.figure()
     ax = plt.subplot(111)
 
@@ -133,7 +108,8 @@ def plot_char(folder, char, lbl):
     if lbl[0] == '/':
         lbl = 'sur'
     name = '_'+lbl[0]+ '_' + str(random.randint(0,1000000)) + '.png'
-    fig.savefig(folder + name)
+    if draw:
+        fig.savefig(folder + name)
     # plt.show()
 
 def pts2lines(CHAR):
@@ -343,12 +319,12 @@ def extract_line(Lines_in):
         Lines.append(Line)
     return Lines
 
-def remove_empty_labels(chars, lbls):
+def remove_empty_labels(chars, lbls, input_char = ''):
     chars_out = list(chars)
     lbls_out = lbls[:]
     for i in range(len(lbls_out)):
 
-        index = [k for k, x in enumerate(lbls_out[i]) if x == ''or len(x) == 1 ]
+        index = [k for k, x in enumerate(lbls_out[i]) if x == '' or len(x) == 1 or x[0]!= input_char]
 
         for j in sorted(index, reverse=True):
             del chars_out[i][j]
@@ -406,11 +382,11 @@ def get_width_height(char_pts):
             py.append(char_pts[s][p][1])
     return np.max(px) - np.min(px), np.max(py) - np.min(py)
 
-def clean_redundant_points(char_pts, Tcos, dis = 0.01):
+def clean_redundant_points(char_pts, Tcos):
 
     # get width and height of a character
     width, height = get_width_height(char_pts)
-    Tdis = dis*np.max([width,height])
+    Tdis = 0.01*np.max([width,height])
 
     strokes = []
     for s in range(len(char_pts)):
