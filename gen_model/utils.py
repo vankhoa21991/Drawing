@@ -19,7 +19,7 @@ def load_data(data_dir='',model_dir=''):
     chars_pts, LB = [], []
     data = []
 
-    for file in list_files[:4]:
+    for file in list_files[:100]:
 
         if file[-9:] == '_lbls.txt':
             file_name = file[:3]
@@ -343,7 +343,7 @@ def remove_empty_labels(chars, lbls):
     lbls_out = lbls[:]
     for i in range(len(lbls_out)):
 
-        index = [k for k, x in enumerate(lbls_out[i]) if x == ''or len(x) > 1 ]
+        index = [k for k, x in enumerate(lbls_out[i]) if x == ''or len(x) == 1 ]
 
         for j in sorted(index, reverse=True):
             del chars_out[i][j]
