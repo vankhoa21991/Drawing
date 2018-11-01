@@ -20,23 +20,19 @@ def load_data(data_dir='',model_dir='', input_char=''):
     chars_pts, LB = [], []
     data = []
 
-    for file in list_files[:1]:
+    file_name = '005'
 
-        if file[-9:] == '_lbls.txt':
-            file_name = file[:3]
-            try:
-                file_stroke = open(data_dir + file_name + '_stroke.txt', "rb")
-                file_lable = open(data_dir + file_name + '_lbls.txt', "rb")
-            except:
-                break
+    file_stroke = open(data_dir + file_name + '_stroke.txt', "rb")
+    file_lable = open(data_dir + file_name + '_lbls.txt', "rb")
 
-            strokes = pickle.load(file_stroke)
-            chars.append(strokes)
-            chars_pts += strokes
 
-            lbl = pickle.load(file_lable)
-            lbls.append(lbl)
-            LB += lbl
+    strokes = pickle.load(file_stroke)
+    chars.append(strokes)
+    chars_pts += strokes
+
+    lbl = pickle.load(file_lable)
+    lbls.append(lbl)
+    LB += lbl
 
     chars_pts_all, lbls_all = chars, lbls
 
@@ -51,7 +47,7 @@ def load_data(data_dir='',model_dir='', input_char=''):
         for c in range(len(chars_pts_after_clean[w])):
             chars_pts_after_clean[w][c] = clean_double_points(chars_pts_after_clean[w][c])
             chars_pts_after_clean[w][c] = clean_one_point_strokes(chars_pts_after_clean[w][c])
-            chars_pts_after_clean[w][c] = clean_redundant_points(chars_pts_after_clean[w][c], 0.99)
+            chars_pts_after_clean[w][c] = clean_redundant_points(chars_pts_after_clean[w][c], 0.999)
 
 
 
@@ -71,19 +67,7 @@ def load_data(data_dir='',model_dir='', input_char=''):
 
     # for i in range(len(chars_pts_normalized)):
     #     for c in range(len(chars_pts_normalized[i])):
-    #         plot_char('',chars_pts_normalized[i][c], lbls_all[i][c], draw=False)
-
-    strokes5 = []
-    line_rebuild = []
-    for i in range(len(Lines_normalized)):
-        li = Lines_normalized[i]
-        s5 = lines2strokes5(li)
-        # line_rebuild = strokes52lines(s5)
-
-        # plot_char(lines2pts([line_rebuild])[0], 'bc')
-        # diff = li - line_rebuild
-
-        strokes5.append(s5)
+    #         plot_char('online_ref',chars_pts_normalized[i][c], lbls_all[i][c], draw=True)
 
     return chars_pts_normalized
 
@@ -146,10 +130,10 @@ def lines2pts(Lines):
                 y2 = Lines[c][s][l][3]
 
                 if l == len(Lines[c][s]) - 1:
-                    Line.append((x1, y1))
-                    Line.append((x2, y2))
+                    Line.append([x1, y1])
+                    Line.append([x2, y2])
                 else:
-                    Line.append((x1, y1))
+                    Line.append([x1, y1])
             Strokes.append(Line)
         CHAR.append(Strokes)
     return CHAR

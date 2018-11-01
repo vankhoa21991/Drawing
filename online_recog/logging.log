@@ -1,0 +1,2640 @@
+INFO:root:Predicted g with cost = 9.863261427227677
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted w with cost = 46.95214864326014
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted d with cost = 6.494381311857646
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted G with cost = 23.818148342294567
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted B with cost = 11.275605140451999
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted D with cost = 6.149175741533397
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted B with cost = 16.735129968978445
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted B with cost = 35.10830964834755
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted x with cost = 21.751307138419484
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted B with cost = 10.83395732199187
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted B with cost = 3.5373403278495017
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted B with cost = 27.728586300316657
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted D with cost = 28.079083430622457
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted G with cost = 50.038133652413414
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted G with cost = 11.831297065517711
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted b with cost = 37.19735071068917
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted j with cost = 6.3648184651161035
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted C with cost = 10.669163674445358
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted D with cost = 51.47107021718218
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted T with cost = 6.210279641426538
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted m with cost = 28.636631620219834
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted a with cost = 12.938603869013333
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted d with cost = 7.652102753344081
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted Q with cost = 19.9140757274221
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted H with cost = 46.720732333399184
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted x with cost = 24.708185393511638
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted O with cost = 12.291325496555539
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted B with cost = 3.932052323499084
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted B with cost = 31.27108963887583
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted b with cost = 28.373579283562332
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted o with cost = 60.50402264887231
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted G with cost = 14.303184753474431
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted b with cost = 42.97741648881667
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted Q with cost = 9.552732708119295
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted H with cost = 28.3289883564075
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted K with cost = 61.15186141203884
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted o with cost = 14.305188673979481
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted B with cost = 43.27721635517236
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted P with cost = 34.41946702880185
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted U with cost = 25.58452488068582
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted H with cost = 36.987019955668956
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted B with cost = 20.169081532728974
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted d with cost = 24.2446753671269
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted B with cost = 22.507622263777293
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted g with cost = 51.06389652039453
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted B with cost = 25.84644722588903
+INFO:root:Real char: U
+INFO:root:
+
+INFO:root:Predicted b with cost = 24.934279659847576
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted b with cost = 12.095086727600071
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted o with cost = 47.54143073390577
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted P with cost = 13.147594502209765
+INFO:root:Real char: F
+INFO:root:
+
+INFO:root:Predicted g with cost = 63.1043082360635
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted U with cost = 22.981379140964282
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted B with cost = 32.92862167258843
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted b with cost = 11.65856106694519
+INFO:root:Real char: s
+INFO:root:
+
+INFO:root:Predicted G with cost = 60.37712521220559
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted B with cost = 25.325208987881656
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted B with cost = 19.38416408559548
+INFO:root:Real char: O
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.745670186594536
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted B with cost = 22.894871312629274
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted K with cost = 16.098837213390752
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted u with cost = 13.623258688272017
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted b with cost = 16.063172123402282
+INFO:root:Real char: s
+INFO:root:
+
+INFO:root:Predicted b with cost = 18.075826490301495
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted B with cost = 26.781585734807052
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted U with cost = 31.181957979027544
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted B with cost = 25.005893761097678
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted p with cost = 28.35216329722835
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted G with cost = 26.41346205929232
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted B with cost = 42.53708798635882
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted T with cost = 7.760130482268438
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted B with cost = 18.47804928231148
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted B with cost = 17.3284803840208
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted P with cost = 36.03754684367832
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted E with cost = 12.379485934404764
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted B with cost = 28.849422504592276
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted H with cost = 43.72273330785355
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted G with cost = 28.150554085592077
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted Q with cost = 68.24371342090174
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted G with cost = 21.45121841674168
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted d with cost = 27.140756026698536
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted F with cost = 13.025675075115242
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted o with cost = 7.6578264457074
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted B with cost = 28.219244099018884
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted b with cost = 24.17081283601364
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted b with cost = 31.286187642225755
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted B with cost = 28.095308620712988
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted Q with cost = 25.171043230213698
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted Q with cost = 17.60439645818066
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted o with cost = 40.56137495617413
+INFO:root:Real char: U
+INFO:root:
+
+INFO:root:Predicted B with cost = 12.639033223020963
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted e with cost = 67.55437243894043
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted g with cost = 53.821154388320174
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted g with cost = 61.267126859654304
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted y with cost = 33.05984252611058
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted D with cost = 31.66034383531354
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted K with cost = 6.99496027851035
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted G with cost = 13.283497858798134
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted B with cost = 34.84722793309756
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted P with cost = 26.32967358364336
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted d with cost = 12.337058469361514
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted g with cost = 16.552423641957436
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted U with cost = 30.441765893938616
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted G with cost = 15.504417582934607
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted Q with cost = 32.7090684495617
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted b with cost = 15.924545915419145
+INFO:root:Real char: F
+INFO:root:
+
+INFO:root:Predicted G with cost = 17.15346812719581
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted b with cost = 20.069102664101976
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted B with cost = 23.711202432035165
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.239788916657231
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted B with cost = 31.14758557834975
+INFO:root:Real char: A
+INFO:root:
+
+INFO:root:Predicted b with cost = 40.15545731916858
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted H with cost = 20.319254910038428
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted o with cost = 34.947671766036855
+INFO:root:Real char: O
+INFO:root:
+
+INFO:root:Predicted d with cost = 32.35393637186077
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted B with cost = 40.841981344975444
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted x with cost = 32.79385924045454
+INFO:root:Real char: X
+INFO:root:
+
+INFO:root:Predicted U with cost = 34.15932143071678
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted B with cost = 19.15578934122452
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted Q with cost = 21.35991815897797
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted P with cost = 20.864173347045426
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted P with cost = 44.870777414528895
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted G with cost = 9.536912431314418
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted D with cost = 18.085907466607612
+INFO:root:Real char: E
+INFO:root:
+
+INFO:root:Predicted G with cost = 19.795211002892657
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted G with cost = 25.458521651360165
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted B with cost = 17.096444964581014
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted b with cost = 13.666233918508686
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted p with cost = 32.10966710574253
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted U with cost = 25.062741706687124
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted i with cost = 21.408628082808647
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted D with cost = 5.503291757808502
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted x with cost = 26.753747096255413
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted U with cost = 18.370161818290942
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted d with cost = 45.885506092597836
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted g with cost = 11.633080886365804
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted G with cost = 11.435584998723828
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted G with cost = 33.5912292904203
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted b with cost = 22.608181278447642
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted o with cost = 35.420044207089745
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted G with cost = 23.177797273903355
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted D with cost = 13.571022065033429
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted y with cost = 13.313282013949676
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted p with cost = 24.58889575760486
+INFO:root:Real char: t
+INFO:root:
+
+INFO:root:Predicted T with cost = 8.23879179705286
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted d with cost = 7.4567862132163665
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted D with cost = 45.46381274274042
+INFO:root:Real char: V
+INFO:root:
+
+INFO:root:Predicted p with cost = 24.82345256532511
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted B with cost = 16.62173303226765
+INFO:root:Real char: W
+INFO:root:
+
+INFO:root:Predicted H with cost = 26.976489493252885
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted S with cost = 29.798332480976505
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted b with cost = 21.722529586366722
+INFO:root:Real char: f
+INFO:root:
+
+INFO:root:Predicted g with cost = 17.390192572562178
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted B with cost = 14.577280785086636
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted B with cost = 9.800822610943912
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted B with cost = 32.95027160741831
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted S with cost = 16.823122526277274
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted d with cost = 9.371856243264801
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted B with cost = 32.506316548042285
+INFO:root:Real char: e
+INFO:root:
+
+INFO:root:Predicted D with cost = 11.991524975435672
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted U with cost = 25.929526667251494
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted G with cost = 17.072562509228753
+INFO:root:Real char: t
+INFO:root:
+
+INFO:root:Predicted G with cost = 22.316705837364427
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted o with cost = 15.590177853349896
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted G with cost = 29.395922848652372
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted g with cost = 25.779667792782007
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted R with cost = 25.38347929194681
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted B with cost = 10.870821796880094
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted a with cost = 18.05643147503121
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted D with cost = 37.3649508152485
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted e with cost = 15.794566993563842
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted Q with cost = 15.881959963005919
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted G with cost = 23.6664522721697
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted e with cost = 56.058461278891755
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted G with cost = 21.419795226890315
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted B with cost = 52.2306760648391
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted K with cost = 41.166934267672076
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted k with cost = 29.616926069728624
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted B with cost = 22.710951281553484
+INFO:root:Real char: E
+INFO:root:
+
+INFO:root:Predicted p with cost = 23.320820014848476
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted P with cost = 33.11192388786997
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted B with cost = 33.709647304283266
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted Q with cost = 36.89287071319521
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted G with cost = 22.424714132401025
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted U with cost = 28.542116057430963
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted B with cost = 23.470562271671266
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted B with cost = 22.991548458815497
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted d with cost = 9.812345705304626
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted o with cost = 7.112010293105868
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted B with cost = 22.736465497083
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted Q with cost = 43.3290214820653
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted o with cost = 24.164710604806405
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted d with cost = 40.48021524275957
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted y with cost = 29.54348039277922
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted K with cost = 12.978409814341935
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted B with cost = 13.130482062337945
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted Q with cost = 46.98114512697906
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted Q with cost = 6.156337082402352
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted Q with cost = 41.412981531539344
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted B with cost = 27.430190434465953
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted U with cost = 33.742280443158165
+INFO:root:Real char: V
+INFO:root:
+
+INFO:root:Predicted p with cost = 22.378574687423633
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted Q with cost = 10.507800815691533
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted J with cost = 10.537904785742693
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted U with cost = 24.925879731871976
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted p with cost = 47.7146306270629
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted F with cost = 33.29365896945785
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted G with cost = 20.507828767581756
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted g with cost = 18.355909272925253
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted D with cost = 30.725619289513432
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted T with cost = 5.274297705835602
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted Q with cost = 30.050457203701427
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted o with cost = 29.253539165887258
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted B with cost = 35.21806054696535
+INFO:root:Real char: W
+INFO:root:
+
+INFO:root:Predicted p with cost = 40.296210730989465
+INFO:root:Real char: f
+INFO:root:
+
+INFO:root:Predicted g with cost = 19.861042893955396
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.908661521849334
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted U with cost = 31.221045522558388
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted Q with cost = 48.70821566345273
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted D with cost = 4.285686234828442
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted U with cost = 32.61995047997554
+INFO:root:Real char: W
+INFO:root:
+
+INFO:root:Predicted U with cost = 28.09168192396201
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted o with cost = 9.574752809555665
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted U with cost = 52.577861040422384
+INFO:root:Real char: A
+INFO:root:
+
+INFO:root:Predicted R with cost = 30.327248102831252
+INFO:root:Real char: e
+INFO:root:
+
+INFO:root:Predicted G with cost = 22.869251364271324
+INFO:root:Real char: e
+INFO:root:
+
+INFO:root:Predicted o with cost = 19.772121765145492
+INFO:root:Real char: O
+INFO:root:
+
+INFO:root:Predicted D with cost = 13.105989742161132
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted G with cost = 44.84159192205854
+INFO:root:Real char: X
+INFO:root:
+
+INFO:root:Predicted H with cost = 32.99119769818227
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted d with cost = 22.678263804723905
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted B with cost = 5.545483251783354
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted K with cost = 23.873057667101012
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted x with cost = 3.5412432791801463
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted K with cost = 17.69688214683978
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted B with cost = 6.935156043837651
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted R with cost = 3.702574528575657
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted G with cost = 9.910556782907396
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted B with cost = 19.46634841025471
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted H with cost = 12.82786700064563
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted U with cost = 7.526865739258462
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted K with cost = 2.25759794769472
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted B with cost = 20.43364788972613
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted b with cost = 19.930443613758115
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted B with cost = 31.50016527857552
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted a with cost = 6.9423246791143685
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted B with cost = 27.060863562697072
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted B with cost = 4.961746294033517
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted B with cost = 17.381989153094356
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted B with cost = 28.354243437091743
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted G with cost = 9.14502414378321
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted B with cost = 23.255090549634534
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted U with cost = 16.036913549365266
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted B with cost = 13.504751936766441
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted G with cost = 17.640840785566354
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted B with cost = 10.470224232876381
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted b with cost = 8.48263879132878
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted p with cost = 10.511001770748393
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted g with cost = 39.931512199583246
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted B with cost = 13.329459009412766
+INFO:root:Real char: U
+INFO:root:
+
+INFO:root:Predicted D with cost = 13.522699136112216
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted K with cost = 5.5408138641863705
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted D with cost = 28.862779783737217
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted P with cost = 5.082980057320947
+INFO:root:Real char: F
+INFO:root:
+
+INFO:root:Predicted H with cost = 39.544810546093785
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted B with cost = 13.942951834027838
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted B with cost = 14.409081874686482
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted P with cost = 6.252162721861817
+INFO:root:Real char: s
+INFO:root:
+
+INFO:root:Predicted B with cost = 36.79659926837352
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted B with cost = 16.576188512631937
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted Q with cost = 10.93380344906121
+INFO:root:Real char: O
+INFO:root:
+
+INFO:root:Predicted B with cost = 8.23191370595534
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.27486539027704
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted B with cost = 7.748011718280991
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted B with cost = 5.288469347600927
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted S with cost = 9.478305017777771
+INFO:root:Real char: s
+INFO:root:
+
+INFO:root:Predicted b with cost = 8.00784722149994
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted B with cost = 20.126634341092153
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted B with cost = 18.03266463700974
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted B with cost = 12.641350747159574
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted B with cost = 14.133288821442513
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted B with cost = 11.763209459106
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted B with cost = 24.444804242677417
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted F with cost = 5.08336951778718
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted F with cost = 9.825423223513816
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted o with cost = 12.564388802487505
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted B with cost = 18.621627313329526
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted B with cost = 7.758661818730205
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted B with cost = 18.855280341241368
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted H with cost = 24.083468327314694
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.603618674852692
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted U with cost = 36.54262434955017
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted B with cost = 12.815956462955103
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted U with cost = 15.463226075569366
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted J with cost = 7.158653727602513
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted b with cost = 3.5999950818825726
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.86875936071871
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted b with cost = 15.983883207014037
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted U with cost = 23.340447014648067
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted O with cost = 18.355775955501223
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted K with cost = 15.169268732382704
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted Q with cost = 12.487160682775636
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted B with cost = 19.14324410723009
+INFO:root:Real char: U
+INFO:root:
+
+INFO:root:Predicted U with cost = 7.40274302617921
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted H with cost = 44.07233213406483
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted G with cost = 39.89427808659226
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted g with cost = 66.07578333446385
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted F with cost = 10.65229864397084
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted B with cost = 23.610297077939336
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted o with cost = 3.1957242011805223
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted u with cost = 5.742443024539651
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted B with cost = 21.942044884032796
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted U with cost = 12.762892712408222
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted i with cost = 7.926126045207251
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted S with cost = 7.433793282781943
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted U with cost = 14.103407230857485
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted o with cost = 10.597571704908763
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted B with cost = 17.09682308521277
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted b with cost = 8.389045133958447
+INFO:root:Real char: F
+INFO:root:
+
+INFO:root:Predicted D with cost = 6.036150813174698
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted b with cost = 11.099552227863906
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted B with cost = 11.82483445239337
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted B with cost = 10.324842441761003
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted G with cost = 20.92728747379952
+INFO:root:Real char: A
+INFO:root:
+
+INFO:root:Predicted b with cost = 23.35121637685389
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted B with cost = 10.744231040327282
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted B with cost = 21.45960031560943
+INFO:root:Real char: O
+INFO:root:
+
+INFO:root:Predicted B with cost = 18.241909688154852
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted S with cost = 29.049607866518734
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted x with cost = 14.841746648439468
+INFO:root:Real char: X
+INFO:root:
+
+INFO:root:Predicted U with cost = 16.449121736598897
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted B with cost = 12.388464265066519
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted G with cost = 11.256898262523647
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted P with cost = 13.93231801187204
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted D with cost = 24.390052469289195
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted u with cost = 7.497633880847989
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted B with cost = 10.752708611647133
+INFO:root:Real char: E
+INFO:root:
+
+INFO:root:Predicted w with cost = 9.674904997726129
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted o with cost = 13.4387422480021
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted U with cost = 7.98749493920281
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted w with cost = 7.666709054949933
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted H with cost = 24.809534051006942
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted B with cost = 13.710905691099038
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted S with cost = 9.950787996395716
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted K with cost = 2.5592688086503905
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted x with cost = 16.918312460737248
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted B with cost = 9.90334848911151
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted b with cost = 20.28514724749558
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted a with cost = 4.827567524400718
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted G with cost = 8.452570904514568
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted U with cost = 18.01825114638152
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted B with cost = 11.408474977815606
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted U with cost = 20.469871672129425
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted D with cost = 10.381901756115878
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted J with cost = 5.495071306510016
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted q with cost = 6.328682638100371
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted H with cost = 17.378298299225534
+INFO:root:Real char: t
+INFO:root:
+
+INFO:root:Predicted p with cost = 6.3934900236786145
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted d with cost = 3.413039687393325
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted D with cost = 20.05749984008345
+INFO:root:Real char: V
+INFO:root:
+
+INFO:root:Predicted P with cost = 15.887096678578468
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted w with cost = 10.17806169285841
+INFO:root:Real char: W
+INFO:root:
+
+INFO:root:Predicted H with cost = 16.888566263930443
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted B with cost = 16.557540266478235
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted b with cost = 9.80178478433823
+INFO:root:Real char: f
+INFO:root:
+
+INFO:root:Predicted g with cost = 7.915948251377821
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted e with cost = 8.4140671109759
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted o with cost = 5.3825104473465855
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted H with cost = 19.035761050782146
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted S with cost = 11.125151261557857
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted a with cost = 3.069174571241051
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted B with cost = 18.0107826033749
+INFO:root:Real char: e
+INFO:root:
+
+INFO:root:Predicted B with cost = 7.826404481620697
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.166525647413618
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted Q with cost = 9.723958944828892
+INFO:root:Real char: t
+INFO:root:
+
+INFO:root:Predicted E with cost = 12.948571621670366
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted B with cost = 9.64993360638144
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted x with cost = 15.42888198975129
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted i with cost = 11.410791457595478
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted B with cost = 10.845819659582268
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted P with cost = 5.640764239491116
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted e with cost = 10.403844108768524
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted B with cost = 26.301592588130156
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted U with cost = 9.04738435805729
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted B with cost = 7.544378952279991
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted x with cost = 13.27083226862176
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted S with cost = 28.463734076868647
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted w with cost = 12.688766442400633
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted B with cost = 27.882648711207125
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted K with cost = 21.670338492872588
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted D with cost = 12.749857250325144
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted B with cost = 14.036783361034155
+INFO:root:Real char: E
+INFO:root:
+
+INFO:root:Predicted p with cost = 18.7493127650988
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted p with cost = 22.63506711302451
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted G with cost = 23.45707311429319
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted B with cost = 22.086431260751862
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted G with cost = 11.636278160204196
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted U with cost = 15.864088845770638
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted U with cost = 11.954375986839697
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted B with cost = 14.92285793227417
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted u with cost = 4.127896875331218
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted m with cost = 3.8091850227895976
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted B with cost = 9.828705836823518
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted B with cost = 25.799809521397492
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.539564182486847
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted U with cost = 22.7137053700831
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted q with cost = 148.50112342548968
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted g with cost = 4.726985351865365
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted B with cost = 9.264123705513846
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted B with cost = 27.967065728036484
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted Q with cost = 3.7042801674719152
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted B with cost = 34.04645901114705
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted B with cost = 16.672024401664505
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted U with cost = 18.83452327139573
+INFO:root:Real char: V
+INFO:root:
+
+INFO:root:Predicted D with cost = 11.14698843004269
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted Q with cost = 6.438647510928736
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted J with cost = 5.213508068755097
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted U with cost = 12.627469338334608
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted g with cost = 25.30177866175659
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted u with cost = 22.18863734571884
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted G with cost = 20.92389443005183
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted x with cost = 13.006383293860805
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.066858853728744
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted F with cost = 3.0504752816661758
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted G with cost = 15.444710099404107
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted B with cost = 19.638652129599553
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted u with cost = 20.456493043144512
+INFO:root:Real char: W
+INFO:root:
+
+INFO:root:Predicted p with cost = 27.651409789262196
+INFO:root:Real char: f
+INFO:root:
+
+INFO:root:Predicted i with cost = 9.604897730566426
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted B with cost = 10.94733879476976
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted B with cost = 20.102312072019313
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted B with cost = 33.63237433534045
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted a with cost = 1.530143118604104
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted G with cost = 18.839852156863262
+INFO:root:Real char: W
+INFO:root:
+
+INFO:root:Predicted B with cost = 17.219503916743
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted B with cost = 4.91831359286336
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted U with cost = 27.804278784436455
+INFO:root:Real char: A
+INFO:root:
+
+INFO:root:Predicted o with cost = 19.647500021284703
+INFO:root:Real char: e
+INFO:root:
+
+INFO:root:Predicted Q with cost = 17.70254596371316
+INFO:root:Real char: e
+INFO:root:
+
+INFO:root:Predicted U with cost = 14.150445429397637
+INFO:root:Real char: O
+INFO:root:
+
+INFO:root:Predicted d with cost = 4.847417003860132
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted x with cost = 21.16904030109604
+INFO:root:Real char: X
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.049659138321129
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted b with cost = 24.5172734562291
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted o with cost = 8.57069700833394
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted H with cost = 31.002839217723814
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted I with cost = 40.64655517569953
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted e with cost = 9.412055662305645
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted L with cost = 7.2596272789137695
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted Z with cost = 19.094688238982126
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted U with cost = 26.87537850099792
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted H with cost = 16.60614714291694
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted Z with cost = 12.414392556427874
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted c with cost = 4.972608440815183
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted o with cost = 29.739172374330966
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted b with cost = 23.361937456282813
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted U with cost = 43.263341801627284
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted M with cost = 15.392825431221553
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted b with cost = 34.4205555420383
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted e with cost = 8.15764106427267
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted U with cost = 21.253214521723937
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted x with cost = 42.8718416297434
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted c with cost = 18.143286614055825
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted H with cost = 41.77293840154046
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted U with cost = 22.202721658562346
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted U with cost = 15.94375003640185
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted u with cost = 30.72343397223096
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted A with cost = 17.367565263402142
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted M with cost = 33.83030720988498
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted U with cost = 21.780165884588925
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted c with cost = 13.459329747164118
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted I with cost = 55.016375278925054
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted u with cost = 12.444316252860583
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted n with cost = 7.751509007421397
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted N with cost = 27.2203196522008
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted S with cost = 32.36812203961702
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted M with cost = 23.716501846535103
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted c with cost = 18.864028803220116
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted c with cost = 4.972608440815183
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted O with cost = 33.40700127462606
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted t with cost = 51.46987594628533
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted U with cost = 43.263341801627284
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted z with cost = 17.148371157579
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted j with cost = 51.652262883841104
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted c with cost = 10.549450130049603
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted u with cost = 28.938855342533444
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted x with cost = 42.8718416297434
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted c with cost = 18.143286614055825
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted U with cost = 43.266598337704124
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted U with cost = 22.202721658562346
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted U with cost = 15.94375003640185
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted w with cost = 32.63964153598323
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted I with cost = 31.514464948518413
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted M with cost = 33.83030720988498
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted V with cost = 33.08024597126669
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted U with cost = 65.44915057894248
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted U with cost = 16.491651458030194
+INFO:root:Real char: U
+INFO:root:
+
+INFO:root:Predicted c with cost = 31.9218955392215
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted N with cost = 23.009872149069306
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted U with cost = 41.92588299326385
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: F
+INFO:root:
+
+INFO:root:Predicted c with cost = 107.39042596422091
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted z with cost = 27.763265961745113
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted U with cost = 18.06357044600116
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted N with cost = 32.01985981178284
+INFO:root:Real char: s
+INFO:root:
+
+INFO:root:Predicted s with cost = 74.72211811041267
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted o with cost = 21.25952035906843
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted U with cost = 14.184440682550644
+INFO:root:Real char: O
+INFO:root:
+
+INFO:root:Predicted V with cost = 20.59993709115306
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted c with cost = 30.241577887287683
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted N with cost = 27.673830932432907
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted M with cost = 9.619227673105094
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted l with cost = 34.91438477607019
+INFO:root:Real char: s
+INFO:root:
+
+INFO:root:Predicted k with cost = 20.58382743681698
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted o with cost = 31.375513794473008
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted U with cost = 25.866954555969663
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted k with cost = 28.38608582861922
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted c with cost = 37.84406452406197
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted u with cost = 18.07882180121097
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted U with cost = 32.10337266950802
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted N with cost = 22.09838445732195
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted c with cost = 24.446239682519874
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted x with cost = 16.506385883357755
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted X with cost = 35.13659667782198
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted U with cost = 25.340175628226216
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted z with cost = 54.69789785741426
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted U with cost = 19.537602307623686
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted U with cost = 49.89694573300396
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted U with cost = 18.356365106048457
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted h with cost = 33.70041224678205
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted l with cost = 13.462208125641435
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted o with cost = 23.15237478556147
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted l with cost = 49.99186271705697
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted U with cost = 29.242243254333413
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted N with cost = 49.47275600409495
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted I with cost = 30.485341483549778
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted c with cost = 27.985920548761623
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted z with cost = 47.95065903738646
+INFO:root:Real char: U
+INFO:root:
+
+INFO:root:Predicted z with cost = 11.149130161295101
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted U with cost = 61.188788206755895
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted S with cost = 56.78489218641667
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted o with cost = 104.42838899881676
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted V with cost = 19.90929167033283
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted o with cost = 32.35862372740428
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted Z with cost = 13.10808184810064
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted y with cost = 53.82700871609198
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted N with cost = 52.02508988098451
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted I with cost = 17.51122163077292
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted V with cost = 33.3811815098761
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted c with cost = 22.9430025600723
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted C with cost = 35.149462192725444
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted h with cost = 23.644744269917595
+INFO:root:Real char: F
+INFO:root:
+
+INFO:root:Predicted h with cost = 18.494460488161245
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted c with cost = 27.537008733922136
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted c with cost = 25.405144951522715
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted R with cost = 32.740228036412
+INFO:root:Real char: A
+INFO:root:
+
+INFO:root:Predicted o with cost = 56.57973000784526
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted N with cost = 28.293836082248713
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted o with cost = 27.908972385759878
+INFO:root:Real char: O
+INFO:root:
+
+INFO:root:Predicted S with cost = 23.86952030220745
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted x with cost = 45.69188481515809
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted u with cost = 24.194897260448307
+INFO:root:Real char: X
+INFO:root:
+
+INFO:root:Predicted c with cost = 42.35071925434303
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted M with cost = 25.988808697032326
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted z with cost = 20.205754071328045
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted U with cost = 21.056446561693846
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted r with cost = 52.06383653947425
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted N with cost = 17.62283208358714
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted r with cost = 25.66046416803319
+INFO:root:Real char: E
+INFO:root:
+
+INFO:root:Predicted N with cost = 26.150410603561532
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted N with cost = 62.782630317822395
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted z with cost = 12.62318393728122
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted z with cost = 15.626052372405171
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted z with cost = 64.23192539971707
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted Z with cost = 33.90804408364179
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted t with cost = 21.55100014904987
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted c with cost = 5.777537223992824
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted Z with cost = 28.37651318985696
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted U with cost = 11.728515856367615
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted c with cost = 68.59188320146252
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted I with cost = 11.60439965565809
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted N with cost = 26.852002413821385
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted u with cost = 25.41406558353019
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted A with cost = 17.7519061223035
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted U with cost = 23.834977738044614
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted c with cost = 24.058812411370827
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted z with cost = 14.180170069247392
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted V with cost = 22.05571840418915
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted Y with cost = 35.12051440988889
+INFO:root:Real char: t
+INFO:root:
+
+INFO:root:Predicted l with cost = 17.675201810525497
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted U with cost = 25.54104836422709
+INFO:root:Real char: V
+INFO:root:
+
+INFO:root:Predicted c with cost = 42.675076332513214
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted n with cost = 29.402103089005404
+INFO:root:Real char: W
+INFO:root:
+
+INFO:root:Predicted z with cost = 30.821062601260596
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted o with cost = 32.83900080605424
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted l with cost = 28.45948699634599
+INFO:root:Real char: f
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted h with cost = 16.811953260388872
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted C with cost = 9.929708869194153
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted k with cost = 28.44634329935948
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted L with cost = 27.703234421303673
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted U with cost = 29.20285924200854
+INFO:root:Real char: e
+INFO:root:
+
+INFO:root:Predicted N with cost = 31.7181133939916
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted Z with cost = 36.989883874738794
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted n with cost = 17.039163106223292
+INFO:root:Real char: t
+INFO:root:
+
+INFO:root:Predicted n with cost = 23.030414759491833
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted n with cost = 22.414972345466317
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted z with cost = 42.05143721397919
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted l with cost = 45.01970110694642
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted c with cost = 23.643091735024473
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted N with cost = 31.20020604251296
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted h with cost = 22.359726133002365
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted S with cost = 42.19543020817668
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted c with cost = 20.707093500551945
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted c with cost = 14.401372997195764
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted M with cost = 21.971459826173565
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted h with cost = 74.0628521854553
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted N with cost = 28.79917420768881
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted o with cost = 46.072505302969766
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted k with cost = 35.2086928495714
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted V with cost = 24.2752482984089
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted o with cost = 18.101871041986428
+INFO:root:Real char: E
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted I with cost = 84.0543608823405
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted C with cost = 43.21770489264785
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted U with cost = 27.780996487197907
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted n with cost = 21.00422362428248
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted E with cost = 25.62319860882232
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted Z with cost = 24.44044781130295
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted c with cost = 30.16699691687601
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted M with cost = 29.283017628288405
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted s with cost = 48.95039384814872
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted c with cost = 29.649956921862497
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted U with cost = 31.30882887122718
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted l with cost = 10.555994811433099
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted U with cost = 10.796466892796127
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted U with cost = 47.30964791115055
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted c with cost = 5.5064290481940805
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted U with cost = 41.237922696797234
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted o with cost = 25.718949494394973
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted U with cost = 21.92947736696665
+INFO:root:Real char: V
+INFO:root:
+
+INFO:root:Predicted T with cost = 18.834254127763515
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted C with cost = 10.951130001486083
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted l with cost = 22.32097892748121
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted U with cost = 13.912509017080628
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted q with cost = 40.434714932318464
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted z with cost = 34.09101325729655
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted Z with cost = 36.513115766747624
+INFO:root:Real char: x
+INFO:root:
+
