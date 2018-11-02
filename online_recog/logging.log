@@ -2638,3 +2638,1271 @@ INFO:root:Predicted Z with cost = 36.513115766747624
 INFO:root:Real char: x
 INFO:root:
 
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:root:Predicted 2 with cost = 10.81834617700177
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 22.605220448182806
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 16.396002237544167
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 9.365066040919725
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 5.259381338804609
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 39.183431983690234
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 23.102872132575104
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 20.796286430663482
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 31.873203763434102
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 23.612452493842373
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 22.96190007418765
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 40.43046570666824
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 9.045301519228996
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 31.68718416785045
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 7.1536960104026
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 1 with cost = 16.725115375571036
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 13.453866479268306
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 13.356218090275302
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 23.472289290538075
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 5.566298065276565
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 9.793996634206001
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 13.352770523595886
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 16.589629176789735
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 21.76537571057982
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 14.238952922212762
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 15.004564636070265
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 13.617635581253822
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 11.564968535283816
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 16.24810870037807
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.052260988435991
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 42.870571730303006
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.394677725511293
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 19.3567377994901
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 10.57991192586293
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 23.8985144413667
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 10.970589121272672
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 8.379917240037486
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 9.588437181240476
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 13.291420211251598
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 9.31526064331887
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 14.324835285395876
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 10.719148715735196
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 8.244040684499401
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 10.345260893045035
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 11.24340277723921
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 13.391641358766146
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 11.632855246906528
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 31.427409013575375
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 6.431397674730681
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 9.676289192415833
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 36.5717838784817
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 13.319816412937062
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 15.333670292001269
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 22.580564962200146
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 14.330065303783693
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 17.67154475042524
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 18.977341667975338
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 14.1887958302121
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 14.820890287429771
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 15.56978181548252
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 17.71430143440145
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 24.522585459962183
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 12.442335890691673
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 16.14909116467549
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 11.417002919104801
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 12.932470576624842
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 33.16038574524975
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 31.725842216485763
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 12.99155383920366
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 13.376089171787727
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 12.411250865085304
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 11.080240294766039
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 15.24773930233153
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 6.464204398594921
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 14.542878859891536
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 14.097145164695329
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 9.008298534917119
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 15.450303264991089
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 9.766248210739468
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 25.36773997052701
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 15.763046775931626
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 7.405982415235507
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 22.875838679684254
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 25.922683498291768
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 12.856096300536677
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 14.711908459139462
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 45.17007273145347
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 5.497917107674328
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 10.799736988612942
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 12.19648255795379
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 9.890771170932371
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 11.839821976411065
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 27.8190985541273
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 6.315143574644344
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 11.417720775300717
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 1 with cost = 6.54458497284976
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 24.186468516926517
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 10.681925437368415
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 11.800223378268267
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 21.326833704041615
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 45.28182937141036
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 27.716383250156913
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 32.25810927833877
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 56.709574839201856
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 25.707522088658912
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 54.85839442845138
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 40.06386798087434
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 41.0426119920734
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 24.25073084764391
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 32.60240006957673
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 46.5237130552111
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 29.072381811988397
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 36.35663806939645
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 25.282162966165842
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 48.90875328558393
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 55.8030493521092
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 32.91261230126332
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 42.56645631716603
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 26.396199583346032
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 21.778628322998447
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 28.20447747573703
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 28.454221567876896
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 31.481841687940623
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 36.5591964551763
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 33.145451328144134
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 48.71567791227805
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 37.16618229376285
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 41.35252572788235
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 49.22017791431551
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 58.44475991826101
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 42.22127302045185
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 16.31279877633582
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 19.58463267776945
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 32.04546622926606
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 37.161275399610346
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 56.8128037075683
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 50.423132122199405
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 44.826987340050074
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 22.777256650707102
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 53.75812190720158
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 45.239429651359494
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 37.239843022917256
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 39.73740516797191
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 26.838206116143766
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 26.300209442957847
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 27.39459690881329
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 30.84149719970217
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 38.46179825773036
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 31.512539419436926
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 55.84922557272873
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 30.43896773747177
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 38.74777392904137
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 42.55993989881421
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 42.33038851024437
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 19.286751284650304
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 41.087379880184194
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 31.731866609472302
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 46.37802160552819
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 30.29473730487465
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.715755063965359
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 7.39932725207556
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.5718160534232886
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 10.983630194682478
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 8.919620957468243
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 4.347267605959247
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 9.612789110089428
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 5.566298065276565
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 6.857761740498939
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 9.867853148110864
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 13.23893316320875
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 14.06746767106727
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 12.055702364990333
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 11.390001662582652
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 11.567030626368814
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 10.147047237370437
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 5.01634058567467
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.052260988435991
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 7.222583509686104
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.394677725511293
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 11.05144573608928
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 11.697985005384314
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 7.625555251374193
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 6.993960768994908
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 8.465315483259502
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.895663154567083
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 8.274119454919715
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 12.16341051648525
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 1 with cost = 19.477687873371895
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 6.331750724088362
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 1 with cost = 11.144323734167486
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 8.205995484756693
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 8.099018153403074
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.781753678367033
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 10.30430603276196
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 7.77253205059639
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 1 with cost = 37.295884131143005
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 9.798801765162043
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 6.386207290944827
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 9.217301755561694
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.533596386661882
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.935064267105841
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.514572364252647
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 3.581877073052163
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 9.429442920321609
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 8.421279254439126
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 9.846969144349739
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 8.140974125053857
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 14.599137712721966
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 8.875498896147512
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 9.774139554081833
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 14.558336050395472
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 12.763773451123432
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 8.561559531634023
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 6.329460121434251
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.002167543337785
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 3.348871644564237
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.707543749545598
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 12.932470576624842
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 8.109834396431149
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 7.866339618576038
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 12.188910921505231
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.138001385069389
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 12.963523249440874
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 8.538856113717124
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 11.080240294766039
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 11.321689128259303
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 4.443906915583299
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 12.156431411639408
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 13.00784799060038
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 6.5657787327641
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 10.007218622487365
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 7.251590418483784
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 7.522584607681246
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.012663006502446
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.557677050825222
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 7.261326272437287
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 9.520739883448917
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 8.902463293497199
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.041377845417667
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 14.711908459139462
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 9.195518709826723
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.173807987572724
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.142549049895866
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 9.894826460512935
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.3344840687031656
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 9.842926267411643
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 11.839821976411065
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 8.232441884815682
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.921873622181621
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 1 with cost = 21.063753695857258
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.934929039765445
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 4.653708182933648
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 8.945367169632048
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 10.681925437368415
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 9.44815794566194
+INFO:root:Real char: 9
+INFO:root:
+

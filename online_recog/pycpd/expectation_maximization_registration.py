@@ -12,7 +12,7 @@ def initialize_sigma2(X, Y):
     return np.sum(err) / (D * M * N)
 
 class expectation_maximization_registration(object):
-    def __init__(self, X, Y, sigma2=3, max_iterations=6, tolerance=0.001, w=0, *args, **kwargs):
+    def __init__(self, X, Y, sigma2=3, max_iterations=100, tolerance=0.001, w=0, *args, **kwargs):
         if type(X) is not np.ndarray or X.ndim != 2:
             raise ValueError("The target point cloud (X) must be at a 2D numpy array.")
         if type(Y) is not np.ndarray or Y.ndim != 2:
