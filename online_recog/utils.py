@@ -1,40 +1,13 @@
+import os
 import preprocess as pres
-from functools import partial
-import matplotlib.pyplot as plt
-from pycpd import deformable_registration,affine_registration,rigid_registration
 import tensorflow as tf
 import skeleton_extraction as se
 from skimage.morphology import skeletonize
 from skimage.util import invert
 import numpy as np
+import numpy as np
+import matplotlib.pyplot as plt
 
-def visualize(iteration, error, X, Y, ax, draw):
-    if draw:
-        plt.cla()
-        ax.scatter(X[:, 0], X[:, 1], color='red', label='Target: offline', marker="X")
-        ax.scatter(Y[:, 0], Y[:, 1], color='blue', label='Source: online')
-        plt.text(0.87, 0.92, 'Iteration: {:d}\nError: {:06.4f}'.format(iteration, error), horizontalalignment='center',
-                 verticalalignment='center', transform=ax.transAxes, fontsize='x-large')
-        ax.legend(loc='upper left', fontsize='x-large')
-
-        plt.draw()
-        plt.pause(0.001)
-
-def CPD(X, Y, draw=True):
-    if draw:
-        fig = plt.figure()
-        fig.add_axes([0, 0, 1, 1])
-        callback = partial(visualize, ax=fig.axes[0], draw=draw)
-    else:
-        callback = []
-
-    reg = deformable_registration(**{'X': X, 'Y': Y})
-    reg.register(callback)
-
-    if draw:
-        plt.show()
-
-    return reg.TY
 
 def normalize(X, Y):
     X_norm = X[:]
@@ -87,7 +60,7 @@ def similarity(X, Y):
 
     max_dist = max(min_cost)
     cover_percentage = len(set(ix)) / len(Y)
-    if cover_percentage < 0.97 and max_dist > 5:
+    if cover_percentage < 0.8:
         total_cost = 9999
     else:
         total_cost = sum(min_cost)  # - 10*cover_percentage
@@ -96,7 +69,7 @@ def similarity(X, Y):
 
 
 def prepare_online_ref(datadir):
-    chars = 'abcdefghijklmnopqrstuvxywzABCDEFGHIJKLMNOPQRSTUVXYWZ'
+    chars = 'abcdefghijklmnopqrstuvxywzABCDEFGHIJKLMNOPQRSTUVXYWZ0123456789'
     chars = '0123456789'
 
     labels = []
@@ -106,15 +79,65 @@ def prepare_online_ref(datadir):
 
         ol_ref = pres.online_preprocess(datadir, input_char=char)[0][0]
 
+        long_ref = interpolate(ol_ref)
         a = []
-        for s in range(len(ol_ref)):
-            for i in range(len(ol_ref[s])):
-                a.append(ol_ref[s][i])
+        for s in range(len(long_ref)):
+            for i in range(len(long_ref[s])):
+                a.append(long_ref[s][i])
 
         # scale the reference first
         Y.append(np.asarray(a))
 
     return Y, chars
+
+def test_interpolate():
+
+
+    timestamp = (0, 5, 10, 15, 30, 35, 40, 50, 55, 60)
+    x_coords = (0, 10, 12, 13, 19, 13, 12, 19, 21, 25)
+    y_coords = (0, 5, 10, 7, 2, 8, 15, 19, 14, 15)
+
+    start_timestamp = min(timestamp)
+    end_timestamp = max(timestamp)
+    duration_seconds = (end_timestamp - start_timestamp)
+
+    new_intervals = np.linspace(start_timestamp, end_timestamp, duration_seconds)
+
+    new_x_coords = np.interp(new_intervals, timestamp, x_coords)
+    new_y_coords = np.interp(new_intervals, timestamp, y_coords)
+
+    plt.plot(x_coords, y_coords, 'o')
+    plt.plot(new_x_coords, new_y_coords, '-x')
+    plt.show()
+
+def interpolate(ref, npts=3, draw = False):
+    char = []
+    for s in range(len(ref)):
+        l = len(ref[s])
+        timestamp = range(0,l*npts,npts)
+        x_coords, y_coords = zip(*ref[s])
+
+        start_timestamp = min(timestamp)
+        end_timestamp = max(timestamp)
+        duration_seconds = (end_timestamp - start_timestamp)
+
+        new_intervals = np.linspace(start_timestamp, end_timestamp, duration_seconds)
+
+        new_x_coords = np.interp(new_intervals, timestamp, x_coords)
+        new_y_coords = np.interp(new_intervals, timestamp, y_coords)
+
+        if draw:
+            plt.plot(x_coords, y_coords, 'o')
+            plt.plot(new_x_coords, new_y_coords, '-x')
+            plt.show()
+
+        stroke = []
+        for p in range(len(new_x_coords)):
+            stroke.append([new_x_coords[p],new_y_coords[p]])
+        char.append(stroke)
+    return char
+
+
 
 
 def prepare_mnist():
@@ -157,7 +180,11 @@ def prepare_mnist():
         # convert back to verify
         ske_normed = pres.lines2pts(lines_after_normalize)[0][0]
 
+
         skes.append(ske_normed)
+
+    # for j in range(len(skes)):
+    #     pres.plot_char('skeleton', [skes[j]], str(y_test[j]), draw=True)
 
     return skes, labels
 

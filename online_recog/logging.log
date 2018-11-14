@@ -3906,3 +3906,2029 @@ INFO:root:Predicted 8 with cost = 9.44815794566194
 INFO:root:Real char: 9
 INFO:root:
 
+INFO:root:Predicted D with cost = 10.446201340878453
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted S with cost = 11.043910909080717
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted b with cost = 7.944134230596937
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted B with cost = 12.810464632015522
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted G with cost = 14.687663707810387
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted b with cost = 6.98290001567562
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted B with cost = 14.716196205763639
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted g with cost = 8.887713571239605
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted d with cost = 11.310214136885492
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 14.081893903205872
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 17.156798911919907
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 7.970085936102409
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 19.795312541105748
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 19.7827065567603
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 7.750254987307375
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 22.58080695549294
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 11.694612381661473
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 15.465092136986016
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 19.29997984956021
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 22.42627459828917
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 26.158356893979768
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 17.6076941772334
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 19.253191004493605
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 29.875991080547895
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 18.93728208853273
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 19.649698754337376
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 10.63995469320501
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 17.367212542894933
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 15.04263513631954
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 22.426069205075116
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 22.074482148854827
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 23.321594633680355
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 15.289158442618975
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 14.98716227650811
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 15.601142186178988
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 14.182176426411928
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 20.943870237621937
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 21.877015432676455
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 15.487422378461858
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 9.421791840041118
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 12.934058130763834
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 12.834591436285532
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 13.212063085625765
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 13.111766219535548
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 20.067844960621233
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 16.697292594723073
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 22.993495638591945
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 15.249122210135935
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 18.47887889080912
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 29.470158409119563
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 13.537414518665889
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 23.246420554773845
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 10.986242731557066
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.03036926537197
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 21.684335528878815
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 6.390461638096707
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 17.38589337689431
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 18.341260008746026
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 18.284826459555344
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 15.104910865966392
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 21.38067541321433
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 13.756458256936966
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 21.473580271977852
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 23.578741963249218
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 21.506361865171666
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 20.860865955481433
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 10.191432620230296
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 21.398844545825067
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 7.359578601572578
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 8.374838883309534
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 21.086309328172895
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 18.481476998505244
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 13.009988783581274
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 21.704615013711965
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 20.259955442489144
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 26.677514914508954
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 17.587155827898716
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 15.821741787174707
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 16.252349587104664
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 9.54195278492995
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 23.005767554421837
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 22.582832856241605
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 15.03972739922856
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 28.986532978903245
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 17.903460224037634
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 12.345093874883071
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 11.821480091646297
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 16.935311269784812
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 9.671956500102368
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 11.238459924182658
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 17.367793314734072
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 20.38954624651273
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 9.335291502131199
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 32.00837866739333
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 15.461403269301616
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 11.494012710215333
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 16.05787901132272
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 17.391388394340733
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 7.045377773403052
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 15.482048775696107
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 24.089082536520866
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 15.099318287243067
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 13.452953342935873
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 19.262006865735486
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 23.457818320649636
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 7.31806989663301
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 15.221640347969556
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 22.070629067292277
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 17.705324915154428
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage11" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage244" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage253" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage262" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage271" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage280" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage289" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage298" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage307" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage316" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage325" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage334" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage343" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage352" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage361" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage370" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage379" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage388" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage397" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage406" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage415" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage424" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage433" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage442" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage451" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage460" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage469" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage478" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage487" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage496" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage505" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage514" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage523" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage532" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage541" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage550" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage559" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage568" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage577" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage586" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage595" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage604" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage613" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage622" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage631" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage640" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage649" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage658" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage667" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage676" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage685" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage694" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage703" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage712" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage721" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage730" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage739" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage748" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage757" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage766" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage775" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage784" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage793" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage802" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage811" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage820" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage829" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage838" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage847" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage856" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage865" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage874" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage883" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage892" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage244" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage253" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage262" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage271" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage280" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage289" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage298" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage307" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage316" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage325" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage334" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage343" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage352" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage361" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage370" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage379" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage388" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage397" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage406" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage415" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage424" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage433" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage442" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage451" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage460" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage469" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage478" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage487" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage496" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage505" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage514" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage523" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage532" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage541" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage550" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage559" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage568" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage577" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage586" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage595" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage604" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage613" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage622" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage631" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage640" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage649" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage658" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage667" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage676" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage685" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage694" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage703" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage712" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage721" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage730" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage739" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage748" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage757" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage766" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage775" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage784" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage793" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage802" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage811" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage820" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage829" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage838" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage847" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage856" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage865" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage874" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage883" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage892" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage244" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage253" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage262" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage271" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage280" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage289" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage298" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage307" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage316" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage325" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage334" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage343" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage352" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage361" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage370" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage379" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage388" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage397" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage406" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage415" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage424" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage433" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage442" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage451" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage460" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage469" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage478" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage487" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage496" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage505" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage514" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage523" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage532" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage541" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage550" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage244" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage253" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage262" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage271" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:root:Predicted 8 with cost = 2.066203477227253
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.9798978805626706
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 0.9078841875912651
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 5.649009189063442
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.573190221178181
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 0.4048451406440635
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.850819151053157
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 1.7512067375016835
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.739907387638877
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.276799391523675
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.928964174459865
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 7.474655564102705
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.615359250196407
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.825350758783728
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 0.005717718597996784
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.751356552335469
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.1241404606383165
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.1773181844325085
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.389674323681
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.235223092118863
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 4.146430388019713
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.094167778627
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 7.297965273804814
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 2.9659946514242908
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 4.481695338625214
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 4.569718733439161
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.0747196916400106
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.419733398403027
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.250953561057346
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 0.18674041272328834
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.285177371856055
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 2.165664001281228
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 2.2629483157422756
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 5.436795710218596
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 2.388601507325338
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 4.4305305596798235
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.62655850977435
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 20.102333657029842
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.564906770208852
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 2.618727446203151
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.8405968983053156
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.3447751918256996
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 1.014620446230342
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.546313848481087
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 0.5449447360620402
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.545416902717845
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.221103171297086
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 5.952532143118449
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.1715800218216006
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 6.259177513502615
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 4.152956942025491
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.141207428736945
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 8.944295993519646
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.070880387491724
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.9638000240336115
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 1.564466544161623
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.276649268525495
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 1.171519648665587
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 1.6150021730383297
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 6.6000433643125485
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 1.949443577153289
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.420533637975862
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.49654107447737
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.7918949223108886
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 9.6142622851623
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 3.1849913671845673
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 3.3669616936261524
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 4.69062479371805
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 1.9170258857568694
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 5.366310119340772
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 6.042577865831728
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 1.3584074508034754
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 7.345512568282119
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 2.208273904046637
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 3.2176387738267063
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.19579905888911
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 1.6661345826073184
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.113434807167273
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.810066801768629
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.628554991230633
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 1.3043180569570092
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 6.451170140034652
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 4.546778701395828
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 1.583440363470333
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 7.232771133810677
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.4924418886506015
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 0.5745462283775066
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 3.14684319002691
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.69438985411133
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.040347462479203
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 2.143371099187501
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 2.6456271679777568
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 6.212700030926819
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 0.5785020094545108
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.202474243617186
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.7285832349565595
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.932476577787527
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 12.66508206656546
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 40.102279768056974
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 17.447874602481427
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 16.753427121585148
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 13.588966822598294
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 43.8387143551605
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 64.3209168919424
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 56.42206975191818
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 69.98435966995609
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 43.68772052446313
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 9.374973840113002
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 35.45532000743918
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 43.570022013486906
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 28.6256219021699
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 24.4756441718621
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 27.534139092967873
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 40.22633476893429
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 64.57882828167367
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 56.74205763885195
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 36.586035916771735
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 15.727395777821535
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 25.37391103844205
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 70.5825696705284
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 62.29241211536592
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 25.668022416864495
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 48.926787055330514
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 66.84573675789356
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 39.467079780746815
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 45.666781798760596
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 15.17061116515114
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 35.31000068999496
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 86.57185849690572
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 21.301624882062484
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 43.55831660575309
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 6.660949796518792
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 6.816658865796809
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 31.16853978831459
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 53.01461842692188
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 17.884898527073855
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 80.57441188559028
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 46.72216758776574
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 7.784546022981599
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 25.72283608457524
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 26.72047064376074
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 12.157153212962855
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 29.45598413487787
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 26.5937331878295
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 29.932041496609052
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 58.11103688784395
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 33.452699714340845
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 29.46762067052292
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 32.02281371125963
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 21.866733466235797
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 26.121763463202484
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 41.15403200745991
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 15.569303887301698
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 39.172454993631405
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 12.66508206656546
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 40.102279768056974
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 17.447874602481427
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 16.753427121585148
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 13.588966822598294
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 43.8387143551605
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 64.3209168919424
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 56.42206975191818
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 69.98435966995609
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 43.68772052446313
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 9.374973840113002
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 35.45532000743918
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 43.570022013486906
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 28.6256219021699
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 24.4756441718621
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 27.534139092967873
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 40.22633476893429
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 53.75109561246967
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 56.74205763885195
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 36.586035916771735
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 15.727395777821535
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 25.37391103844205
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 70.5825696705284
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 62.29241211536592
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 25.668022416864495
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 48.926787055330514
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 66.84573675789356
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 39.467079780746815
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 45.666781798760596
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 15.17061116515114
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 35.31000068999496
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 86.57185849690572
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 21.301624882062484
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 43.55831660575309
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 6.660949796518792
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 6.816658865796809
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 31.16853978831459
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage20" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage30" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage40" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:root:Predicted 2 with cost = 2.579902777807349
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 14.595145656829107
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 5.712167937404462
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 8.58960741397999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 16.446751735730686
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.375281307029231
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.928964174459865
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 10.952737362233481
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 17.705509995263228
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 7.380295703857767
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 7.42625052057274
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 22.12068084773029
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 2.991761765089779
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.389674323681
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 13.436600392489414
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 9.482453587093882
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 26.8871337463355
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 5.0636776041499925
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 6.053336868043931
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 3.3645467833658347
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 10.84882310348765
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 4.071254223025135
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 6.616572186396752
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 3.376003865319092
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 4.4305305596798235
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 5.513722210137538
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 5.667002658113168
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 15.885128892404353
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 2.769414239103498
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 7.365141132993606
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage40" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage49" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage58" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage80" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage89" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage98" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image

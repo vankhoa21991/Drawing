@@ -1,8 +1,9 @@
 import os
 import _pickle as pickle
+import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.use('agg')
-import matplotlib.pyplot as plt
+
 import numpy as np
 import six
 import tensorflow as tf
@@ -108,7 +109,7 @@ def plot_char(folder, char, lbl, draw = True):
 
     for i in range(len(char)):
         x,y = zip(*char[i])
-        ax.plot(x,np.dot(y,-1))
+        ax.scatter(x,np.dot(y,-1))
     plt.axes().set_aspect('equal', 'datalim')
 
     if lbl[0] == '/':
