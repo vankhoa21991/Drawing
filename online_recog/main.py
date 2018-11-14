@@ -151,6 +151,7 @@ if __name__ == '__main__':
 
         print('Predicted ' + str(online_labels[index]) + ' with cost = ' + str(np.min(dist)))
         print('Real char: ' + str(offline_labels[i]))
-        print('/n')
+        print('\n')
 
         dist = []
+    print('Accuracy: ' + str(GoodDetect/(GoodDetect + FalseDetect)))
