@@ -42,7 +42,23 @@ def recognition_model(args,vocabulary):
 
 def train(args):
     # load model
-    stroke_train, stroke_val, label_train, label_val, label2char, char2label,max_len = load_data(args.data_dir,args.model_dir)
+    #stroke_train, stroke_val, label_train, label_val, label2char, char2label,max_len = load_data(args.data_dir,args.model_dir)
+    
+    data = np.load(args.data_dir + args.data_filename, encoding='latin1')
+    stroke_train = list(data['train'])
+    label_train = list(data['label_train'])
+    stroke_val = list(data['valid'])
+    label_val = list(data['label_val'])
+
+    max_len = data['max_len']
+
+
+    # load encode file
+    char2label = json.load(open(args.model_dir + 'encode_kanji.json'))
+    label2char = {}
+    for k, v in char2label.items():
+        label2char[v] = k
+    
     vocabulary = len(label2char)
 
     train_data = DataLoader(stroke_train, label_train, args=args)
@@ -73,7 +89,7 @@ def train(args):
     plt.ylabel('accuracy')
     plt.xlabel('epoch')
     plt.legend(['train', 'test'], loc='upper left')
-    fig.savefig('acc.png') 
+    fig.savefig(args.sample_dir + 'acc.png') 
     
     fig, ax = plt.subplots( nrows=1, ncols=1 ) 
     ax.plot(history.history['loss'])
@@ -82,21 +98,33 @@ def train(args):
     plt.ylabel('loss')
     plt.xlabel('epoch')
     plt.legend(['train', 'test'], loc='upper left')
-    fig.savefig('loss.png')
+    fig.savefig(args.sample_dir + 'loss.png')
 
 
 def evaluate(args):
-    stroke_train, stroke_val, label_train, label_val, label2char, char2label, max_len = load_data(args.data_dir,args.model_dir)
+    #stroke_train, stroke_val, label_train, label_val, label2char, char2label, max_len = load_data(args.data_dir,args.model_dir)
+    
+    
+    data = np.load(args.data_dir + args.data_filename, encoding='latin1')
+    stroke_test = list(data['test'])
+    label_test = list(data['label_test'])
+
+    max_len = data['max_len']
+
+    # load encode file
+    char2label = json.load(open(args.model_dir + 'encode_kanji.json'))
+    label2char = {}
+    for k, v in char2label.items():
+        label2char[v] = k
+    
     vocabulary = len(label2char)
-    test_data = DataLoader(stroke_val, label_val, args=args)
+    test_data = DataLoader(stroke_test, label_test, args=args)
 
     model = load_model(args.model_dir + "final_model.hdf5")
 
-
-
     true_print_out = "Actual words: "
     pred_print_out = "Predicted words: "
-    index = random.sample(range(0,len(test_data.pad_strokes)), 100)
+    index = random.sample(range(0,len(test_data.pad_strokes)), 1000)
     data = test_data.pad_strokes[index, :,:]
     prediction = model.predict(data)
 
@@ -120,25 +148,27 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # environment
-    server = False
+    server = True
 
     if server == True:
-        parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Drawing/recog_model/model/')
-        parser.add_argument('--model_dir', default='/mnt/DATA/lupin/Drawing/recog_model/model/')
+        parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Flaxscanner/Dataset/CASIA/Drawing/')
+        parser.add_argument('--data_filename', default='casia_preprocessed_20.npz')
+        parser.add_argument('--model_dir', default='/mnt/DATA/lupin/Flaxscanner/Models/Drawing/recog_model/')
+        parser.add_argument('--sample_dir', default='/mnt/DATA/lupin/Flaxscanner/Drawing/recog_model/samples/')
     else:
         parser.add_argument('--data_dir', default='model/')
         parser.add_argument('--model_dir', default='model/')
         
 
-    parser.add_argument('--mode', default='train', type=str)
-    parser.add_argument('--num_epochs', default=1, type=int)
+    parser.add_argument('--mode', default='test', type=str)
+    parser.add_argument('--num_epochs', default=120, type=int)
     parser.add_argument('--hidden_size', default=500, type=int)
     parser.add_argument('--learning_rate', default=1e-4, type=float)
     parser.add_argument('--dropout_rate', default=0.2, type=float)
     parser.add_argument('--max_seq_length', default=317, type=int)
 
-    parser.add_argument('--batch_size', default=1000, type=int)
-    parser.add_argument('--num_gpu', default='0', type=int)
+    parser.add_argument('--batch_size', default=600, type=int)
+    parser.add_argument('--num_gpu', default='1', type=int)
     parser.add_argument('--is_resume', default=False, type=bool)
 
     args = parser.parse_args()

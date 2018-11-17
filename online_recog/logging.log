@@ -1,0 +1,5934 @@
+INFO:root:Predicted g with cost = 9.863261427227677
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted w with cost = 46.95214864326014
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted d with cost = 6.494381311857646
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted G with cost = 23.818148342294567
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted B with cost = 11.275605140451999
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted D with cost = 6.149175741533397
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted B with cost = 16.735129968978445
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted B with cost = 35.10830964834755
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted x with cost = 21.751307138419484
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted B with cost = 10.83395732199187
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted B with cost = 3.5373403278495017
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted B with cost = 27.728586300316657
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted D with cost = 28.079083430622457
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted G with cost = 50.038133652413414
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted G with cost = 11.831297065517711
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted b with cost = 37.19735071068917
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted j with cost = 6.3648184651161035
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted C with cost = 10.669163674445358
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted D with cost = 51.47107021718218
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted T with cost = 6.210279641426538
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted m with cost = 28.636631620219834
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted a with cost = 12.938603869013333
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted d with cost = 7.652102753344081
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted Q with cost = 19.9140757274221
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted H with cost = 46.720732333399184
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted x with cost = 24.708185393511638
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted O with cost = 12.291325496555539
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted B with cost = 3.932052323499084
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted B with cost = 31.27108963887583
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted b with cost = 28.373579283562332
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted o with cost = 60.50402264887231
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted G with cost = 14.303184753474431
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted b with cost = 42.97741648881667
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted Q with cost = 9.552732708119295
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted H with cost = 28.3289883564075
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted K with cost = 61.15186141203884
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted o with cost = 14.305188673979481
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted B with cost = 43.27721635517236
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted P with cost = 34.41946702880185
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted U with cost = 25.58452488068582
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted H with cost = 36.987019955668956
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted B with cost = 20.169081532728974
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted d with cost = 24.2446753671269
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted B with cost = 22.507622263777293
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted g with cost = 51.06389652039453
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted B with cost = 25.84644722588903
+INFO:root:Real char: U
+INFO:root:
+
+INFO:root:Predicted b with cost = 24.934279659847576
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted b with cost = 12.095086727600071
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted o with cost = 47.54143073390577
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted P with cost = 13.147594502209765
+INFO:root:Real char: F
+INFO:root:
+
+INFO:root:Predicted g with cost = 63.1043082360635
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted U with cost = 22.981379140964282
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted B with cost = 32.92862167258843
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted b with cost = 11.65856106694519
+INFO:root:Real char: s
+INFO:root:
+
+INFO:root:Predicted G with cost = 60.37712521220559
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted B with cost = 25.325208987881656
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted B with cost = 19.38416408559548
+INFO:root:Real char: O
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.745670186594536
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted B with cost = 22.894871312629274
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted K with cost = 16.098837213390752
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted u with cost = 13.623258688272017
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted b with cost = 16.063172123402282
+INFO:root:Real char: s
+INFO:root:
+
+INFO:root:Predicted b with cost = 18.075826490301495
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted B with cost = 26.781585734807052
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted U with cost = 31.181957979027544
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted B with cost = 25.005893761097678
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted p with cost = 28.35216329722835
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted G with cost = 26.41346205929232
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted B with cost = 42.53708798635882
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted T with cost = 7.760130482268438
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted B with cost = 18.47804928231148
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted B with cost = 17.3284803840208
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted P with cost = 36.03754684367832
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted E with cost = 12.379485934404764
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted B with cost = 28.849422504592276
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted H with cost = 43.72273330785355
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted G with cost = 28.150554085592077
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted Q with cost = 68.24371342090174
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted G with cost = 21.45121841674168
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted d with cost = 27.140756026698536
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted F with cost = 13.025675075115242
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted o with cost = 7.6578264457074
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted B with cost = 28.219244099018884
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted b with cost = 24.17081283601364
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted b with cost = 31.286187642225755
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted B with cost = 28.095308620712988
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted Q with cost = 25.171043230213698
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted Q with cost = 17.60439645818066
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted o with cost = 40.56137495617413
+INFO:root:Real char: U
+INFO:root:
+
+INFO:root:Predicted B with cost = 12.639033223020963
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted e with cost = 67.55437243894043
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted g with cost = 53.821154388320174
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted g with cost = 61.267126859654304
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted y with cost = 33.05984252611058
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted D with cost = 31.66034383531354
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted K with cost = 6.99496027851035
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted G with cost = 13.283497858798134
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted B with cost = 34.84722793309756
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted P with cost = 26.32967358364336
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted d with cost = 12.337058469361514
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted g with cost = 16.552423641957436
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted U with cost = 30.441765893938616
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted G with cost = 15.504417582934607
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted Q with cost = 32.7090684495617
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted b with cost = 15.924545915419145
+INFO:root:Real char: F
+INFO:root:
+
+INFO:root:Predicted G with cost = 17.15346812719581
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted b with cost = 20.069102664101976
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted B with cost = 23.711202432035165
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.239788916657231
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted B with cost = 31.14758557834975
+INFO:root:Real char: A
+INFO:root:
+
+INFO:root:Predicted b with cost = 40.15545731916858
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted H with cost = 20.319254910038428
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted o with cost = 34.947671766036855
+INFO:root:Real char: O
+INFO:root:
+
+INFO:root:Predicted d with cost = 32.35393637186077
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted B with cost = 40.841981344975444
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted x with cost = 32.79385924045454
+INFO:root:Real char: X
+INFO:root:
+
+INFO:root:Predicted U with cost = 34.15932143071678
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted B with cost = 19.15578934122452
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted Q with cost = 21.35991815897797
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted P with cost = 20.864173347045426
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted P with cost = 44.870777414528895
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted G with cost = 9.536912431314418
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted D with cost = 18.085907466607612
+INFO:root:Real char: E
+INFO:root:
+
+INFO:root:Predicted G with cost = 19.795211002892657
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted G with cost = 25.458521651360165
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted B with cost = 17.096444964581014
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted b with cost = 13.666233918508686
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted p with cost = 32.10966710574253
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted U with cost = 25.062741706687124
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted i with cost = 21.408628082808647
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted D with cost = 5.503291757808502
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted x with cost = 26.753747096255413
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted U with cost = 18.370161818290942
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted d with cost = 45.885506092597836
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted g with cost = 11.633080886365804
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted G with cost = 11.435584998723828
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted G with cost = 33.5912292904203
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted b with cost = 22.608181278447642
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted o with cost = 35.420044207089745
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted G with cost = 23.177797273903355
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted D with cost = 13.571022065033429
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted y with cost = 13.313282013949676
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted p with cost = 24.58889575760486
+INFO:root:Real char: t
+INFO:root:
+
+INFO:root:Predicted T with cost = 8.23879179705286
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted d with cost = 7.4567862132163665
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted D with cost = 45.46381274274042
+INFO:root:Real char: V
+INFO:root:
+
+INFO:root:Predicted p with cost = 24.82345256532511
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted B with cost = 16.62173303226765
+INFO:root:Real char: W
+INFO:root:
+
+INFO:root:Predicted H with cost = 26.976489493252885
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted S with cost = 29.798332480976505
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted b with cost = 21.722529586366722
+INFO:root:Real char: f
+INFO:root:
+
+INFO:root:Predicted g with cost = 17.390192572562178
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted B with cost = 14.577280785086636
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted B with cost = 9.800822610943912
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted B with cost = 32.95027160741831
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted S with cost = 16.823122526277274
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted d with cost = 9.371856243264801
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted B with cost = 32.506316548042285
+INFO:root:Real char: e
+INFO:root:
+
+INFO:root:Predicted D with cost = 11.991524975435672
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted U with cost = 25.929526667251494
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted G with cost = 17.072562509228753
+INFO:root:Real char: t
+INFO:root:
+
+INFO:root:Predicted G with cost = 22.316705837364427
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted o with cost = 15.590177853349896
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted G with cost = 29.395922848652372
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted g with cost = 25.779667792782007
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted R with cost = 25.38347929194681
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted B with cost = 10.870821796880094
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted a with cost = 18.05643147503121
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted D with cost = 37.3649508152485
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted e with cost = 15.794566993563842
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted Q with cost = 15.881959963005919
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted G with cost = 23.6664522721697
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted e with cost = 56.058461278891755
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted G with cost = 21.419795226890315
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted B with cost = 52.2306760648391
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted K with cost = 41.166934267672076
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted k with cost = 29.616926069728624
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted B with cost = 22.710951281553484
+INFO:root:Real char: E
+INFO:root:
+
+INFO:root:Predicted p with cost = 23.320820014848476
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted P with cost = 33.11192388786997
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted B with cost = 33.709647304283266
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted Q with cost = 36.89287071319521
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted G with cost = 22.424714132401025
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted U with cost = 28.542116057430963
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted B with cost = 23.470562271671266
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted B with cost = 22.991548458815497
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted d with cost = 9.812345705304626
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted o with cost = 7.112010293105868
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted B with cost = 22.736465497083
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted Q with cost = 43.3290214820653
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted o with cost = 24.164710604806405
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted d with cost = 40.48021524275957
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted y with cost = 29.54348039277922
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted K with cost = 12.978409814341935
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted B with cost = 13.130482062337945
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted Q with cost = 46.98114512697906
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted Q with cost = 6.156337082402352
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted Q with cost = 41.412981531539344
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted B with cost = 27.430190434465953
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted U with cost = 33.742280443158165
+INFO:root:Real char: V
+INFO:root:
+
+INFO:root:Predicted p with cost = 22.378574687423633
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted Q with cost = 10.507800815691533
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted J with cost = 10.537904785742693
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted U with cost = 24.925879731871976
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted p with cost = 47.7146306270629
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted F with cost = 33.29365896945785
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted G with cost = 20.507828767581756
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted g with cost = 18.355909272925253
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted D with cost = 30.725619289513432
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted T with cost = 5.274297705835602
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted Q with cost = 30.050457203701427
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted o with cost = 29.253539165887258
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted B with cost = 35.21806054696535
+INFO:root:Real char: W
+INFO:root:
+
+INFO:root:Predicted p with cost = 40.296210730989465
+INFO:root:Real char: f
+INFO:root:
+
+INFO:root:Predicted g with cost = 19.861042893955396
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.908661521849334
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted U with cost = 31.221045522558388
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted Q with cost = 48.70821566345273
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted D with cost = 4.285686234828442
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted U with cost = 32.61995047997554
+INFO:root:Real char: W
+INFO:root:
+
+INFO:root:Predicted U with cost = 28.09168192396201
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted o with cost = 9.574752809555665
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted U with cost = 52.577861040422384
+INFO:root:Real char: A
+INFO:root:
+
+INFO:root:Predicted R with cost = 30.327248102831252
+INFO:root:Real char: e
+INFO:root:
+
+INFO:root:Predicted G with cost = 22.869251364271324
+INFO:root:Real char: e
+INFO:root:
+
+INFO:root:Predicted o with cost = 19.772121765145492
+INFO:root:Real char: O
+INFO:root:
+
+INFO:root:Predicted D with cost = 13.105989742161132
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted G with cost = 44.84159192205854
+INFO:root:Real char: X
+INFO:root:
+
+INFO:root:Predicted H with cost = 32.99119769818227
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted d with cost = 22.678263804723905
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted B with cost = 5.545483251783354
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted K with cost = 23.873057667101012
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted x with cost = 3.5412432791801463
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted K with cost = 17.69688214683978
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted B with cost = 6.935156043837651
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted R with cost = 3.702574528575657
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted G with cost = 9.910556782907396
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted B with cost = 19.46634841025471
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted H with cost = 12.82786700064563
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted U with cost = 7.526865739258462
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted K with cost = 2.25759794769472
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted B with cost = 20.43364788972613
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted b with cost = 19.930443613758115
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted B with cost = 31.50016527857552
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted a with cost = 6.9423246791143685
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted B with cost = 27.060863562697072
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted B with cost = 4.961746294033517
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted B with cost = 17.381989153094356
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted B with cost = 28.354243437091743
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted G with cost = 9.14502414378321
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted B with cost = 23.255090549634534
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted U with cost = 16.036913549365266
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted B with cost = 13.504751936766441
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted G with cost = 17.640840785566354
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted B with cost = 10.470224232876381
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted b with cost = 8.48263879132878
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted p with cost = 10.511001770748393
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted g with cost = 39.931512199583246
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted B with cost = 13.329459009412766
+INFO:root:Real char: U
+INFO:root:
+
+INFO:root:Predicted D with cost = 13.522699136112216
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted K with cost = 5.5408138641863705
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted D with cost = 28.862779783737217
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted P with cost = 5.082980057320947
+INFO:root:Real char: F
+INFO:root:
+
+INFO:root:Predicted H with cost = 39.544810546093785
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted B with cost = 13.942951834027838
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted B with cost = 14.409081874686482
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted P with cost = 6.252162721861817
+INFO:root:Real char: s
+INFO:root:
+
+INFO:root:Predicted B with cost = 36.79659926837352
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted B with cost = 16.576188512631937
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted Q with cost = 10.93380344906121
+INFO:root:Real char: O
+INFO:root:
+
+INFO:root:Predicted B with cost = 8.23191370595534
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.27486539027704
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted B with cost = 7.748011718280991
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted B with cost = 5.288469347600927
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted S with cost = 9.478305017777771
+INFO:root:Real char: s
+INFO:root:
+
+INFO:root:Predicted b with cost = 8.00784722149994
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted B with cost = 20.126634341092153
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted B with cost = 18.03266463700974
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted B with cost = 12.641350747159574
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted B with cost = 14.133288821442513
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted B with cost = 11.763209459106
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted B with cost = 24.444804242677417
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted F with cost = 5.08336951778718
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted F with cost = 9.825423223513816
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted o with cost = 12.564388802487505
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted B with cost = 18.621627313329526
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted B with cost = 7.758661818730205
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted B with cost = 18.855280341241368
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted H with cost = 24.083468327314694
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.603618674852692
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted U with cost = 36.54262434955017
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted B with cost = 12.815956462955103
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted U with cost = 15.463226075569366
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted J with cost = 7.158653727602513
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted b with cost = 3.5999950818825726
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.86875936071871
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted b with cost = 15.983883207014037
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted U with cost = 23.340447014648067
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted O with cost = 18.355775955501223
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted K with cost = 15.169268732382704
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted Q with cost = 12.487160682775636
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted B with cost = 19.14324410723009
+INFO:root:Real char: U
+INFO:root:
+
+INFO:root:Predicted U with cost = 7.40274302617921
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted H with cost = 44.07233213406483
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted G with cost = 39.89427808659226
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted g with cost = 66.07578333446385
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted F with cost = 10.65229864397084
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted B with cost = 23.610297077939336
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted o with cost = 3.1957242011805223
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted u with cost = 5.742443024539651
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted B with cost = 21.942044884032796
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted U with cost = 12.762892712408222
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted i with cost = 7.926126045207251
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted S with cost = 7.433793282781943
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted U with cost = 14.103407230857485
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted o with cost = 10.597571704908763
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted B with cost = 17.09682308521277
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted b with cost = 8.389045133958447
+INFO:root:Real char: F
+INFO:root:
+
+INFO:root:Predicted D with cost = 6.036150813174698
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted b with cost = 11.099552227863906
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted B with cost = 11.82483445239337
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted B with cost = 10.324842441761003
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted G with cost = 20.92728747379952
+INFO:root:Real char: A
+INFO:root:
+
+INFO:root:Predicted b with cost = 23.35121637685389
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted B with cost = 10.744231040327282
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted B with cost = 21.45960031560943
+INFO:root:Real char: O
+INFO:root:
+
+INFO:root:Predicted B with cost = 18.241909688154852
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted S with cost = 29.049607866518734
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted x with cost = 14.841746648439468
+INFO:root:Real char: X
+INFO:root:
+
+INFO:root:Predicted U with cost = 16.449121736598897
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted B with cost = 12.388464265066519
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted G with cost = 11.256898262523647
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted P with cost = 13.93231801187204
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted D with cost = 24.390052469289195
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted u with cost = 7.497633880847989
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted B with cost = 10.752708611647133
+INFO:root:Real char: E
+INFO:root:
+
+INFO:root:Predicted w with cost = 9.674904997726129
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted o with cost = 13.4387422480021
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted U with cost = 7.98749493920281
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted w with cost = 7.666709054949933
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted H with cost = 24.809534051006942
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted B with cost = 13.710905691099038
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted S with cost = 9.950787996395716
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted K with cost = 2.5592688086503905
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted x with cost = 16.918312460737248
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted B with cost = 9.90334848911151
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted b with cost = 20.28514724749558
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted a with cost = 4.827567524400718
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted G with cost = 8.452570904514568
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted U with cost = 18.01825114638152
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted B with cost = 11.408474977815606
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted U with cost = 20.469871672129425
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted D with cost = 10.381901756115878
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted J with cost = 5.495071306510016
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted q with cost = 6.328682638100371
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted H with cost = 17.378298299225534
+INFO:root:Real char: t
+INFO:root:
+
+INFO:root:Predicted p with cost = 6.3934900236786145
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted d with cost = 3.413039687393325
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted D with cost = 20.05749984008345
+INFO:root:Real char: V
+INFO:root:
+
+INFO:root:Predicted P with cost = 15.887096678578468
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted w with cost = 10.17806169285841
+INFO:root:Real char: W
+INFO:root:
+
+INFO:root:Predicted H with cost = 16.888566263930443
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted B with cost = 16.557540266478235
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted b with cost = 9.80178478433823
+INFO:root:Real char: f
+INFO:root:
+
+INFO:root:Predicted g with cost = 7.915948251377821
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted e with cost = 8.4140671109759
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted o with cost = 5.3825104473465855
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted H with cost = 19.035761050782146
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted S with cost = 11.125151261557857
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted a with cost = 3.069174571241051
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted B with cost = 18.0107826033749
+INFO:root:Real char: e
+INFO:root:
+
+INFO:root:Predicted B with cost = 7.826404481620697
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.166525647413618
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted Q with cost = 9.723958944828892
+INFO:root:Real char: t
+INFO:root:
+
+INFO:root:Predicted E with cost = 12.948571621670366
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted B with cost = 9.64993360638144
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted x with cost = 15.42888198975129
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted i with cost = 11.410791457595478
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted B with cost = 10.845819659582268
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted P with cost = 5.640764239491116
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted e with cost = 10.403844108768524
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted B with cost = 26.301592588130156
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted U with cost = 9.04738435805729
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted B with cost = 7.544378952279991
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted x with cost = 13.27083226862176
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted S with cost = 28.463734076868647
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted w with cost = 12.688766442400633
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted B with cost = 27.882648711207125
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted K with cost = 21.670338492872588
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted D with cost = 12.749857250325144
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted B with cost = 14.036783361034155
+INFO:root:Real char: E
+INFO:root:
+
+INFO:root:Predicted p with cost = 18.7493127650988
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted p with cost = 22.63506711302451
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted G with cost = 23.45707311429319
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted B with cost = 22.086431260751862
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted G with cost = 11.636278160204196
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted U with cost = 15.864088845770638
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted U with cost = 11.954375986839697
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted B with cost = 14.92285793227417
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted u with cost = 4.127896875331218
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted m with cost = 3.8091850227895976
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted B with cost = 9.828705836823518
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted B with cost = 25.799809521397492
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.539564182486847
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted U with cost = 22.7137053700831
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted q with cost = 148.50112342548968
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted g with cost = 4.726985351865365
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted B with cost = 9.264123705513846
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted B with cost = 27.967065728036484
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted Q with cost = 3.7042801674719152
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted B with cost = 34.04645901114705
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted B with cost = 16.672024401664505
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted U with cost = 18.83452327139573
+INFO:root:Real char: V
+INFO:root:
+
+INFO:root:Predicted D with cost = 11.14698843004269
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted Q with cost = 6.438647510928736
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted J with cost = 5.213508068755097
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted U with cost = 12.627469338334608
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted g with cost = 25.30177866175659
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted u with cost = 22.18863734571884
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted G with cost = 20.92389443005183
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted x with cost = 13.006383293860805
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.066858853728744
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted F with cost = 3.0504752816661758
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted G with cost = 15.444710099404107
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted B with cost = 19.638652129599553
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted u with cost = 20.456493043144512
+INFO:root:Real char: W
+INFO:root:
+
+INFO:root:Predicted p with cost = 27.651409789262196
+INFO:root:Real char: f
+INFO:root:
+
+INFO:root:Predicted i with cost = 9.604897730566426
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted B with cost = 10.94733879476976
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted B with cost = 20.102312072019313
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted B with cost = 33.63237433534045
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted a with cost = 1.530143118604104
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted G with cost = 18.839852156863262
+INFO:root:Real char: W
+INFO:root:
+
+INFO:root:Predicted B with cost = 17.219503916743
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted B with cost = 4.91831359286336
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted U with cost = 27.804278784436455
+INFO:root:Real char: A
+INFO:root:
+
+INFO:root:Predicted o with cost = 19.647500021284703
+INFO:root:Real char: e
+INFO:root:
+
+INFO:root:Predicted Q with cost = 17.70254596371316
+INFO:root:Real char: e
+INFO:root:
+
+INFO:root:Predicted U with cost = 14.150445429397637
+INFO:root:Real char: O
+INFO:root:
+
+INFO:root:Predicted d with cost = 4.847417003860132
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted x with cost = 21.16904030109604
+INFO:root:Real char: X
+INFO:root:
+
+INFO:root:Predicted B with cost = 15.049659138321129
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted b with cost = 24.5172734562291
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted o with cost = 8.57069700833394
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted H with cost = 31.002839217723814
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted I with cost = 40.64655517569953
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted e with cost = 9.412055662305645
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted L with cost = 7.2596272789137695
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted Z with cost = 19.094688238982126
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted U with cost = 26.87537850099792
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted H with cost = 16.60614714291694
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted Z with cost = 12.414392556427874
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted c with cost = 4.972608440815183
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted o with cost = 29.739172374330966
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted b with cost = 23.361937456282813
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted U with cost = 43.263341801627284
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted M with cost = 15.392825431221553
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted b with cost = 34.4205555420383
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted e with cost = 8.15764106427267
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted U with cost = 21.253214521723937
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted x with cost = 42.8718416297434
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted c with cost = 18.143286614055825
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted H with cost = 41.77293840154046
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted U with cost = 22.202721658562346
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted U with cost = 15.94375003640185
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted u with cost = 30.72343397223096
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted A with cost = 17.367565263402142
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted M with cost = 33.83030720988498
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted U with cost = 21.780165884588925
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted c with cost = 13.459329747164118
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted I with cost = 55.016375278925054
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted u with cost = 12.444316252860583
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted n with cost = 7.751509007421397
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted N with cost = 27.2203196522008
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted S with cost = 32.36812203961702
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted M with cost = 23.716501846535103
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted c with cost = 18.864028803220116
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted c with cost = 4.972608440815183
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted O with cost = 33.40700127462606
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted t with cost = 51.46987594628533
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted U with cost = 43.263341801627284
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted z with cost = 17.148371157579
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted j with cost = 51.652262883841104
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted c with cost = 10.549450130049603
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted u with cost = 28.938855342533444
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted x with cost = 42.8718416297434
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted c with cost = 18.143286614055825
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted U with cost = 43.266598337704124
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted U with cost = 22.202721658562346
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted U with cost = 15.94375003640185
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted w with cost = 32.63964153598323
+INFO:root:Real char: N
+INFO:root:
+
+INFO:root:Predicted I with cost = 31.514464948518413
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted M with cost = 33.83030720988498
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted V with cost = 33.08024597126669
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted U with cost = 65.44915057894248
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted U with cost = 16.491651458030194
+INFO:root:Real char: U
+INFO:root:
+
+INFO:root:Predicted c with cost = 31.9218955392215
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted N with cost = 23.009872149069306
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted U with cost = 41.92588299326385
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: F
+INFO:root:
+
+INFO:root:Predicted c with cost = 107.39042596422091
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted z with cost = 27.763265961745113
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted U with cost = 18.06357044600116
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted N with cost = 32.01985981178284
+INFO:root:Real char: s
+INFO:root:
+
+INFO:root:Predicted s with cost = 74.72211811041267
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted o with cost = 21.25952035906843
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted U with cost = 14.184440682550644
+INFO:root:Real char: O
+INFO:root:
+
+INFO:root:Predicted V with cost = 20.59993709115306
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted c with cost = 30.241577887287683
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted N with cost = 27.673830932432907
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted M with cost = 9.619227673105094
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted l with cost = 34.91438477607019
+INFO:root:Real char: s
+INFO:root:
+
+INFO:root:Predicted k with cost = 20.58382743681698
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted o with cost = 31.375513794473008
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted U with cost = 25.866954555969663
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted k with cost = 28.38608582861922
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted c with cost = 37.84406452406197
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted u with cost = 18.07882180121097
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted U with cost = 32.10337266950802
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted N with cost = 22.09838445732195
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted c with cost = 24.446239682519874
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted x with cost = 16.506385883357755
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted X with cost = 35.13659667782198
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted U with cost = 25.340175628226216
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted z with cost = 54.69789785741426
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted U with cost = 19.537602307623686
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted U with cost = 49.89694573300396
+INFO:root:Real char: y
+INFO:root:
+
+INFO:root:Predicted U with cost = 18.356365106048457
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted h with cost = 33.70041224678205
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted l with cost = 13.462208125641435
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted o with cost = 23.15237478556147
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted l with cost = 49.99186271705697
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted U with cost = 29.242243254333413
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted N with cost = 49.47275600409495
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted I with cost = 30.485341483549778
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted c with cost = 27.985920548761623
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted z with cost = 47.95065903738646
+INFO:root:Real char: U
+INFO:root:
+
+INFO:root:Predicted z with cost = 11.149130161295101
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted U with cost = 61.188788206755895
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted S with cost = 56.78489218641667
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted o with cost = 104.42838899881676
+INFO:root:Real char: g
+INFO:root:
+
+INFO:root:Predicted V with cost = 19.90929167033283
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted o with cost = 32.35862372740428
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted Z with cost = 13.10808184810064
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted y with cost = 53.82700871609198
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted N with cost = 52.02508988098451
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted I with cost = 17.51122163077292
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted V with cost = 33.3811815098761
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted c with cost = 22.9430025600723
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted C with cost = 35.149462192725444
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted h with cost = 23.644744269917595
+INFO:root:Real char: F
+INFO:root:
+
+INFO:root:Predicted h with cost = 18.494460488161245
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted c with cost = 27.537008733922136
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted c with cost = 25.405144951522715
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted R with cost = 32.740228036412
+INFO:root:Real char: A
+INFO:root:
+
+INFO:root:Predicted o with cost = 56.57973000784526
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted N with cost = 28.293836082248713
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted o with cost = 27.908972385759878
+INFO:root:Real char: O
+INFO:root:
+
+INFO:root:Predicted S with cost = 23.86952030220745
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted x with cost = 45.69188481515809
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted u with cost = 24.194897260448307
+INFO:root:Real char: X
+INFO:root:
+
+INFO:root:Predicted c with cost = 42.35071925434303
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted M with cost = 25.988808697032326
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted z with cost = 20.205754071328045
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted U with cost = 21.056446561693846
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted r with cost = 52.06383653947425
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted N with cost = 17.62283208358714
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted r with cost = 25.66046416803319
+INFO:root:Real char: E
+INFO:root:
+
+INFO:root:Predicted N with cost = 26.150410603561532
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted N with cost = 62.782630317822395
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted z with cost = 12.62318393728122
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted z with cost = 15.626052372405171
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted z with cost = 64.23192539971707
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted Z with cost = 33.90804408364179
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted t with cost = 21.55100014904987
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted c with cost = 5.777537223992824
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted Z with cost = 28.37651318985696
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted U with cost = 11.728515856367615
+INFO:root:Real char: n
+INFO:root:
+
+INFO:root:Predicted c with cost = 68.59188320146252
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted I with cost = 11.60439965565809
+INFO:root:Real char: J
+INFO:root:
+
+INFO:root:Predicted N with cost = 26.852002413821385
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted u with cost = 25.41406558353019
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted A with cost = 17.7519061223035
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted U with cost = 23.834977738044614
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted c with cost = 24.058812411370827
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted z with cost = 14.180170069247392
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted V with cost = 22.05571840418915
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted Y with cost = 35.12051440988889
+INFO:root:Real char: t
+INFO:root:
+
+INFO:root:Predicted l with cost = 17.675201810525497
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted U with cost = 25.54104836422709
+INFO:root:Real char: V
+INFO:root:
+
+INFO:root:Predicted c with cost = 42.675076332513214
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted n with cost = 29.402103089005404
+INFO:root:Real char: W
+INFO:root:
+
+INFO:root:Predicted z with cost = 30.821062601260596
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted o with cost = 32.83900080605424
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted l with cost = 28.45948699634599
+INFO:root:Real char: f
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted h with cost = 16.811953260388872
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted C with cost = 9.929708869194153
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted k with cost = 28.44634329935948
+INFO:root:Real char: K
+INFO:root:
+
+INFO:root:Predicted L with cost = 27.703234421303673
+INFO:root:Real char: S
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted U with cost = 29.20285924200854
+INFO:root:Real char: e
+INFO:root:
+
+INFO:root:Predicted N with cost = 31.7181133939916
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted Z with cost = 36.989883874738794
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted n with cost = 17.039163106223292
+INFO:root:Real char: t
+INFO:root:
+
+INFO:root:Predicted n with cost = 23.030414759491833
+INFO:root:Real char: Z
+INFO:root:
+
+INFO:root:Predicted n with cost = 22.414972345466317
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted z with cost = 42.05143721397919
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted l with cost = 45.01970110694642
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted c with cost = 23.643091735024473
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted N with cost = 31.20020604251296
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted h with cost = 22.359726133002365
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted S with cost = 42.19543020817668
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted c with cost = 20.707093500551945
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted c with cost = 14.401372997195764
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted M with cost = 21.971459826173565
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted h with cost = 74.0628521854553
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted N with cost = 28.79917420768881
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted o with cost = 46.072505302969766
+INFO:root:Real char: B
+INFO:root:
+
+INFO:root:Predicted k with cost = 35.2086928495714
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted V with cost = 24.2752482984089
+INFO:root:Real char: h
+INFO:root:
+
+INFO:root:Predicted o with cost = 18.101871041986428
+INFO:root:Real char: E
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: l
+INFO:root:
+
+INFO:root:Predicted I with cost = 84.0543608823405
+INFO:root:Real char: p
+INFO:root:
+
+INFO:root:Predicted C with cost = 43.21770489264785
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted U with cost = 27.780996487197907
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted n with cost = 21.00422362428248
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted E with cost = 25.62319860882232
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted Z with cost = 24.44044781130295
+INFO:root:Real char: u
+INFO:root:
+
+INFO:root:Predicted c with cost = 30.16699691687601
+INFO:root:Real char: a
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: m
+INFO:root:
+
+INFO:root:Predicted M with cost = 29.283017628288405
+INFO:root:Real char: Y
+INFO:root:
+
+INFO:root:Predicted s with cost = 48.95039384814872
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted c with cost = 29.649956921862497
+INFO:root:Real char: G
+INFO:root:
+
+INFO:root:Predicted U with cost = 31.30882887122718
+INFO:root:Real char: d
+INFO:root:
+
+INFO:root:Predicted a with cost = 9999
+INFO:root:Real char: i
+INFO:root:
+
+INFO:root:Predicted l with cost = 10.555994811433099
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted U with cost = 10.796466892796127
+INFO:root:Real char: o
+INFO:root:
+
+INFO:root:Predicted U with cost = 47.30964791115055
+INFO:root:Real char: R
+INFO:root:
+
+INFO:root:Predicted c with cost = 5.5064290481940805
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted U with cost = 41.237922696797234
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted o with cost = 25.718949494394973
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted U with cost = 21.92947736696665
+INFO:root:Real char: V
+INFO:root:
+
+INFO:root:Predicted T with cost = 18.834254127763515
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted C with cost = 10.951130001486083
+INFO:root:Real char: c
+INFO:root:
+
+INFO:root:Predicted l with cost = 22.32097892748121
+INFO:root:Real char: I
+INFO:root:
+
+INFO:root:Predicted U with cost = 13.912509017080628
+INFO:root:Real char: v
+INFO:root:
+
+INFO:root:Predicted q with cost = 40.434714932318464
+INFO:root:Real char: j
+INFO:root:
+
+INFO:root:Predicted z with cost = 34.09101325729655
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted Z with cost = 36.513115766747624
+INFO:root:Real char: x
+INFO:root:
+
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:root:Predicted 2 with cost = 10.81834617700177
+INFO:root:Real char: C
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 22.605220448182806
+INFO:root:Real char: q
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: T
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 16.396002237544167
+INFO:root:Real char: k
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 9.365066040919725
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 5.259381338804609
+INFO:root:Real char: r
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 39.183431983690234
+INFO:root:Real char: M
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 23.102872132575104
+INFO:root:Real char: H
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 20.796286430663482
+INFO:root:Real char: x
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 31.873203763434102
+INFO:root:Real char: w
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: L
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 23.612452493842373
+INFO:root:Real char: D
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 22.96190007418765
+INFO:root:Real char: b
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 40.43046570666824
+INFO:root:Real char: Q
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 9.045301519228996
+INFO:root:Real char: z
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 31.68718416785045
+INFO:root:Real char: P
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 7.1536960104026
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 1 with cost = 16.725115375571036
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 13.453866479268306
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 13.356218090275302
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 23.472289290538075
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 5.566298065276565
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 9.793996634206001
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 13.352770523595886
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 16.589629176789735
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 21.76537571057982
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 14.238952922212762
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 15.004564636070265
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 13.617635581253822
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 11.564968535283816
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 16.24810870037807
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.052260988435991
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 42.870571730303006
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.394677725511293
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 19.3567377994901
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 10.57991192586293
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 23.8985144413667
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 10.970589121272672
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 8.379917240037486
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 9.588437181240476
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 13.291420211251598
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 9.31526064331887
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 14.324835285395876
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 10.719148715735196
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 8.244040684499401
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 10.345260893045035
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 11.24340277723921
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 13.391641358766146
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 11.632855246906528
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 31.427409013575375
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 6.431397674730681
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 9.676289192415833
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 36.5717838784817
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 13.319816412937062
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 15.333670292001269
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 22.580564962200146
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 14.330065303783693
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 17.67154475042524
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 18.977341667975338
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 14.1887958302121
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 14.820890287429771
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 15.56978181548252
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 17.71430143440145
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 24.522585459962183
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 12.442335890691673
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 16.14909116467549
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 11.417002919104801
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 12.932470576624842
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 33.16038574524975
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 31.725842216485763
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 12.99155383920366
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 13.376089171787727
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 12.411250865085304
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 11.080240294766039
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 15.24773930233153
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 6.464204398594921
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 14.542878859891536
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 14.097145164695329
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 9.008298534917119
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 15.450303264991089
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 9.766248210739468
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 25.36773997052701
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 15.763046775931626
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 7.405982415235507
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 22.875838679684254
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 25.922683498291768
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 12.856096300536677
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 14.711908459139462
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 45.17007273145347
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 5.497917107674328
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 10.799736988612942
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 12.19648255795379
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 9.890771170932371
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 11.839821976411065
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 27.8190985541273
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 6.315143574644344
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 11.417720775300717
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 1 with cost = 6.54458497284976
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 24.186468516926517
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 10.681925437368415
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 11.800223378268267
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 21.326833704041615
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 45.28182937141036
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 27.716383250156913
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 32.25810927833877
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 56.709574839201856
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 25.707522088658912
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 54.85839442845138
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 40.06386798087434
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 41.0426119920734
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 24.25073084764391
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 32.60240006957673
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 46.5237130552111
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 29.072381811988397
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 36.35663806939645
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 25.282162966165842
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 48.90875328558393
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 55.8030493521092
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 32.91261230126332
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 42.56645631716603
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 26.396199583346032
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 21.778628322998447
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 28.20447747573703
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 28.454221567876896
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 31.481841687940623
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 36.5591964551763
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 33.145451328144134
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 48.71567791227805
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 37.16618229376285
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 41.35252572788235
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 49.22017791431551
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 58.44475991826101
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 42.22127302045185
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 16.31279877633582
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 19.58463267776945
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 32.04546622926606
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 37.161275399610346
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 56.8128037075683
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 50.423132122199405
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 44.826987340050074
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 22.777256650707102
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 53.75812190720158
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 45.239429651359494
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 37.239843022917256
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 39.73740516797191
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 26.838206116143766
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 26.300209442957847
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 27.39459690881329
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 30.84149719970217
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 38.46179825773036
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 31.512539419436926
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 55.84922557272873
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 30.43896773747177
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 38.74777392904137
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 42.55993989881421
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 42.33038851024437
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 19.286751284650304
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 41.087379880184194
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 31.731866609472302
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 46.37802160552819
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 30.29473730487465
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.715755063965359
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 7.39932725207556
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.5718160534232886
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 10.983630194682478
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 8.919620957468243
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 4.347267605959247
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 9.612789110089428
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 5.566298065276565
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 6.857761740498939
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 9.867853148110864
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 13.23893316320875
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 14.06746767106727
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 12.055702364990333
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 11.390001662582652
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 11.567030626368814
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 10.147047237370437
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 5.01634058567467
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.052260988435991
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 7.222583509686104
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.394677725511293
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 11.05144573608928
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 11.697985005384314
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 7.625555251374193
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 6.993960768994908
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 8.465315483259502
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.895663154567083
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 8.274119454919715
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 12.16341051648525
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 1 with cost = 19.477687873371895
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 6.331750724088362
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 1 with cost = 11.144323734167486
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 8.205995484756693
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 8.099018153403074
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.781753678367033
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 10.30430603276196
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 7.77253205059639
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 1 with cost = 37.295884131143005
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 9.798801765162043
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 6.386207290944827
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 9.217301755561694
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.533596386661882
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.935064267105841
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.514572364252647
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 3.581877073052163
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 9.429442920321609
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 8.421279254439126
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 9.846969144349739
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 8.140974125053857
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 14.599137712721966
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 8.875498896147512
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 9.774139554081833
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 14.558336050395472
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 12.763773451123432
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 8.561559531634023
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 6.329460121434251
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.002167543337785
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 3.348871644564237
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.707543749545598
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 12.932470576624842
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 8.109834396431149
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 7.866339618576038
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 12.188910921505231
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.138001385069389
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 12.963523249440874
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 8.538856113717124
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 11.080240294766039
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 11.321689128259303
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 4.443906915583299
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 12.156431411639408
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 13.00784799060038
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 6.5657787327641
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 10.007218622487365
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 7.251590418483784
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 7.522584607681246
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.012663006502446
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.557677050825222
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 7.261326272437287
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 9.520739883448917
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 8.902463293497199
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.041377845417667
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 14.711908459139462
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 9.195518709826723
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.173807987572724
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.142549049895866
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 9.894826460512935
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.3344840687031656
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 9.842926267411643
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 11.839821976411065
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 8.232441884815682
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.921873622181621
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 1 with cost = 21.063753695857258
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.934929039765445
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 4.653708182933648
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 8.945367169632048
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 10.681925437368415
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 9.44815794566194
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted D with cost = 10.446201340878453
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted S with cost = 11.043910909080717
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted b with cost = 7.944134230596937
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted B with cost = 12.810464632015522
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted G with cost = 14.687663707810387
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted b with cost = 6.98290001567562
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted B with cost = 14.716196205763639
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted g with cost = 8.887713571239605
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted d with cost = 11.310214136885492
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 14.081893903205872
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 17.156798911919907
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 7.970085936102409
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 19.795312541105748
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 19.7827065567603
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 7.750254987307375
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 22.58080695549294
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 11.694612381661473
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 15.465092136986016
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 19.29997984956021
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 22.42627459828917
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 26.158356893979768
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 17.6076941772334
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 19.253191004493605
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 29.875991080547895
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 18.93728208853273
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 19.649698754337376
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 10.63995469320501
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 17.367212542894933
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 15.04263513631954
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 22.426069205075116
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 22.074482148854827
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 23.321594633680355
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 15.289158442618975
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 14.98716227650811
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 15.601142186178988
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 14.182176426411928
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 20.943870237621937
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 21.877015432676455
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 15.487422378461858
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 9.421791840041118
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 12.934058130763834
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 12.834591436285532
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 13.212063085625765
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 13.111766219535548
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 20.067844960621233
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 16.697292594723073
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 22.993495638591945
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 15.249122210135935
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 18.47887889080912
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 29.470158409119563
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 13.537414518665889
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 23.246420554773845
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 10.986242731557066
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 10.03036926537197
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 21.684335528878815
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 6.390461638096707
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 17.38589337689431
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 18.341260008746026
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 18.284826459555344
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 15.104910865966392
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 21.38067541321433
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 13.756458256936966
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 21.473580271977852
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 23.578741963249218
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 21.506361865171666
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 20.860865955481433
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 10.191432620230296
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 21.398844545825067
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 7.359578601572578
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 8.374838883309534
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 21.086309328172895
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 18.481476998505244
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 13.009988783581274
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 21.704615013711965
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 20.259955442489144
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 26.677514914508954
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 17.587155827898716
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 15.821741787174707
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 16.252349587104664
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 9.54195278492995
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 23.005767554421837
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 22.582832856241605
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 15.03972739922856
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 28.986532978903245
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 17.903460224037634
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 12.345093874883071
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 11.821480091646297
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 16.935311269784812
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 9.671956500102368
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 11.238459924182658
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 17.367793314734072
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 20.38954624651273
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 9.335291502131199
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 32.00837866739333
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 15.461403269301616
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 11.494012710215333
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 16.05787901132272
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 17.391388394340733
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 7.045377773403052
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 15.482048775696107
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 24.089082536520866
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 15.099318287243067
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 13.452953342935873
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 19.262006865735486
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 23.457818320649636
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 7.31806989663301
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 15.221640347969556
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 22.070629067292277
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 17.705324915154428
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage11" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage244" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage253" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage262" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage271" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage280" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage289" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage298" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage307" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage316" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage325" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage334" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage343" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage352" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage361" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage370" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage379" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage388" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage397" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage406" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage415" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage424" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage433" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage442" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage451" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage460" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage469" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage478" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage487" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage496" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage505" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage514" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage523" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage532" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage541" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage550" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage559" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage568" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage577" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage586" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage595" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage604" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage613" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage622" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage631" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage640" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage649" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage658" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage667" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage676" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage685" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage694" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage703" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage712" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage721" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage730" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage739" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage748" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage757" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage766" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage775" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage784" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage793" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage802" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage811" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage820" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage829" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage838" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage847" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage856" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage865" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage874" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage883" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage892" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage244" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage253" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage262" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage271" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage280" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage289" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage298" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage307" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage316" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage325" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage334" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage343" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage352" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage361" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage370" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage379" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage388" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage397" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage406" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage415" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage424" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage433" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage442" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage451" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage460" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage469" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage478" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage487" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage496" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage505" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage514" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage523" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage532" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage541" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage550" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage559" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage568" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage577" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage586" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage595" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage604" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage613" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage622" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage631" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage640" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage649" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage658" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage667" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage676" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage685" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage694" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage703" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage712" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage721" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage730" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage739" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage748" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage757" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage766" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage775" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage784" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage793" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage802" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage811" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage820" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage829" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage838" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage847" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage856" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage865" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage874" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage883" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage892" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage244" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage253" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage262" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage271" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage280" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage289" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage298" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage307" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage316" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage325" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage334" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage343" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage352" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage361" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage370" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage379" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage388" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage397" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage406" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage415" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage424" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage433" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage442" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage451" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage460" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage469" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage478" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage487" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage496" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage505" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage514" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage523" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage532" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage541" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage550" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage244" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage253" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage262" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage271" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:root:Predicted 8 with cost = 2.066203477227253
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.9798978805626706
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 0.9078841875912651
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 5.649009189063442
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.573190221178181
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 0.4048451406440635
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.850819151053157
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 1.7512067375016835
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.739907387638877
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.276799391523675
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.928964174459865
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 7.474655564102705
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.615359250196407
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.825350758783728
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 0.005717718597996784
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.751356552335469
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.1241404606383165
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.1773181844325085
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.389674323681
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.235223092118863
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 4.146430388019713
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.094167778627
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 7.297965273804814
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 2.9659946514242908
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 4.481695338625214
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 4.569718733439161
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.0747196916400106
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.419733398403027
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.250953561057346
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 0.18674041272328834
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.285177371856055
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 2.165664001281228
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 2.2629483157422756
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 5.436795710218596
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 2.388601507325338
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 4.4305305596798235
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.62655850977435
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 20.102333657029842
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.564906770208852
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 2.618727446203151
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.8405968983053156
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.3447751918256996
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 1.014620446230342
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.546313848481087
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 0.5449447360620402
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.545416902717845
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.221103171297086
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 5.952532143118449
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.1715800218216006
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 6.259177513502615
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 4.152956942025491
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.141207428736945
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 8.944295993519646
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.070880387491724
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.9638000240336115
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 1.564466544161623
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.276649268525495
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 1.171519648665587
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 1.6150021730383297
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 6.6000433643125485
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 1.949443577153289
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.420533637975862
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.49654107447737
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.7918949223108886
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 9.6142622851623
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 3.1849913671845673
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 3.3669616936261524
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 4.69062479371805
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 1.9170258857568694
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 5.366310119340772
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 6.042577865831728
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 1.3584074508034754
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 7.345512568282119
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 2.208273904046637
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 3.2176387738267063
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.19579905888911
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 1.6661345826073184
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 2.113434807167273
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.810066801768629
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.628554991230633
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 1.3043180569570092
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 6.451170140034652
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 4.546778701395828
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 1.583440363470333
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 7.232771133810677
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.4924418886506015
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 0.5745462283775066
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 3.14684319002691
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.69438985411133
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.040347462479203
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 2.143371099187501
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 2.6456271679777568
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 6.212700030926819
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 6 with cost = 0.5785020094545108
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.202474243617186
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 4.7285832349565595
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 3.932476577787527
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 12.66508206656546
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 40.102279768056974
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 17.447874602481427
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 16.753427121585148
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 13.588966822598294
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 43.8387143551605
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 64.3209168919424
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 56.42206975191818
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 69.98435966995609
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 43.68772052446313
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 9.374973840113002
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 35.45532000743918
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 43.570022013486906
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 28.6256219021699
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 24.4756441718621
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 27.534139092967873
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 40.22633476893429
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 64.57882828167367
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 56.74205763885195
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 36.586035916771735
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 15.727395777821535
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 25.37391103844205
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 70.5825696705284
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 62.29241211536592
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 25.668022416864495
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 48.926787055330514
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 66.84573675789356
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 39.467079780746815
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 45.666781798760596
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 15.17061116515114
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 35.31000068999496
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 86.57185849690572
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 21.301624882062484
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 43.55831660575309
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 6.660949796518792
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 6.816658865796809
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 31.16853978831459
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 53.01461842692188
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 17.884898527073855
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 80.57441188559028
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 46.72216758776574
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 7.784546022981599
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 25.72283608457524
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 26.72047064376074
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 12.157153212962855
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 29.45598413487787
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 26.5937331878295
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 29.932041496609052
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 58.11103688784395
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 33.452699714340845
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 29.46762067052292
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 32.02281371125963
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 21.866733466235797
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 26.121763463202484
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 41.15403200745991
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 15.569303887301698
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 39.172454993631405
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 12.66508206656546
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 40.102279768056974
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 17.447874602481427
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 16.753427121585148
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 13.588966822598294
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 43.8387143551605
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 64.3209168919424
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 56.42206975191818
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 69.98435966995609
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 43.68772052446313
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 9.374973840113002
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 35.45532000743918
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 43.570022013486906
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 28.6256219021699
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 24.4756441718621
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 27.534139092967873
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 40.22633476893429
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 4 with cost = 53.75109561246967
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 56.74205763885195
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 36.586035916771735
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 15.727395777821535
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 25.37391103844205
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 70.5825696705284
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 62.29241211536592
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 25.668022416864495
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 48.926787055330514
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 66.84573675789356
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 39.467079780746815
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 45.666781798760596
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 15.17061116515114
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 35.31000068999496
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 86.57185849690572
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 21.301624882062484
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 43.55831660575309
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 6.660949796518792
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 6.816658865796809
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 5 with cost = 31.16853978831459
+INFO:root:Real char: 8
+INFO:root:
+
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage20" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage30" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage40" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:root:Predicted 2 with cost = 2.579902777807349
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 14.595145656829107
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 9 with cost = 5.712167937404462
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 8.58960741397999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 16.446751735730686
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.375281307029231
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 5.928964174459865
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 10.952737362233481
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 17.705509995263228
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 7.380295703857767
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 7.42625052057274
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 22.12068084773029
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 2.991761765089779
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 8 with cost = 5.389674323681
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 13.436600392489414
+INFO:root:Real char: 9
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 9.482453587093882
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 26.8871337463355
+INFO:root:Real char: 6
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 5.0636776041499925
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 6.053336868043931
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 3.3645467833658347
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 10.84882310348765
+INFO:root:Real char: 0
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 4.071254223025135
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 6.616572186396752
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 3.376003865319092
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 3 with cost = 4.4305305596798235
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 5.513722210137538
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 5.667002658113168
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 1
+INFO:root:
+
+INFO:root:Predicted 7 with cost = 15.885128892404353
+INFO:root:Real char: 7
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 4
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 2.769414239103498
+INFO:root:Real char: 2
+INFO:root:
+
+INFO:root:Predicted 0 with cost = 9999
+INFO:root:Real char: 3
+INFO:root:
+
+INFO:root:Predicted 2 with cost = 7.365141132993606
+INFO:root:Real char: 5
+INFO:root:
+
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage40" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage49" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage58" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage80" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage89" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage98" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image

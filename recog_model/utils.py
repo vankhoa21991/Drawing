@@ -16,7 +16,7 @@ def load_data(data_dir='',model_dir=''):
     chars, lbls = [], []
     chars_pts, LB = [], []
     data = []
-    for file in list_files[:100]:
+    for file in list_files[:20]:
 
         if file[-9:] == '_lbls.txt':
             file_name = file[:3]
@@ -76,7 +76,7 @@ def load_data(data_dir='',model_dir=''):
         ALL_LINES += Lines_input[i]
         ALL_LBLS += lbls_all[i]
 
-    create_encode_decode_file(ALL_LBLS,model_dir)
+    #create_encode_decode_file(ALL_LBLS,model_dir)
     max_len = np.max([len(x) for x in ALL_LINES])
 
     # load encode file
@@ -87,9 +87,11 @@ def load_data(data_dir='',model_dir=''):
 
     ALL_LBLS_ENCODED = file_to_word_ids(ALL_LBLS, char2label)
 
-    stroke_train, stroke_val, label_train, label_val = train_test_split(ALL_LINES, ALL_LBLS_ENCODED, test_size=0.08,random_state=1)
+    stroke_train, stroke_val, label_train, label_val = train_test_split(ALL_LINES, ALL_LBLS_ENCODED, test_size=0.1,random_state=1)
+    
+    stroke_test, stroke_val, label_test, label_val = train_test_split(stroke_val, label_val, test_size=0.1,random_state=1)
 
-    return stroke_train, stroke_val, label_train, label_val, label2char, char2label, max_len
+    return stroke_train, stroke_val, stroke_test, label_train, label_val, label_test, label2char, char2label, max_len
 
 def file_to_word_ids(label, word_to_id):
     label_out = []

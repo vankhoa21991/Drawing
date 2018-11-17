@@ -14,64 +14,30 @@ from six.moves import xrange
 import itertools
 from keras.utils import to_categorical
 import json
+from utils import *
+
+if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser()
+
+    # environment
+    server = True
+
+    if server == True:
+        parser.add_argument('--data_dir', default='/mnt/DATA/lupin/Flaxscanner/Dataset/CASIA/Drawing/')
+        parser.add_argument('--model_dir', default='/mnt/DATA/lupin/Flaxscanner/Models/Drawing/recog_model/')
+        parser.add_argument('--sample_dir', default='/mnt/DATA/lupin/Flaxscanner/Drawing/recog_model/samples/')
+    else:
+        parser.add_argument('--data_dir', default='model/')
+        parser.add_argument('--model_dir', default='model/')
+    args = parser.parse_args()
+    
+    stroke_train, stroke_val, stroke_test, label_train, label_val, label_test, label2char, char2label, max_len = load_data(args.data_dir,args.model_dir)
+    
+    data_filepath = args.data_dir + 'casia_preprocessed_20.npz'     
+    
+    np.savez_compressed(data_filepath, train=stroke_train, valid=stroke_val, test=stroke_test,label_train=label_train, label_val=label_val,label_test=label_test, label2char=label2char,char2label=char2label,max_len=max_len)
+    
 
 
-    list_files = os.listdir(data_dir)
-      list_files = sorted(list_files)
-      chars, lbls = [], []
-      chars_pts, LB = [], []
-      data = []
-      for file in list_files[:6]:
-
-          if file[-9:] == '_lbls.txt':
-              file_name = file[:3]
-              try:
-                  file_stroke = open(data_dir + file_name + '_stroke.txt', "rb")
-                  file_lable = open(data_dir + file_name + '_lbls.txt', "rb")
-              except:
-                  break
-
-              strokes = pickle.load(file_stroke)
-              chars.append(strokes)
-              chars_pts += strokes
-
-              lbl = pickle.load(file_lable)
-              lbls.append(lbl)
-              LB += lbl
-
-      chars_pts_all, lbls_all = chars, lbls
-
-      # get first 5 people
-      chars_pts_before_clean = chars_pts_all
-      lbls_before_clean = lbls_all
-
-      chars_pts_after_clean, lbls_after_clean = remove_empty_labels(chars_pts_before_clean, lbls_before_clean)
-
-      chars_pts_after_clean = clean_redundant_points(chars_pts_after_clean)
-
-      Lines_normalized = []
-      chars_pts_normalized = []
-      for i in range(len(chars_pts_after_clean)):
-          # points to lines
-          lines_before_normalize = pts2lines(chars_pts_after_clean[i])
-
-          # normalize
-          lines_after_normalize = normalize(lines_before_normalize)
-
-          # convert back to verify
-          chars_pts_normalized.append(lines2pts(lines_after_normalize))
-
-          Lines_normalized.append(lines_after_normalize)
-
-      Lines_input = []
-      for i in range(len(Lines_normalized)):
-          Lines_input.append(extract_line(Lines_normalized[i]))
-
-      ALL_LINES = []
-      ALL_LBLS = []
-      for i in range(len(lbls_all)):
-          ALL_LINES += Lines_input[i]
-          ALL_LBLS += lbls_all[i]
-
-      create_encode_decode_file(ALL_LBLS)
-      max_len = np.max([len(x) for x in ALL_LINES])
